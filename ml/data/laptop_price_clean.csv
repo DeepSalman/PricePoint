@@ -1,0 +1,1304 @@
+brand,type,inches,touchscreen,ips,resolution_pixels,cpu_brand,cpu_speed_ghz,ram_gb,storage_gb,storage_type,gpu_brand,os,weight_kg,price_euros,price_bdt
+Apple,Ultrabook,13.3,False,True,4096000,Intel i5,2.3,8,128,SSD,Intel,Mac,1.37,1339.69,167461
+Apple,Ultrabook,13.3,False,False,1296000,Intel i5,1.8,8,128,SSD,Intel,Mac,1.34,898.94,112368
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,No OS,1.86,575.0,71875
+Apple,Ultrabook,15.4,False,True,5184000,Intel i7,2.7,16,512,SSD,AMD,Mac,1.83,2537.45,317181
+Apple,Ultrabook,13.3,False,True,4096000,Intel i5,3.1,8,256,SSD,Intel,Mac,1.37,1803.6,225450
+Acer,Notebook,15.6,False,False,1049088,AMD,3.0,4,500,HDD,AMD,Windows,2.1,400.0,50000
+Apple,Ultrabook,15.4,False,True,5184000,Intel i7,2.2,16,256,SSD,Intel,Mac,2.04,2139.97,267496
+Apple,Ultrabook,13.3,False,False,1296000,Intel i5,1.8,8,256,SSD,Intel,Mac,1.34,1158.7,144838
+Asus,Ultrabook,14.0,False,False,2073600,Intel i7,1.8,16,512,SSD,Nvidia,Windows,1.3,1495.0,186875
+Acer,Ultrabook,14.0,False,True,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.6,770.0,96250
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,No OS,1.86,393.9,49238
+HP,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,500,HDD,Intel,No OS,1.86,344.99,43124
+Apple,Ultrabook,15.4,False,True,5184000,Intel i7,2.8,16,256,SSD,AMD,Mac,1.83,2439.97,304996
+Dell,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,256,SSD,AMD,Windows,2.2,498.9,62362
+Apple,Ultrabook,12.0,False,True,3317760,Intel Other,1.2,8,256,SSD,Intel,Mac,0.92,1262.4,157800
+Apple,Ultrabook,13.3,False,True,4096000,Intel i5,2.3,8,256,SSD,Intel,Mac,1.37,1518.55,189819
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,AMD,Windows,2.2,745.0,93125
+Apple,Ultrabook,15.4,False,True,5184000,Intel i7,2.9,16,512,SSD,AMD,Mac,1.83,2858.0,357250
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.4,8,1024,HDD,Nvidia,No OS,2.2,499.0,62375
+Dell,Ultrabook,13.3,True,True,2073600,Intel i5,1.6,8,128,SSD,Intel,Windows,1.22,979.0,122375
+Asus,Netbook,11.6,False,False,1049088,Intel Other,1.44,2,32,SSD,Intel,Windows,0.98,191.9,23988
+Lenovo,Gaming,15.6,False,True,2073600,Intel i5,2.5,8,1152,Hybrid,Nvidia,Windows,2.5,999.0,124875
+HP,Notebook,15.6,False,False,1049088,AMD,1.5,4,500,HDD,AMD,No OS,1.86,258.0,32250
+Dell,2 in 1 Convertible,13.3,True,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.62,819.0,102375
+HP,Ultrabook,15.6,False,False,2073600,Intel i7,1.8,8,256,SSD,Intel,Windows,1.91,659.0,82375
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,Intel,Windows,2.3,418.64,52330
+Apple,Ultrabook,13.3,False,False,1296000,Intel i5,1.6,8,128,SSD,Intel,Mac,1.35,1099.0,137375
+Dell,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,256,SSD,AMD,Windows,2.2,800.0,100000
+Dell,Ultrabook,15.6,False,False,2073600,Intel i7,1.9,8,512,SSD,Intel,Windows,1.88,1298.0,162250
+HP,Notebook,17.3,False,False,2073600,Intel i5,1.6,8,1024,HDD,Nvidia,Windows,2.5,896.0,112000
+Chuwi,Notebook,15.6,False,False,2073600,Intel Other,1.44,4,64,SSD,Intel,Windows,1.89,244.99,30624
+Asus,Notebook,14.0,False,False,1049088,AMD,1.5,2,32,SSD,AMD,Windows,1.65,199.0,24875
+HP,Notebook,17.3,False,False,2073600,AMD,2.5,4,500,HDD,AMD,Windows,2.71,439.0,54875
+Dell,Ultrabook,13.3,True,False,5760000,Intel i7,1.8,16,512,SSD,Intel,Windows,1.2,1869.0,233625
+Apple,Ultrabook,13.3,False,False,1296000,Intel i5,1.6,8,256,SSD,Intel,Mac,1.35,998.0,124750
+Lenovo,Notebook,14.0,False,False,1049088,Intel Other,1.1,4,64,SSD,Intel,Windows,1.44,249.0,31125
+Acer,Notebook,15.6,False,False,1049088,Intel i3,2.7,4,1024,HDD,Intel,Linux,2.1,367.0,45875
+Dell,Notebook,17.3,False,True,2073600,Intel i5,1.6,8,1152,Hybrid,AMD,Windows,2.8,979.0,122375
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,1024,HDD,Intel,Windows,1.86,488.69,61086
+HP,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,256,SSD,Nvidia,Windows,2.1,879.0,109875
+Asus,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,Intel,Linux,2.0,389.0,48625
+Dell,Gaming,15.6,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.65,1499.0,187375
+Asus,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,1024,HDD,Nvidia,Linux,2.3,522.99,65374
+Acer,Notebook,15.6,False,True,2073600,Intel i5,1.6,4,256,SSD,Intel,Windows,2.2,682.0,85250
+Dell,2 in 1 Convertible,17.3,True,False,2073600,Intel i5,1.6,12,1024,HDD,Nvidia,Windows,2.77,999.0,124875
+Apple,Ultrabook,13.3,False,True,4096000,Intel i5,2.0,8,256,SSD,Intel,Mac,1.37,1419.0,177375
+Lenovo,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,128,SSD,Intel,No OS,2.2,369.0,46125
+Asus,Gaming,17.3,False,False,2073600,AMD,3.0,8,1280,Hybrid,AMD,Windows,3.2,1299.0,162375
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,256,SSD,AMD,Windows,2.3,639.0,79875
+Asus,Notebook,17.3,False,False,1049088,Intel Other,1.1,4,1024,HDD,Nvidia,Windows,2.8,466.0,58250
+Lenovo,2 in 1 Convertible,10.1,True,True,2304000,Intel Other,1.44,4,64,SSD,Intel,Android,0.69,319.0,39875
+Acer,Notebook,15.6,False,True,2073600,Intel i7,1.8,8,256,SSD,Nvidia,Windows,2.2,841.0,105125
+HP,Notebook,15.6,False,False,2073600,AMD,2.5,4,256,SSD,AMD,Windows,1.86,398.49,49811
+HP,Notebook,13.3,False,False,2073600,Intel i7,1.8,8,512,SSD,Intel,Windows,1.49,1103.0,137875
+Acer,Notebook,15.6,False,False,1049088,Intel i3,2.4,4,1024,HDD,Intel,Windows,2.4,384.0,48000
+Dell,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,256,SSD,AMD,Windows,2.13,767.8,95975
+HP,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,128,SSD,Intel,Windows,1.91,439.0,54875
+Asus,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,256,SSD,Intel,Windows,2.0,586.19,73274
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,2304,Hybrid,Nvidia,Windows,2.43,2449.0,306125
+Asus,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,256,SSD,Intel,Linux,2.0,415.0,51875
+Dell,Notebook,17.3,False,False,2073600,Intel i7,1.8,16,2304,Hybrid,AMD,Windows,2.8,1299.0,162375
+Dell,Ultrabook,14.0,False,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.7,879.0,109875
+Lenovo,Notebook,14.0,False,True,2073600,Intel i3,2.7,8,256,SSD,Intel,No OS,1.7,599.0,74875
+Asus,Notebook,14.0,False,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.4,941.0,117625
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.86,690.0,86250
+Asus,Ultrabook,15.6,False,False,2073600,Intel i7,2.8,16,512,SSD,Nvidia,Windows,1.8,1983.0,247875
+HP,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,500,HDD,AMD,Windows,1.86,438.69,54836
+HP,Notebook,14.0,False,False,1049088,Intel Other,1.6,4,32,SSD,Intel,Windows,1.44,229.0,28625
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,1024,HDD,Intel,Windows,1.9,549.0,68625
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,12,1024,HDD,Nvidia,Linux,3.0,949.0,118625
+Microsoft,Ultrabook,13.5,True,False,3393024,Intel i5,2.5,4,128,SSD,Intel,Windows,1.252,1089.0,136125
+Dell,Ultrabook,13.3,False,True,2073600,Intel i7,1.8,8,256,SSD,AMD,Windows,1.4,955.0,119375
+Dell,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,256,SSD,AMD,Windows,2.2,870.0,108750
+MSI,Gaming,17.3,False,False,2073600,Intel i5,2.5,8,1152,Hybrid,Nvidia,Windows,2.7,1095.0,136875
+Acer,Notebook,14.0,False,False,1049088,Intel i3,2.0,8,1024,HDD,Intel,Windows,2.1,389.0,48625
+Asus,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,1024,HDD,Nvidia,Windows,2.2,949.0,118625
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,2048,HDD,Intel,No OS,2.2,519.0,64875
+Dell,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,1152,Hybrid,Intel,Windows,2.02,855.0,106875
+Acer,Notebook,15.6,False,False,2073600,Intel i3,2.7,4,1024,HDD,Nvidia,Windows,2.2,530.0,66250
+HP,Notebook,17.3,False,False,2073600,Intel i5,1.6,8,1152,Hybrid,Nvidia,Windows,2.5,977.0,122125
+Dell,Ultrabook,15.6,False,True,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.88,1096.16,137020
+Apple,Ultrabook,12.0,False,True,3317760,Intel i5,1.3,8,512,SSD,Intel,Mac,0.92,1510.0,188750
+HP,Notebook,14.0,False,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.63,860.0,107500
+Lenovo,Notebook,15.6,False,False,2073600,AMD,2.5,4,128,SSD,AMD,Windows,2.2,399.0,49875
+Acer,Notebook,15.6,False,False,1049088,AMD,3.0,4,1024,HDD,AMD,Windows,2.1,395.0,49375
+Dell,Gaming,15.6,False,True,2073600,Intel i7,2.8,16,1152,Hybrid,Nvidia,Windows,2.65,1349.0,168625
+HP,Ultrabook,15.6,False,True,2073600,Intel i7,1.8,8,256,SSD,Nvidia,Windows,1.83,699.0,87375
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.96,598.99,74874
+Asus,Gaming,15.6,False,True,2073600,Intel i7,2.8,16,1152,Hybrid,Nvidia,Windows,2.2,1449.0,181125
+Dell,Ultrabook,13.3,False,True,2073600,Intel i7,1.8,8,256,SSD,Intel,Windows,1.21,1649.0,206125
+Asus,Gaming,15.6,False,False,2073600,AMD,3.0,8,1024,HDD,AMD,Windows,2.45,699.0,87375
+Acer,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,1024,HDD,Nvidia,Windows,2.2,689.0,86125
+HP,Notebook,13.3,False,False,2073600,Intel i7,1.8,16,512,SSD,Intel,Windows,1.49,1197.0,149625
+Dell,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.65,1195.0,149375
+Asus,Ultrabook,14.0,False,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.25,1049.0,131125
+Acer,2 in 1 Convertible,13.3,True,True,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.5,847.0,105875
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,1024,HDD,AMD,Linux,2.2,599.9,74988
+Dell,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,256,SSD,AMD,Linux,2.2,485.0,60625
+Asus,Notebook,15.6,False,False,2073600,Intel i3,2.4,6,256,SSD,Nvidia,Windows,2.0,577.0,72125
+HP,Gaming,15.6,False,True,2073600,Intel i7,2.8,12,1152,Hybrid,Nvidia,Windows,2.62,1249.0,156125
+HP,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,AMD,Windows,1.91,719.0,89875
+HP,Notebook,15.6,False,False,2073600,AMD,1.5,4,500,HDD,AMD,Windows,2.1,349.0,43625
+Dell,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,1024,HDD,AMD,Linux,2.2,647.0,80875
+HP,Ultrabook,13.3,False,True,2073600,Intel i7,2.7,8,256,SSD,Nvidia,Windows,1.38,1119.0,139875
+Microsoft,Ultrabook,13.5,True,False,3393024,Intel i5,2.5,8,256,SSD,Intel,Windows,1.252,1340.0,167500
+HP,Notebook,14.0,False,True,2073600,Intel i5,2.5,6,256,SSD,Nvidia,Windows,1.58,659.0,82375
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,Intel,Windows,1.85,414.9,51862
+Asus,Ultrabook,14.0,False,True,2073600,Intel i7,2.7,8,256,SSD,Nvidia,Windows,1.3,1193.0,149125
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.2,1299.0,162375
+Lenovo,Notebook,14.0,False,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.58,1480.0,185000
+Asus,Ultrabook,15.6,False,False,2073600,Intel i7,1.8,16,1280,Hybrid,Nvidia,Windows,1.5,1262.0,157750
+Dell,Ultrabook,13.3,True,False,5760000,Intel i7,2.4,8,256,SSD,Intel,Windows,1.23,1379.0,172375
+Lenovo,2 in 1 Convertible,13.3,True,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.37,1399.0,174875
+HP,Notebook,14.0,False,True,1049088,Intel i5,1.6,4,500,HDD,Intel,Windows,1.63,722.0,90250
+Dell,Ultrabook,13.3,False,True,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.21,1629.0,203625
+HP,2 in 1 Convertible,13.3,True,True,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.26,1398.99,174874
+HP,Notebook,14.0,False,False,2073600,Intel i7,1.8,8,512,SSD,Intel,Windows,1.63,1084.0,135500
+Dell,Notebook,15.6,False,True,2073600,Intel i7,1.8,8,1280,Hybrid,Nvidia,Windows,2.16,1130.33,141291
+Asus,Notebook,17.3,False,False,2073600,Intel i3,2.0,4,1024,HDD,Nvidia,Windows,2.0,564.0,70500
+Asus,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,256,SSD,Nvidia,Windows,1.7,1118.0,139750
+Acer,Notebook,15.6,True,True,2073600,Intel i3,2.4,6,1024,HDD,Intel,Windows,2.1,479.0,59875
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,2304,Hybrid,Nvidia,Windows,1.8,2241.5,280188
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Nvidia,No OS,2.2,629.0,78625
+HP,Notebook,17.3,False,False,2073600,Intel i7,1.8,16,512,SSD,Nvidia,Windows,2.5,1271.0,158875
+Acer,Notebook,15.6,False,False,1049088,AMD,3.0,4,256,SSD,AMD,Windows,2.1,451.0,56375
+HP,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,No OS,1.86,259.0,32375
+HP,Notebook,14.0,False,False,2073600,Intel i5,1.6,8,1024,HDD,Intel,Windows,1.63,812.0,101500
+Asus,Notebook,14.0,False,False,1049088,AMD,1.5,4,64,SSD,AMD,Windows,1.65,277.99,34749
+Dell,Notebook,17.3,False,False,2073600,Intel i7,1.8,16,2304,Hybrid,AMD,Windows,2.8,1396.0,174500
+HP,Notebook,17.3,False,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,2.5,928.0,116000
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,1024,HDD,AMD,Windows,2.36,638.99,79874
+Dell,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,AMD,Windows,2.2,449.0,56125
+Acer,Ultrabook,14.0,False,True,2073600,Intel i7,1.8,8,256,SSD,Intel,Windows,1.6,884.0,110500
+Acer,Notebook,15.6,False,False,2073600,Intel i3,2.7,4,256,SSD,Nvidia,Windows,2.2,572.0,71500
+HP,Notebook,15.6,False,False,1049088,Intel i7,2.7,8,1024,HDD,Intel,Windows,2.05,598.0,74750
+HP,Notebook,14.0,False,False,2073600,Intel i7,1.8,8,256,SSD,Intel,Windows,1.63,988.0,123500
+Lenovo,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,1024,HDD,Intel,No OS,1.9,252.36,31545
+Asus,Gaming,17.3,False,False,2073600,Intel i5,2.5,8,1152,Hybrid,Nvidia,Windows,3.0,938.0,117250
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,1024,HDD,Nvidia,No OS,2.2,499.0,62375
+HP,Notebook,13.3,False,True,2073600,Intel i5,2.5,4,256,SSD,Intel,Windows,1.32,699.0,87375
+Acer,Notebook,17.3,False,True,2073600,Intel i3,2.7,4,1024,HDD,Nvidia,Windows,3.0,655.0,81875
+Lenovo,Notebook,14.0,False,True,2073600,Intel i5,1.6,8,256,SSD,AMD,Windows,1.75,1116.02,139502
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,256,SSD,Nvidia,No OS,2.4,869.0,108625
+Toshiba,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,Windows,2.1,602.0,75250
+HP,Notebook,15.6,False,False,1049088,AMD,2.5,4,256,SSD,AMD,Windows,1.86,369.0,46125
+Asus,Ultrabook,14.0,False,False,2073600,Intel i7,1.8,8,256,SSD,Intel,Windows,1.25,1099.0,137375
+HP,Ultrabook,12.5,True,True,8294400,Intel Other,1.2,8,512,SSD,Intel,Windows,0.97,2014.0,251750
+Asus,Notebook,15.6,False,False,2073600,Intel Other,1.1,4,1024,HDD,Intel,Windows,2.0,344.0,43000
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.9,2029.0,253625
+Acer,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,Intel,Windows,2.1,447.0,55875
+Dell,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,512,SSD,Nvidia,Windows,2.56,1249.26,156158
+Dell,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,0,Other,Nvidia,Windows,2.62,899.0,112375
+Lenovo,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,128,SSD,Intel,Windows,1.9,498.0,62250
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.8,1890.0,236250
+HP,Ultrabook,14.0,False,False,2073600,Intel i5,2.7,4,256,SSD,Intel,Windows,1.48,1082.0,135250
+HP,Notebook,15.6,False,False,2073600,Intel i5,1.6,6,256,SSD,AMD,Windows,1.91,619.0,77375
+Lenovo,2 in 1 Convertible,14.0,True,True,2073600,Intel i3,2.4,4,256,SSD,Intel,Windows,1.74,629.0,78625
+Asus,2 in 1 Convertible,13.3,True,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.1,1315.0,164375
+Dell,2 in 1 Convertible,15.6,True,False,2073600,Intel i7,1.8,8,256,SSD,Intel,Windows,1.56,1049.0,131125
+Toshiba,Notebook,15.6,False,False,1049088,Intel i3,2.2,4,500,HDD,Intel,Windows,2.1,447.0,55875
+Asus,Notebook,15.6,False,False,1049088,AMD,3.0,4,1024,HDD,AMD,Windows,2.03,403.0,50375
+Acer,Notebook,17.3,False,True,2073600,Intel i5,1.6,4,256,SSD,Nvidia,Windows,3.0,805.0,100625
+Dell,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,256,SSD,AMD,Windows,2.13,728.0,91000
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,16,256,SSD,Nvidia,Windows,2.5,1079.0,134875
+Acer,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,1024,HDD,Intel,Windows,2.1,348.0,43500
+MSI,Gaming,15.6,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.4,1799.0,224875
+Acer,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,1024,HDD,Intel,Windows,2.1,363.51,45439
+Dell,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.56,1060.49,132561
+Acer,Notebook,17.3,False,True,2073600,Intel i5,1.6,8,256,SSD,Nvidia,Windows,3.0,854.0,106750
+HP,Notebook,13.3,False,True,2073600,Intel i5,1.6,4,500,HDD,Intel,Windows,1.49,754.0,94250
+Huawei,Ultrabook,13.0,False,True,3110400,Intel i5,2.5,8,256,SSD,Intel,Windows,1.05,1349.0,168625
+HP,Notebook,17.3,False,True,2073600,Intel i5,2.5,6,2048,HDD,AMD,Windows,2.71,699.0,87375
+Lenovo,Notebook,15.6,False,False,1049088,AMD,2.9,4,500,HDD,AMD,No OS,2.2,309.0,38625
+Toshiba,Notebook,15.6,False,False,1049088,Intel i3,2.4,4,500,HDD,Intel,Windows,2.0,489.0,61125
+HP,Notebook,17.3,False,False,2073600,Intel i5,1.6,8,256,SSD,Nvidia,Windows,2.5,923.0,115375
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.4,8,1024,HDD,Intel,Windows,2.3,459.0,57375
+Acer,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,128,SSD,Intel,Windows,2.1,449.0,56125
+MSI,Gaming,18.4,False,False,2073600,Intel i7,2.9,32,1536,Hybrid,Nvidia,Windows,4.4,2799.0,349875
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1152,Hybrid,AMD,Windows,1.9,813.0,101625
+HP,2 in 1 Convertible,13.3,True,True,8294400,Intel i5,1.6,8,256,SSD,Intel,Windows,1.29,1499.0,187375
+Dell,Notebook,15.6,False,False,2073600,Intel i7,1.8,16,2304,Hybrid,AMD,Linux,2.02,1049.0,131125
+Dell,Ultrabook,13.3,False,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.23,1399.0,174875
+Lenovo,2 in 1 Convertible,13.9,True,True,8294400,Intel i7,1.8,16,512,SSD,Intel,Windows,1.4,1849.0,231125
+Toshiba,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,128,SSD,Intel,Windows,2.0,793.0,99125
+Xiaomi,Notebook,15.6,False,True,2073600,Intel i5,1.6,8,256,SSD,Nvidia,No OS,1.95,1199.0,149875
+Dell,Notebook,17.3,True,False,2073600,Intel i7,1.8,16,512,SSD,Nvidia,Windows,2.77,1549.0,193625
+Dell,Notebook,15.6,True,False,8294400,Intel i7,2.8,16,512,SSD,Nvidia,Windows,2.06,2397.0,299625
+Lenovo,Gaming,15.6,False,True,2073600,Intel i5,2.5,8,256,SSD,Nvidia,No OS,2.4,779.0,97375
+Acer,Ultrabook,13.3,False,True,2073600,Intel i5,1.2,8,256,SSD,Intel,Windows,1.12,989.0,123625
+Dell,Notebook,17.3,False,False,2073600,Intel i7,1.8,8,1152,Hybrid,AMD,Windows,2.8,1085.0,135625
+Lenovo,2 in 1 Convertible,14.0,True,False,3686400,Intel i7,2.7,16,1024,SSD,Intel,Windows,1.42,2824.0,353000
+Vero,Notebook,14.0,False,True,2073600,Intel Other,1.1,4,32,SSD,Intel,Windows,1.3,260.0,32500
+Xiaomi,Ultrabook,13.3,False,True,2073600,Intel i5,2.5,8,256,SSD,Nvidia,No OS,1.3,999.9,124988
+Lenovo,Notebook,17.3,False,False,1440000,Intel i5,1.6,8,256,SSD,Nvidia,No OS,2.8,698.0,87250
+Dell,2 in 1 Convertible,13.3,True,True,2073600,Intel i7,1.8,8,1024,HDD,Intel,Windows,1.62,839.0,104875
+HP,Notebook,17.3,False,True,2073600,Intel i5,1.6,8,1024,HDD,Nvidia,Windows,2.5,914.0,114250
+Razer,Gaming,17.3,True,False,8294400,Intel i7,2.9,32,1024,SSD,Nvidia,Windows,3.49,6099.0,762375
+HP,Notebook,13.3,False,False,2073600,Intel i5,1.6,8,512,SSD,Intel,Windows,1.49,959.0,119875
+HP,Gaming,17.3,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,3.35,1379.0,172375
+HP,Notebook,17.3,False,False,2073600,Intel i7,1.8,8,256,SSD,Nvidia,Windows,2.5,1045.0,130625
+Dell,Gaming,15.6,False,True,8294400,Intel i7,2.8,16,1536,Hybrid,Nvidia,Windows,2.65,1845.0,230625
+Lenovo,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,128,SSD,Intel,Windows,2.1,493.0,61625
+Acer,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,1024,HDD,Nvidia,Windows,2.23,742.0,92750
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,16,1536,Hybrid,Nvidia,Windows,3.2,1749.0,218625
+Dell,Workstation,15.6,False,False,8294400,Intel Other,3.0,16,1280,Hybrid,Nvidia,Windows,2.8,3055.0,381875
+Lenovo,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,512,SSD,Nvidia,No OS,2.4,1398.0,174750
+Dell,Notebook,15.6,True,False,1049088,Intel i3,2.4,6,1024,HDD,Intel,Windows,2.3,439.0,54875
+Dell,Ultrabook,13.3,True,True,8294400,Intel i7,1.8,8,256,SSD,Intel,Windows,1.21,1949.0,243625
+Dell,Ultrabook,13.3,False,False,2073600,Intel i7,1.8,8,256,SSD,Intel,Windows,1.2,1449.0,181125
+Lenovo,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,256,SSD,Intel,Windows,2.2,597.0,74625
+Acer,Notebook,15.6,False,False,2073600,Intel i7,2.8,8,1024,HDD,Nvidia,Linux,2.4,779.0,97375
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.9,1407.0,175875
+HP,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,500,HDD,Intel,No OS,2.1,349.0,43625
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,No OS,2.2,549.0,68625
+Huawei,Ultrabook,13.0,False,True,3110400,Intel i7,2.7,8,512,SSD,Intel,Windows,1.05,1499.0,187375
+Dell,Ultrabook,13.3,False,True,2073600,Intel i7,1.8,8,256,SSD,AMD,Windows,1.4,931.88,116485
+Lenovo,Notebook,17.3,False,False,1440000,Intel i5,2.5,8,1024,HDD,Nvidia,No OS,2.8,589.0,73625
+HP,Notebook,14.0,False,False,2073600,Intel i7,1.8,8,256,SSD,Nvidia,Windows,1.63,1031.0,128875
+Dell,Ultrabook,14.0,False,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.6,1149.0,143625
+Dell,2 in 1 Convertible,13.3,True,False,2073600,Intel i7,1.8,16,512,SSD,Intel,Windows,1.62,1279.0,159875
+Dell,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,256,SSD,AMD,Linux,2.2,677.35,84669
+Lenovo,2 in 1 Convertible,14.0,False,True,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.74,899.0,112375
+Toshiba,Ultrabook,13.3,False,False,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.2,1363.0,170375
+HP,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,1024,HDD,Intel,Windows,2.1,794.0,99250
+Dell,Gaming,17.3,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,4.42,2456.34,307042
+Acer,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,Nvidia,Windows,2.2,832.0,104000
+Dell,Notebook,15.6,True,False,2073600,Intel i7,2.7,16,1024,HDD,AMD,Windows,2.3,859.01,107376
+Asus,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.0,769.0,96125
+Asus,Notebook,17.3,False,False,2073600,Intel i5,2.5,8,756,Hybrid,Nvidia,Windows,2.69,891.0,111375
+HP,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,1024,HDD,AMD,Windows,1.9,1269.0,158625
+Asus,Notebook,15.6,False,False,1049088,Intel i3,2.4,4,1024,HDD,Intel,Windows,2.37,398.99,49874
+HP,Notebook,15.6,False,False,1049088,AMD,1.5,4,500,HDD,AMD,Windows,2.1,330.0,41250
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,3.2,1499.0,187375
+Dell,Notebook,14.0,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.6,859.0,107375
+Acer,2 in 1 Convertible,13.3,True,True,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.6,689.0,86125
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,16,256,SSD,AMD,Linux,2.36,899.0,112375
+Acer,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,Intel,Linux,2.1,390.0,48750
+Asus,Notebook,15.6,False,False,2073600,AMD,2.5,4,1152,Hybrid,AMD,Windows,2.2,575.0,71875
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.9,32,1536,Hybrid,Nvidia,Windows,4.7,3890.0,486250
+Acer,Gaming,15.6,False,True,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.5,846.0,105750
+Lenovo,Notebook,15.6,False,False,1049088,Intel i3,2.0,8,128,SSD,Intel,Windows,2.2,589.0,73625
+Asus,Notebook,17.3,False,False,2073600,Intel i7,1.8,8,1152,Hybrid,Nvidia,Windows,2.1,1145.0,143125
+Asus,Notebook,17.3,False,False,2073600,Intel i7,2.7,8,1152,Hybrid,Nvidia,No OS,2.69,889.0,111125
+Dell,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.56,879.0,109875
+Lenovo,2 in 1 Convertible,13.9,True,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.38,1079.0,134875
+Dell,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,2176,Hybrid,AMD,Windows,2.2,985.0,123125
+HP,Notebook,15.6,True,False,1049088,Intel i5,2.5,8,1024,HDD,Intel,Windows,2.04,559.0,69875
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.9,16,256,SSD,Nvidia,Windows,3.6,2999.0,374875
+HP,Notebook,13.3,False,True,2073600,Intel i5,1.6,4,500,HDD,Intel,Windows,1.49,675.0,84375
+Apple,Ultrabook,13.3,False,True,4096000,Intel i5,3.1,8,512,SSD,Intel,Mac,1.37,2040.0,255000
+Dell,2 in 1 Convertible,15.6,True,True,2073600,Intel i7,1.8,8,1024,HDD,Intel,Windows,2.08,819.0,102375
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,4.3,1799.0,224875
+Asus,Notebook,15.6,False,False,1049088,AMD,3.0,4,1024,HDD,AMD,Windows,1.68,469.0,58625
+Lenovo,2 in 1 Convertible,13.9,True,True,2073600,Intel i7,1.8,8,512,SSD,Intel,Windows,1.37,1849.0,231125
+Acer,Notebook,17.3,False,True,2073600,Intel i3,2.7,4,256,SSD,Nvidia,Windows,3.0,702.0,87750
+Dell,Ultrabook,13.3,False,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.41,949.0,118625
+HP,Notebook,15.6,False,False,1049088,AMD,2.5,8,128,SSD,AMD,Windows,1.91,445.9,55738
+HP,Notebook,17.3,False,True,2073600,Intel i7,1.8,16,1024,HDD,Nvidia,Windows,2.9,1059.0,132375
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1536,Hybrid,Nvidia,Windows,4.14,2499.0,312375
+Lenovo,2 in 1 Convertible,15.6,True,True,2073600,Intel i7,2.8,8,512,SSD,Nvidia,Windows,2.0,1699.0,212375
+Dell,Notebook,17.3,False,False,2073600,Intel i7,1.8,8,1152,Hybrid,AMD,Windows,2.8,1142.0,142750
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,256,SSD,Intel,No OS,2.2,444.0,55500
+HP,Notebook,15.6,False,True,2073600,Intel i5,1.6,4,500,HDD,Intel,Windows,2.1,722.0,90250
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,1024,HDD,Intel,Windows,2.18,657.0,82125
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,AMD,Windows,2.24,565.0,70625
+Dell,2 in 1 Convertible,15.6,True,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,2.67,799.0,99875
+Asus,2 in 1 Convertible,13.3,True,False,2073600,Intel i7,1.8,8,1024,SSD,Intel,Windows,1.1,1499.0,187375
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,1024,HDD,Intel,No OS,2.2,467.0,58375
+HP,Notebook,17.3,False,False,2073600,Intel i7,1.8,8,1024,HDD,Nvidia,Windows,2.5,1018.0,127250
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,256,SSD,Intel,Windows,2.05,880.0,110000
+Apple,Ultrabook,13.3,False,True,4096000,Intel i5,2.9,8,512,SSD,Intel,Mac,1.37,1958.9,244862
+Asus,Gaming,17.3,False,False,2073600,AMD,3.0,16,1280,Hybrid,AMD,Windows,3.2,1549.0,193625
+Dell,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,256,SSD,AMD,Linux,2.14,735.07,91884
+Lenovo,2 in 1 Convertible,14.0,True,False,3686400,Intel i7,2.6,16,512,SSD,Intel,Windows,1.36,2499.0,312375
+Toshiba,Notebook,15.6,False,False,1049088,Intel i7,2.5,8,500,HDD,Nvidia,Windows,2.2,812.0,101500
+Dell,Notebook,15.6,False,False,1049088,Intel i7,2.7,12,1024,HDD,Intel,Windows,2.3,713.07,89134
+Dell,Notebook,17.3,False,False,2073600,Intel i7,1.8,8,1152,Hybrid,AMD,Linux,2.8,1099.0,137375
+Acer,Notebook,15.6,False,True,2073600,Intel i7,1.8,8,1024,HDD,Nvidia,Windows,2.2,745.0,93125
+Lenovo,Notebook,17.3,False,False,1440000,Intel i3,2.0,4,1024,HDD,Intel,Windows,2.8,489.0,61125
+Lenovo,Notebook,17.3,False,False,2073600,Intel i7,1.8,8,2048,HDD,Nvidia,No OS,2.8,849.0,106125
+Lenovo,Notebook,17.3,False,False,1440000,Intel i7,2.7,6,1152,Hybrid,Nvidia,Windows,2.8,859.0,107375
+Dell,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,AMD,Linux,2.25,428.0,53500
+Lenovo,Gaming,15.6,False,True,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.5,829.0,103625
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,6,256,SSD,Intel,Windows,2.2,579.0,72375
+Acer,Notebook,15.6,False,True,2073600,Intel i7,1.8,8,256,SSD,Nvidia,Windows,3.0,951.0,118875
+Acer,Notebook,15.6,True,True,2073600,Intel i7,2.7,12,1024,HDD,Intel,Windows,2.15,659.0,82375
+Lenovo,Notebook,15.6,False,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.95,1097.0,137125
+Asus,Ultrabook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,1.7,977.0,122125
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.5,1179.0,147375
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,1024,HDD,Nvidia,No OS,2.2,659.01,82376
+Acer,Notebook,15.6,False,False,1049088,Intel Other,1.5,2,16,SSD,Intel,Chrome OS,2.19,199.0,24875
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,8,1024,HDD,Nvidia,Windows,3.0,1187.0,148375
+HP,Notebook,17.3,False,False,1440000,Intel i3,2.0,8,1024,HDD,Intel,Windows,2.54,489.0,61125
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Windows,2.0,1829.0,228625
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,2.05,739.0,92375
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1024,HDD,Nvidia,Windows,3.2,1299.0,162375
+Acer,Notebook,15.6,False,False,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Linux,2.5,979.0,122375
+Dell,Workstation,17.3,False,False,2073600,Intel i7,2.9,16,256,SSD,Nvidia,Windows,3.42,2884.86,360608
+Lenovo,Notebook,15.6,False,False,2073600,AMD,2.4,6,1024,HDD,AMD,Windows,2.4,499.0,62375
+Asus,Ultrabook,15.6,False,False,2073600,Intel i7,2.7,16,512,SSD,Nvidia,Windows,1.63,1468.0,183500
+Asus,Notebook,14.0,False,False,1049088,Intel i3,2.4,4,128,SSD,Intel,Windows,1.3,509.0,63625
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.9,2122.0,265250
+Lenovo,Notebook,17.3,False,False,1440000,Intel i5,2.5,6,1024,HDD,Nvidia,Windows,2.8,649.0,81125
+Lenovo,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,2048,HDD,Nvidia,No OS,2.2,549.0,68625
+Asus,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.5,1265.0,158125
+Lenovo,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,1024,HDD,Intel,No OS,2.2,359.99,44999
+HP,2 in 1 Convertible,13.3,True,False,2073600,Intel i7,2.8,16,256,SSD,Intel,Windows,1.28,1975.0,246875
+Toshiba,Notebook,15.6,False,True,2073600,Intel i7,2.5,8,256,SSD,Nvidia,Windows,2.2,1043.0,130375
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1152,Hybrid,Nvidia,Windows,2.3,819.0,102375
+HP,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,Intel,Windows,1.86,469.0,58625
+Lenovo,Notebook,13.3,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.1,999.0,124875
+Dell,Ultrabook,13.3,True,True,8294400,Intel i7,1.8,16,1024,SSD,Intel,Windows,1.21,2499.0,312375
+MSI,Gaming,15.6,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.8,2099.0,262375
+Acer,Notebook,15.6,False,False,2073600,AMD,2.2,8,256,SSD,AMD,Windows,2.23,469.0,58625
+Asus,2 in 1 Convertible,11.6,True,False,1049088,Intel Other,1.1,2,32,SSD,Intel,Windows,1.1,275.0,34375
+Dell,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,1152,Hybrid,AMD,Windows,2.33,844.0,105500
+HP,2 in 1 Convertible,13.3,True,True,8294400,Intel i7,1.8,16,1024,SSD,Intel,Windows,1.29,2449.0,306125
+Lenovo,Notebook,13.3,False,False,1049088,Intel Other,1.6,4,16,SSD,Intel,Chrome OS,1.45,459.9,57488
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.95,980.0,122500
+Acer,Notebook,11.6,False,False,1049088,Intel Other,1.6,4,128,SSD,Intel,Windows,1.4,485.0,60625
+HP,Notebook,14.0,False,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.48,1292.0,161500
+Lenovo,Notebook,17.3,False,False,1440000,Intel i5,2.5,4,1024,HDD,Nvidia,Windows,2.79,589.0,73625
+Asus,Notebook,14.0,False,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,2.0,1094.0,136750
+HP,Notebook,15.6,False,True,1049088,Intel i7,1.8,8,1024,HDD,Intel,Windows,2.1,902.0,112750
+Acer,Notebook,15.6,False,False,1049088,AMD,2.7,8,256,SSD,AMD,Windows,2.2,659.0,82375
+Lenovo,Notebook,14.0,False,False,1049088,Intel Other,1.1,4,32,SSD,Intel,Windows,1.44,292.0,36500
+Acer,Notebook,15.6,False,False,1049088,Intel i5,2.5,6,1024,HDD,Intel,Windows,2.23,549.0,68625
+Asus,Ultrabook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,Nvidia,Windows,1.7,1049.9,131238
+HP,Ultrabook,12.5,False,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.26,1335.0,166875
+Dell,Notebook,15.6,True,False,8294400,Intel i7,2.8,32,1024,SSD,Nvidia,Windows,2.06,2639.0,329875
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,8,1280,Hybrid,Nvidia,Windows,2.7,1199.0,149875
+Toshiba,Notebook,15.6,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,2.0,943.0,117875
+Asus,Notebook,14.0,False,False,2073600,Intel i7,2.7,8,1280,Hybrid,Intel,Windows,2.0,1334.0,166750
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,Intel,Windows,1.85,449.0,56125
+Asus,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Windows,2.5,999.0,124875
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.6,8,256,SSD,Intel,Windows,1.48,1268.0,158500
+Dell,Ultrabook,15.6,False,True,2073600,Intel i5,1.6,8,1152,Hybrid,Nvidia,Windows,1.9,1049.0,131125
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.84,1144.0,143000
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,1024,HDD,Intel,Linux,2.0,274.99,34374
+Dell,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,256,SSD,Nvidia,Windows,2.0,1142.75,142844
+Dell,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Linux,2.2,274.9,34362
+Lenovo,Notebook,15.6,False,False,2073600,AMD,3.6,12,2048,HDD,AMD,Windows,2.2,899.0,112375
+HP,Notebook,15.6,False,True,2073600,Intel i3,2.4,8,1024,HDD,Nvidia,Windows,2.1,716.0,89500
+Lenovo,2 in 1 Convertible,13.9,True,True,8294400,Intel i7,1.8,16,512,SSD,Intel,Windows,1.4,2099.0,262375
+Dell,Ultrabook,13.3,False,False,2073600,Intel i7,1.8,8,256,SSD,Intel,Windows,1.2,1579.0,197375
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,16,2304,Hybrid,Nvidia,Windows,2.4,1129.0,141125
+HP,Notebook,14.0,False,False,1049088,Intel Other,1.6,2,32,SSD,Intel,Windows,1.44,279.0,34875
+Dell,Ultrabook,15.6,False,False,2073600,Intel i7,1.9,16,768,SSD,Intel,Windows,1.88,1607.96,200995
+Asus,2 in 1 Convertible,11.6,True,False,1049088,Intel Other,1.1,4,32,SSD,Intel,Windows,1.5,375.0,46875
+Dell,Ultrabook,15.6,False,False,2073600,Intel i5,1.6,8,1024,HDD,AMD,Windows,1.9,663.0,82875
+Dell,Notebook,15.6,True,False,8294400,Intel i7,2.8,16,512,SSD,Nvidia,Windows,2.06,2027.42,253428
+HP,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.84,1304.0,163000
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.7,1409.0,176125
+HP,Workstation,15.6,False,False,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Windows,2.6,1738.27,217284
+Toshiba,Notebook,15.6,False,True,2073600,Intel i7,2.5,16,512,SSD,Nvidia,Windows,2.4,1403.0,175375
+Dell,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,2176,Hybrid,AMD,Windows,2.02,970.9,121362
+Lenovo,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,1024,HDD,Intel,No OS,2.2,321.99,40249
+Dell,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,Nvidia,Windows,2.65,999.0,124875
+Dell,Notebook,15.6,True,False,1049088,Intel i5,2.5,8,2048,HDD,Intel,Windows,2.36,557.37,69671
+Dell,Notebook,14.0,False,False,2073600,Intel i5,2.6,8,256,SSD,Intel,Windows,1.36,1427.0,178375
+HP,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,500,HDD,Intel,Windows,1.86,439.0,54875
+Asus,Notebook,14.0,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,2.0,945.0,118125
+Lenovo,Notebook,17.3,False,False,1440000,Intel i5,2.5,6,1152,Hybrid,Nvidia,Windows,2.8,719.0,89875
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,Intel,Windows,1.86,639.0,79875
+Lenovo,Notebook,15.6,False,False,1049088,Intel i3,2.0,8,256,SSD,Nvidia,No OS,2.2,499.0,62375
+HP,Notebook,15.6,False,False,1049088,Intel Other,1.6,8,2048,HDD,Intel,Windows,2.04,389.0,48625
+Dell,Notebook,17.3,False,False,2073600,Intel i5,1.6,8,1152,Hybrid,AMD,Windows,2.8,1085.0,135625
+Lenovo,Gaming,15.6,False,True,2073600,Intel i5,2.5,8,1152,Hybrid,Nvidia,No OS,2.4,809.0,101125
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,AMD,Windows,2.33,899.0,112375
+HP,Ultrabook,14.0,False,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.36,1750.0,218750
+Asus,2 in 1 Convertible,15.6,True,False,2073600,Intel i7,2.7,12,2560,Hybrid,Nvidia,Windows,2.26,1099.0,137375
+Acer,Notebook,15.6,False,False,1049088,AMD,3.0,4,128,SSD,AMD,Windows,2.1,426.0,53250
+Asus,Gaming,17.3,False,True,2073600,AMD,3.0,16,1280,Hybrid,AMD,Windows,3.25,2199.0,274875
+Lenovo,Notebook,17.3,False,False,1440000,AMD,2.2,4,128,SSD,AMD,Windows,2.6,489.0,61125
+Dell,2 in 1 Convertible,13.3,True,False,2073600,Intel i7,1.8,8,256,SSD,Intel,Windows,1.62,869.01,108626
+HP,Notebook,15.6,False,False,2073600,AMD,3.0,4,256,SSD,AMD,Windows,1.91,488.99,61124
+Lenovo,Netbook,11.6,False,True,1049088,Intel Other,1.1,4,128,SSD,Intel,Windows,1.59,553.0,69125
+Dell,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Windows,1.8,309.0,38625
+Asus,Notebook,14.0,False,False,1049088,Intel Other,1.1,4,32,SSD,Intel,Windows,1.5,286.0,35750
+Acer,Notebook,15.6,False,False,2073600,Intel i7,2.8,8,1024,HDD,Nvidia,Linux,2.4,846.0,105750
+HP,Gaming,17.3,False,True,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,3.35,1191.0,148875
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,128,SSD,Intel,No OS,1.85,403.5,50438
+Asus,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.3,1655.0,206875
+Lenovo,Notebook,14.0,False,True,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,1.5,1099.0,137375
+Asus,Ultrabook,13.3,True,False,2073600,Intel i7,2.7,16,512,SSD,Intel,Windows,1.1,1748.9,218612
+Lenovo,Ultrabook,14.0,False,True,3686400,Intel i7,2.7,8,512,SSD,Intel,Windows,1.13,2282.0,285250
+Lenovo,Notebook,13.3,False,True,2073600,Intel i3,2.4,4,128,SSD,Intel,Windows,1.5,549.0,68625
+Dell,Workstation,15.6,False,False,2073600,Intel i5,2.6,8,500,HDD,AMD,Windows,2.23,1369.0,171125
+Dell,Workstation,15.6,False,True,2073600,Intel i7,2.7,8,256,SSD,Nvidia,Windows,2.0,2135.0,266875
+Lenovo,2 in 1 Convertible,14.0,True,False,3686400,Intel i7,2.7,16,512,SSD,Intel,Windows,1.42,2509.0,313625
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,8,1024,HDD,Nvidia,Windows,3.0,1039.0,129875
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,3.0,1591.0,198875
+Acer,Notebook,15.6,False,True,1049088,Intel i5,1.6,12,1024,HDD,Nvidia,Windows,2.2,693.99,86749
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Windows,2.7,1349.0,168625
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,AMD,Linux,2.33,778.87,97359
+HP,Ultrabook,15.6,False,False,2073600,AMD,3.0,4,256,SSD,AMD,Windows,1.91,499.0,62375
+Lenovo,Notebook,15.6,False,True,2073600,Intel i7,1.8,8,256,SSD,AMD,Windows,2.1,1229.56,153695
+Lenovo,Notebook,14.0,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.9,938.0,117250
+Dell,Workstation,15.6,True,False,8294400,Intel i7,2.8,8,256,SSD,Nvidia,Windows,1.78,2712.0,339000
+Lenovo,Ultrabook,14.0,False,True,3686400,Intel i7,2.7,16,1024,SSD,Intel,Windows,1.13,2625.0,328125
+Lenovo,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,1024,HDD,Intel,Windows,2.2,306.0,38250
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.9,1529.0,191125
+Lenovo,Notebook,15.6,False,True,2073600,Intel i5,1.6,8,1280,Hybrid,AMD,Windows,2.1,1144.5,143062
+Acer,Notebook,15.6,False,False,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Linux,2.5,879.0,109875
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.8,2249.0,281125
+Asus,Ultrabook,14.0,False,False,2073600,Intel i7,2.7,8,512,SSD,Intel,Windows,1.1,1873.0,234125
+Toshiba,Ultrabook,13.3,False,False,2073600,Intel i7,2.5,16,512,SSD,Intel,Windows,1.2,1747.0,218375
+Dell,Ultrabook,14.0,False,False,2073600,Intel i7,2.8,8,512,SSD,Intel,Windows,1.36,1680.0,210000
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,500,HDD,Intel,Windows,2.2,409.0,51125
+Lenovo,Notebook,11.6,False,False,1049088,Intel Other,1.1,2,32,SSD,Intel,Windows,1.15,304.45,38056
+Lenovo,Workstation,15.6,False,False,2073600,Intel i7,2.8,8,512,SSD,Nvidia,Windows,2.67,1925.0,240625
+Lenovo,Ultrabook,14.0,False,True,3686400,Intel i7,2.8,8,512,SSD,Nvidia,Windows,1.7,1943.0,242875
+HP,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,AMD,Windows,2.1,469.0,58625
+Acer,2 in 1 Convertible,13.3,True,True,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.6,789.01,98626
+Asus,2 in 1 Convertible,13.3,True,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.27,928.0,116000
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,256,SSD,AMD,Linux,2.3,598.9,74862
+Dell,Notebook,13.3,False,False,1049088,Intel i3,2.0,4,128,SSD,Intel,Windows,1.65,689.0,86125
+HP,Ultrabook,14.0,False,False,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.43,1500.0,187500
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,1024,HDD,Intel,Windows,2.14,539.95,67494
+Lenovo,Ultrabook,14.0,False,True,2073600,Intel i7,1.8,8,256,SSD,AMD,Windows,1.75,1215.38,151922
+Lenovo,2 in 1 Convertible,15.6,True,True,8294400,Intel i7,2.8,16,512,SSD,Nvidia,Windows,2.0,1899.0,237375
+Chuwi,Notebook,12.3,False,True,4990464,Intel Other,1.1,6,64,SSD,Intel,Windows,1.4,449.0,56125
+HP,Notebook,15.6,False,False,2073600,Intel i7,2.9,8,256,SSD,Intel,Windows,2.31,1427.0,178375
+Asus,Notebook,15.6,False,False,2073600,Intel i3,2.4,8,1024,HDD,Nvidia,Linux,2.3,597.0,74625
+Dell,Gaming,17.3,False,True,3686400,Intel i7,2.9,16,1280,Hybrid,Nvidia,Windows,4.42,2799.0,349875
+Dell,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.62,1159.0,144875
+Dell,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,2304,Hybrid,AMD,Windows,2.02,1142.4,142800
+Dell,Ultrabook,14.0,False,False,2073600,Intel i7,2.8,8,256,SSD,Intel,Linux,1.6,1099.0,137375
+HP,Gaming,17.3,False,False,2073600,Intel i7,2.8,12,1280,Hybrid,Nvidia,Windows,3.35,1999.0,249875
+Mediacom,2 in 1 Convertible,11.6,True,True,2073600,Intel Other,1.1,4,32,SSD,Intel,Windows,1.16,299.0,37375
+Samsung,Netbook,11.6,False,False,1049088,Intel Other,1.6,4,16,SSD,Intel,Chrome OS,1.15,269.0,33625
+Lenovo,Notebook,13.3,False,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.4,1010.0,126250
+Lenovo,Notebook,14.0,False,True,2073600,Intel i3,2.7,4,128,SSD,Intel,Windows,1.7,599.0,74875
+Lenovo,Workstation,15.6,False,True,8294400,Intel i7,2.8,16,512,SSD,Nvidia,Windows,2.3,2445.0,305625
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,2.9,16,512,SSD,Nvidia,Windows,2.5,2449.0,306125
+Asus,Gaming,17.3,False,False,2073600,AMD,3.2,8,1280,Hybrid,AMD,Windows,3.2,1695.0,211875
+HP,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Windows,2.1,347.0,43375
+Google,Ultrabook,12.3,True,False,3840000,Intel i7,1.3,16,512,SSD,Intel,Chrome OS,1.1,2199.0,274875
+Lenovo,Ultrabook,14.0,False,False,3686400,Intel i7,2.7,24,512,SSD,Intel,Windows,1.32,2382.0,297750
+Asus,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,256,SSD,Intel,Linux,2.0,559.0,69875
+Lenovo,Notebook,17.3,False,False,1440000,AMD,2.5,8,1024,HDD,AMD,Windows,2.8,519.0,64875
+Dell,Notebook,15.6,False,False,2073600,Intel i5,1.6,4,256,SSD,AMD,Windows,2.2,749.0,93625
+Lenovo,Ultrabook,12.5,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.36,1429.0,178625
+Lenovo,Notebook,15.6,False,False,2073600,Intel Other,1.1,4,128,SSD,Intel,Windows,2.2,349.0,43625
+HP,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.2,1099.0,137375
+Dell,Notebook,14.0,False,False,2073600,Intel i5,2.8,8,256,SSD,Nvidia,Windows,1.64,1179.0,147375
+Acer,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Linux,2.4,441.8,55225
+Dell,Workstation,15.6,False,False,2073600,Intel Other,3.0,8,1088,Hybrid,Nvidia,Windows,2.23,1993.0,249125
+MSI,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.2,1027.74,128468
+Microsoft,Ultrabook,13.5,True,False,3393024,Intel i7,2.5,16,512,SSD,Intel,Windows,1.25,2589.0,323625
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,128,SSD,Intel,Windows,1.91,589.0,73625
+Dell,Workstation,15.6,False,True,2073600,Intel i7,2.7,16,256,SSD,Nvidia,Windows,2.17,1975.0,246875
+HP,Workstation,15.6,False,True,2073600,Intel i7,2.9,8,512,SSD,Intel,Windows,2.31,1534.0,191750
+Lenovo,Notebook,14.0,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.65,1345.0,168125
+Dell,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,1152,Hybrid,AMD,Windows,2.36,979.0,122375
+Dell,2 in 1 Convertible,11.6,True,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Windows,1.47,479.0,59875
+Dell,Notebook,17.3,False,True,2073600,Intel i7,2.7,8,1024,HDD,Nvidia,Windows,4.42,2046.0,255750
+Microsoft,Ultrabook,13.5,True,False,3393024,Intel Other,2.2,4,128,SSD,Intel,Windows,1.252,989.0,123625
+Microsoft,Ultrabook,13.5,True,False,3393024,Intel i7,2.5,8,256,SSD,Intel,Windows,1.25,1799.0,224875
+HP,Notebook,17.3,False,False,1440000,Intel i3,2.0,8,256,SSD,Intel,Windows,2.5,639.9,79988
+Acer,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,Nvidia,Windows,2.23,544.0,68000
+Acer,Netbook,11.6,False,False,1049088,Intel Other,1.6,4,128,SSD,Intel,Windows,1.4,435.0,54375
+Asus,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,Intel,Windows,2.37,749.0,93625
+Lenovo,Notebook,14.0,False,True,2073600,Intel i7,2.7,8,512,SSD,AMD,No OS,1.5,799.0,99875
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,2.9,8,256,SSD,Nvidia,Windows,2.67,2090.0,261250
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,500,HDD,Intel,Windows,2.0,304.0,38000
+Acer,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,500,HDD,Nvidia,Windows,2.2,469.0,58625
+Dell,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,2048,HDD,AMD,Windows,2.02,759.0,94875
+HP,Gaming,17.3,False,True,2073600,Intel i7,2.8,12,1024,HDD,Nvidia,Windows,3.78,1699.0,212375
+Lenovo,Ultrabook,14.0,False,True,3686400,Intel i7,2.6,12,256,SSD,Intel,Windows,1.4,1858.0,232250
+HP,2 in 1 Convertible,13.3,True,True,8294400,Intel i7,1.8,8,512,SSD,Intel,Windows,1.29,1999.0,249875
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,500,HDD,AMD,Windows,1.9,1154.0,144250
+Google,Ultrabook,12.3,True,False,3840000,Intel i5,1.2,8,128,SSD,Intel,Chrome OS,1.1,1275.0,159375
+Dell,Ultrabook,13.3,True,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.42,1841.85,230231
+Asus,Notebook,15.6,False,True,8294400,Intel i7,2.6,12,1152,Hybrid,Intel,Windows,2.06,1299.0,162375
+Dell,Notebook,14.0,False,False,1049088,Intel i3,2.3,8,128,SSD,Intel,Windows,1.79,740.0,92500
+Dell,Workstation,15.6,False,False,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Windows,1.78,2408.0,301000
+Lenovo,Notebook,14.0,False,False,2073600,Intel i5,2.5,8,180,SSD,Intel,Windows,1.7,1364.0,170500
+Dell,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,1024,HDD,AMD,Windows,2.2,675.0,84375
+Toshiba,Notebook,13.3,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.05,1672.0,209000
+Dell,Notebook,15.6,False,True,2073600,Intel i7,1.8,8,512,SSD,Nvidia,Windows,2.16,1262.0,157750
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.4,4,1024,HDD,Intel,Windows,2.18,586.6,73325
+HP,Notebook,13.3,False,True,2073600,Intel i5,1.6,4,128,SSD,Intel,Windows,1.49,726.0,90750
+Chuwi,Notebook,15.6,False,False,2073600,Intel Other,1.44,4,64,SSD,Intel,Windows,1.89,248.9,31112
+Lenovo,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,128,SSD,Intel,Windows,2.3,565.0,70625
+Lenovo,Notebook,14.0,False,True,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.75,1049.0,131125
+Dell,Workstation,15.6,False,True,2073600,Intel i7,2.7,16,512,SSD,Nvidia,Windows,2.17,2338.0,292250
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.8,16,512,SSD,Nvidia,Windows,2.06,1899.0,237375
+Lenovo,Ultrabook,12.5,False,True,2073600,Intel i7,2.7,16,512,SSD,Intel,Windows,1.36,1798.0,224750
+Asus,Ultrabook,12.5,False,False,2073600,Intel i7,2.7,16,512,SSD,Intel,Windows,0.91,1950.0,243750
+Lenovo,Notebook,15.6,False,True,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.3,1011.99,126499
+Toshiba,Ultrabook,13.3,True,False,2073600,Intel i7,2.7,32,512,SSD,Intel,Windows,1.05,2799.0,349875
+Asus,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,1.99,1350.0,168750
+Acer,Notebook,15.6,False,False,1049088,AMD,2.5,8,1024,HDD,AMD,Windows,2.2,579.0,72375
+Asus,Gaming,17.3,True,True,2073600,Intel i7,2.6,24,1280,Hybrid,Nvidia,Windows,4.33,1269.0,158625
+Lenovo,Ultrabook,12.5,False,True,1049088,Intel i5,2.3,8,180,SSD,Intel,Windows,1.3,1099.0,137375
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,256,SSD,Intel,Windows,2.17,898.9,112362
+HP,Notebook,14.0,False,False,2073600,Intel i7,2.8,8,1024,SSD,Intel,Windows,1.48,1749.0,218625
+Lenovo,Notebook,13.3,False,True,2073600,Intel i3,2.4,8,256,SSD,Intel,Windows,1.4,949.0,118625
+Lenovo,Notebook,15.6,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,2.3,911.0,113875
+Asus,Netbook,11.6,False,False,1049088,Intel Other,1.1,4,64,SSD,Intel,Windows,1.2,340.0,42500
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,256,SSD,AMD,Windows,1.91,618.99,77374
+Lenovo,2 in 1 Convertible,13.9,True,True,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.4,1599.0,199875
+Lenovo,Notebook,14.0,False,False,1049088,Intel Other,1.1,4,500,HDD,Intel,Windows,2.1,299.0,37375
+Lenovo,Netbook,11.6,False,False,1049088,Intel Other,1.6,4,16,SSD,Intel,Chrome OS,1.25,265.0,33125
+Lenovo,Notebook,13.3,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.44,949.0,118625
+Asus,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,1280,Hybrid,Intel,Windows,2.0,1224.0,153000
+Acer,Notebook,15.6,False,True,2073600,Intel i5,1.6,4,1024,HDD,Nvidia,Windows,2.2,613.0,76625
+HP,Ultrabook,13.3,False,True,2073600,Intel i7,2.7,8,512,SSD,Intel,Windows,1.34,1323.0,165375
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1280,Hybrid,Nvidia,No OS,2.4,1149.0,143625
+Dell,Ultrabook,13.3,True,True,2073600,Intel i5,2.5,8,128,SSD,Intel,Windows,1.29,899.0,112375
+Acer,Notebook,15.6,False,False,2073600,Intel i7,2.7,4,500,HDD,Nvidia,Windows,2.2,639.0,79875
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,Intel,Windows,2.18,836.0,104500
+Dell,Notebook,15.6,False,False,2073600,Intel i7,1.8,16,2304,Hybrid,AMD,Windows,2.2,1219.24,152405
+Xiaomi,Notebook,15.6,False,True,2073600,Intel i7,1.8,16,256,SSD,Nvidia,No OS,1.95,1399.95,174994
+Asus,Netbook,11.6,False,False,1049088,Intel Other,1.1,2,32,SSD,Intel,Windows,1.1,245.0,30625
+HP,Notebook,15.6,True,False,1049088,Intel i5,1.6,4,1024,HDD,Intel,Windows,2.04,521.47,65184
+Asus,Gaming,15.6,False,False,2073600,Intel i7,2.8,24,512,SSD,Nvidia,Windows,2.24,2968.0,371000
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.04,889.0,111125
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,3.0,1504.0,188000
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1280,Hybrid,Nvidia,Windows,3.2,1399.0,174875
+HP,Ultrabook,13.3,False,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.32,1399.0,174875
+Dell,Notebook,14.0,False,False,2073600,Intel i5,2.6,8,256,SSD,Intel,Windows,1.64,1279.73,159966
+HP,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,128,SSD,Intel,Windows,1.63,689.0,86125
+Dell,Notebook,17.3,False,True,2073600,Intel i5,1.6,8,1152,Hybrid,AMD,Linux,2.8,889.0,111125
+Lenovo,Notebook,14.0,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,2.02,1340.0,167500
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,2.7,4,1024,HDD,Nvidia,Windows,2.2,799.0,99875
+Lenovo,Notebook,15.6,False,False,1049088,Intel i3,2.0,8,2048,HDD,Nvidia,No OS,2.2,459.0,57375
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,500,HDD,AMD,Windows,2.3,585.0,73125
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.8,8,256,SSD,Intel,Windows,1.9,1377.0,172125
+Dell,Gaming,17.3,False,True,2073600,Intel i7,2.8,16,1152,Hybrid,Nvidia,Windows,4.42,3012.77,376596
+Toshiba,Notebook,15.6,False,True,2073600,Intel i5,2.5,8,500,HDD,Intel,Windows,2.0,860.0,107500
+Asus,Notebook,15.6,False,True,8294400,Intel i7,2.7,8,1280,Hybrid,Nvidia,Windows,2.0,1299.0,162375
+Mediacom,Notebook,13.3,False,True,2073600,Intel Other,1.1,4,32,SSD,Intel,Windows,1.2,369.0,46125
+Asus,Gaming,15.6,False,True,2073600,Intel i5,2.5,8,1152,Hybrid,Nvidia,Windows,2.3,1649.0,206125
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Windows,1.93,1369.0,171125
+Dell,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,256,SSD,AMD,Windows,2.2,797.41,99676
+HP,Notebook,15.6,False,False,2073600,Intel Other,1.6,4,256,SSD,Intel,Windows,1.86,398.99,49874
+HP,Gaming,17.3,False,False,2073600,Intel i7,2.8,12,1024,HDD,Nvidia,Windows,2.62,1799.0,224875
+Lenovo,Notebook,14.0,False,True,2073600,Intel i7,2.7,8,256,SSD,Nvidia,Windows,1.87,859.0,107375
+Dell,Ultrabook,13.3,True,False,5760000,Intel i7,1.8,8,256,SSD,Intel,Windows,1.2,1399.0,174875
+Dell,Notebook,14.0,False,False,2073600,Intel i3,2.0,4,128,SSD,Intel,Windows,1.6,735.87,91984
+HP,Ultrabook,13.3,False,True,5760000,Intel i7,2.7,8,256,SSD,Intel,Windows,1.34,1145.0,143125
+Acer,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,Nvidia,Linux,2.4,798.0,99750
+Asus,Notebook,15.6,False,False,1049088,AMD,1.8,4,500,HDD,AMD,Windows,2.0,349.0,43625
+HP,Notebook,15.6,False,False,2073600,Intel i3,2.4,4,128,SSD,Intel,Windows,2.1,705.5,88188
+Lenovo,Notebook,14.0,False,False,2073600,Intel i5,2.5,4,500,HDD,Intel,Windows,1.87,785.0,98125
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.3,4,1024,HDD,Intel,No OS,2.15,462.35,57794
+HP,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,500,HDD,Intel,Windows,1.86,397.0,49625
+Lenovo,Notebook,15.6,False,True,2073600,Intel i7,2.7,8,512,SSD,Intel,Windows,1.99,1729.0,216125
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,128,SSD,Intel,Windows,2.2,499.0,62375
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.9,1116.99,139624
+Dell,Gaming,17.3,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,4.42,2699.0,337375
+HP,Notebook,17.3,False,False,1440000,Intel i3,2.0,8,1024,HDD,Intel,Windows,2.65,544.15,68019
+HP,Notebook,17.3,False,False,2073600,Intel i7,2.7,8,1024,HDD,Nvidia,Windows,2.63,1280.0,160000
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,500,HDD,Intel,Linux,2.0,224.0,28000
+Mediacom,Notebook,13.3,False,True,2073600,Intel Other,1.44,4,32,SSD,Intel,Windows,1.35,255.0,31875
+Lenovo,Notebook,17.3,False,False,1440000,Intel i7,2.7,6,1152,Hybrid,Nvidia,Windows,2.8,949.0,118625
+HP,Notebook,15.6,False,True,2073600,AMD,2.5,6,128,SSD,AMD,Windows,1.91,568.9,71112
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,AMD,Windows,2.18,617.9,77238
+Acer,2 in 1 Convertible,11.6,True,True,2073600,Intel Other,2.0,4,32,SSD,Intel,Windows,1.25,349.0,43625
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.7,4,128,SSD,Intel,Windows,2.05,630.0,78750
+HP,Ultrabook,13.3,True,True,5760000,Intel Other,1.2,16,512,SSD,Intel,Windows,1.16,1965.0,245625
+Lenovo,Notebook,17.3,False,True,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Windows,3.4,2999.0,374875
+Asus,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1152,Hybrid,Nvidia,Windows,2.5,839.0,104875
+Dell,Ultrabook,13.3,True,True,8294400,Intel i5,1.6,8,128,SSD,Intel,Windows,1.21,1599.0,199875
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.6,4,500,HDD,Intel,Windows,1.93,959.0,119875
+Fujitsu,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,1024,HDD,Intel,Windows,2.2,739.0,92375
+Lenovo,Notebook,15.6,False,False,2073600,Intel Other,1.1,4,500,HDD,Intel,Windows,2.2,344.0,43000
+Lenovo,Notebook,14.0,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Windows,2.02,990.0,123750
+HP,Workstation,17.3,False,False,1440000,Intel i5,2.8,8,500,HDD,Nvidia,Windows,3.14,1860.99,232624
+HP,Notebook,14.0,False,False,1049088,Intel Other,1.6,8,2048,HDD,Intel,Windows,1.94,389.0,48625
+HP,Notebook,15.6,False,True,2073600,AMD,3.0,6,256,SSD,AMD,Windows,1.95,649.0,81125
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,2.3,830.0,103750
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,1.6,4,500,HDD,Intel,Windows,2.05,685.0,85625
+Mediacom,Notebook,14.0,False,False,2073600,Intel Other,1.44,4,32,SSD,Intel,Windows,1.4,249.0,31125
+Toshiba,Ultrabook,14.0,True,False,2073600,Intel i7,2.7,16,512,SSD,Intel,Windows,1.24,1865.0,233125
+Lenovo,Gaming,17.3,False,True,2073600,Intel i7,2.7,32,1280,Hybrid,Nvidia,Windows,4.6,2663.0,332875
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.9,16,1536,Hybrid,Nvidia,Windows,4.14,2729.0,341125
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,AMD,Linux,2.2,749.01,93626
+Mediacom,Notebook,14.0,False,True,2073600,Intel Other,1.1,4,32,SSD,Intel,Windows,1.45,389.0,48625
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.6,8,500,HDD,Intel,Windows,1.9,1008.52,126065
+HP,Notebook,13.3,False,False,2073600,Intel i3,2.4,4,128,SSD,Intel,Windows,1.49,719.0,89875
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.8,16,256,SSD,Nvidia,Windows,1.93,1537.39,192174
+Dell,Netbook,11.6,False,False,1049088,Intel Other,1.6,4,16,SSD,Intel,Chrome OS,1.26,295.0,36875
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.7,16,1152,Hybrid,Nvidia,Windows,4.5,2349.0,293625
+HP,Gaming,17.3,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,3.78,1498.0,187250
+Lenovo,Ultrabook,14.0,False,True,2073600,Intel i7,2.6,12,256,SSD,Intel,Windows,1.4,1673.0,209125
+Lenovo,Notebook,15.6,True,False,1049088,Intel i7,1.8,12,1024,HDD,Intel,Windows,2.2,609.0,76125
+Asus,Gaming,17.3,False,True,2073600,Intel i5,2.5,8,1152,Hybrid,Nvidia,Windows,2.73,1770.0,221250
+Asus,2 in 1 Convertible,15.6,True,False,1049088,Intel i5,2.5,8,1024,HDD,Intel,Windows,2.2,739.0,92375
+Lenovo,Notebook,15.6,False,False,2073600,AMD,3.6,12,512,SSD,AMD,Windows,2.2,949.0,118625
+Dell,2 in 1 Convertible,11.6,True,False,1049088,Intel Other,1.0,4,128,SSD,Intel,Windows,1.39,603.0,75375
+Samsung,Notebook,15.6,False,False,2073600,Intel i7,2.8,16,1152,Hybrid,Nvidia,Windows,2.5,1699.0,212375
+Lenovo,Notebook,17.3,False,False,2073600,Intel i3,2.0,4,500,HDD,Intel,No OS,2.8,529.0,66125
+Lenovo,Notebook,15.6,False,False,1049088,Intel i3,2.3,8,1024,HDD,Intel,Windows,2.29,459.0,57375
+Lenovo,2 in 1 Convertible,13.3,True,True,2073600,Intel i7,2.7,8,512,SSD,Intel,Windows,1.37,2025.0,253125
+Lenovo,Notebook,14.0,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.7,1474.0,184250
+Dell,2 in 1 Convertible,12.5,True,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.34,1670.0,208750
+Dell,Workstation,15.6,True,False,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Windows,2.06,1763.0,220375
+HP,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.84,1219.0,152375
+HP,Notebook,15.6,False,False,1049088,Intel i3,2.4,4,500,HDD,Intel,Windows,2.1,668.48,83560
+Acer,Notebook,14.0,False,False,2073600,Intel Other,1.1,4,32,SSD,Intel,Windows,1.6,329.0,41125
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.7,16,1152,Hybrid,Nvidia,Windows,4.14,2199.0,274875
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,AMD,Linux,2.18,465.0,58125
+MSI,Gaming,15.6,False,False,8294400,Intel i7,2.8,16,2304,Hybrid,Nvidia,Windows,1.8,2299.0,287375
+Toshiba,Notebook,15.6,False,True,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,2.2,1399.0,174875
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,6,1024,HDD,Intel,Windows,2.4,564.0,70500
+Lenovo,2 in 1 Convertible,15.6,True,True,2073600,Intel i7,2.8,8,256,SSD,Intel,Windows,2.0,1299.0,162375
+Acer,Notebook,14.0,False,False,1049088,Intel Other,1.6,4,128,SSD,Intel,Windows,1.6,349.0,43625
+Lenovo,Notebook,15.6,False,True,8294400,Intel Other,3.1,32,1024,SSD,Nvidia,Windows,2.5,4899.0,612375
+Dell,Gaming,15.6,False,False,2073600,Intel i7,2.6,16,1024,HDD,Nvidia,Windows,2.59,879.01,109876
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,Intel,Linux,2.18,443.9,55488
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,Intel,Linux,2.25,359.0,44875
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.6,4,500,HDD,Intel,Linux,1.93,869.0,108625
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,3.0,1168.0,146000
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,128,SSD,AMD,Linux,2.18,569.0,71125
+HP,Ultrabook,15.6,False,False,2073600,Intel i7,2.7,8,512,SSD,Intel,Windows,1.84,1389.0,173625
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.94,2267.86,283482
+Acer,2 in 1 Convertible,11.6,True,True,1049088,Intel Other,1.6,4,32,SSD,Intel,Chrome OS,1.25,379.0,47375
+HP,Notebook,14.0,False,False,1049088,Intel i5,2.6,8,256,SSD,Intel,Windows,2.31,1124.0,140500
+Lenovo,Notebook,14.0,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.65,1465.0,183125
+Dell,Notebook,15.6,False,False,2073600,Intel i5,1.6,4,1024,HDD,AMD,Windows,2.2,776.0,97000
+Fujitsu,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,256,SSD,Intel,Windows,2.2,799.0,99875
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,Windows,1.88,932.0,116500
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,1024,HDD,Nvidia,Windows,2.2,899.0,112375
+Mediacom,Notebook,14.0,False,False,2073600,Intel Other,1.44,2,32,SSD,Intel,Windows,1.4,239.0,29875
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,128,SSD,Intel,No OS,2.2,468.0,58500
+Asus,2 in 1 Convertible,13.3,True,False,2073600,Intel i5,2.5,6,1024,HDD,Intel,Windows,1.5,639.01,79876
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Windows,2.0,1820.0,227500
+Asus,Ultrabook,14.0,False,False,2073600,Intel i7,2.7,16,512,SSD,Intel,Windows,1.1,1900.0,237500
+Dell,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.62,1479.0,184875
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,1.6,4,256,SSD,Intel,Windows,1.8,829.0,103625
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,Nvidia,Windows,2.2,579.0,72375
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.1,8,1024,HDD,Intel,Windows,2.0,399.0,49875
+Asus,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,Nvidia,Windows,1.99,906.62,113328
+Dell,Ultrabook,13.3,True,False,5760000,Intel i5,1.6,8,256,SSD,Intel,Windows,1.23,1869.0,233625
+Lenovo,Notebook,14.0,False,False,1049088,Intel Other,1.6,2,32,SSD,Intel,Windows,1.42,249.0,31125
+Lenovo,2 in 1 Convertible,13.3,True,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.37,1757.42,219678
+Dell,Notebook,15.6,True,False,8294400,Intel i7,2.8,16,1024,SSD,Nvidia,Windows,2.06,2399.0,299875
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.5,1109.0,138625
+HP,Notebook,17.0,False,False,1440000,AMD,3.0,8,1024,HDD,AMD,Windows,2.6,520.9,65112
+Lenovo,Ultrabook,14.0,False,True,2073600,Intel i7,2.7,16,512,SSD,Intel,Windows,1.14,2450.0,306250
+Asus,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1024,HDD,Nvidia,No OS,2.5,1169.0,146125
+Acer,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,500,HDD,Intel,Windows,2.4,450.0,56250
+Lenovo,Notebook,14.0,False,False,1049088,Intel Other,1.6,4,32,SSD,Intel,Windows,1.43,274.0,34250
+Acer,Ultrabook,14.0,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.8,919.0,114875
+Razer,Gaming,14.0,False,False,2073600,Intel i7,2.8,16,256,SSD,Nvidia,Windows,1.95,2599.0,324875
+Toshiba,Notebook,13.3,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.2,1213.0,151625
+Lenovo,Ultrabook,12.5,False,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.36,1584.0,198000
+Asus,Gaming,17.3,False,True,2073600,Intel i7,2.7,32,512,SSD,Nvidia,Windows,3.8,2799.0,349875
+Acer,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,Nvidia,Linux,2.4,709.0,88625
+Dell,Ultrabook,13.3,False,False,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.2,1449.9,181238
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.2,1191.8,148975
+HP,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,500,HDD,Intel,No OS,1.86,364.9,45612
+Toshiba,Notebook,15.6,False,True,2073600,Intel i5,2.5,8,500,HDD,Intel,Windows,2.0,1064.0,133000
+Dell,Notebook,15.6,False,False,2073600,Intel i7,1.8,8,256,SSD,AMD,Windows,2.2,919.0,114875
+Dell,Notebook,15.6,False,False,2073600,Intel i7,1.8,16,2304,Hybrid,AMD,Windows,2.2,1135.0,141875
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.6,8,1152,Hybrid,Nvidia,Windows,3.31,1196.0,149500
+Dell,Gaming,17.3,False,True,8294400,Intel i7,2.8,32,1536,Hybrid,Nvidia,Windows,4.42,3147.37,393421
+Dell,Notebook,14.0,False,False,2073600,Intel i5,2.4,8,256,SSD,Intel,Windows,1.56,1229.0,153625
+Lenovo,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,500,HDD,Intel,Windows,2.2,419.0,52375
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.3,4,500,HDD,Intel,Windows,2.2,535.0,66875
+HP,Notebook,15.6,False,False,2073600,Intel i3,2.0,6,1024,HDD,AMD,Windows,2.04,539.0,67375
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.7,1486.77,185846
+Toshiba,Notebook,15.6,False,False,1049088,Intel i3,2.1,4,128,SSD,Intel,Windows,2.1,498.0,62250
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,Intel,Windows,2.06,955.0,119375
+HP,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,1024,HDD,AMD,Windows,2.1,745.0,93125
+Toshiba,Notebook,15.6,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,2.0,1258.0,157250
+Acer,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,128,SSD,Intel,Linux,2.1,412.0,51500
+Microsoft,Ultrabook,13.5,True,False,3393024,Intel i7,2.8,8,256,SSD,Intel,Windows,1.252,1867.85,233481
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1152,Hybrid,AMD,Windows,1.9,817.95,102244
+Lenovo,2 in 1 Convertible,13.3,True,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.3,1034.0,129250
+Lenovo,Notebook,15.6,False,False,1049088,AMD,2.2,4,128,SSD,AMD,Windows,2.2,349.0,43625
+HP,2 in 1 Convertible,14.0,True,True,2073600,Intel i3,2.4,4,128,SSD,Nvidia,Windows,1.63,699.0,87375
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.4,1294.0,161750
+Asus,Ultrabook,14.0,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.1,1135.0,141875
+HP,2 in 1 Convertible,11.6,True,False,1049088,Intel Other,1.1,8,64,SSD,Intel,Chrome OS,1.4,495.0,61875
+LG,Ultrabook,15.6,False,True,2073600,Intel i7,1.8,8,512,SSD,Intel,Windows,1.09,2299.0,287375
+Acer,Gaming,15.6,False,False,2073600,Intel i5,2.5,16,256,SSD,Nvidia,Windows,2.5,1299.0,162375
+MSI,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.2,997.9,124738
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,128,SSD,Intel,Windows,1.86,419.0,52375
+Dell,Gaming,15.6,False,False,2073600,Intel i5,2.5,16,1152,Hybrid,Nvidia,Windows,3.21,2051.0,256375
+HP,Notebook,17.3,False,True,2073600,Intel i3,2.0,4,256,SSD,AMD,Windows,2.5,699.0,87375
+Lenovo,2 in 1 Convertible,13.3,True,True,2073600,Intel i7,1.8,8,512,SSD,Intel,Windows,1.19,1499.0,187375
+Dell,Gaming,15.6,False,False,2073600,Intel i7,2.9,16,1280,Hybrid,Nvidia,Windows,3.49,2813.75,351719
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,500,HDD,AMD,Windows,1.86,612.61,76576
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,AMD,Windows,2.2,545.67,68209
+HP,Notebook,17.3,False,True,2073600,AMD,2.4,6,2048,HDD,AMD,Windows,2.65,569.0,71125
+Lenovo,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Windows,2.1,318.0,39750
+Acer,Notebook,14.0,False,False,1049088,Intel Other,1.6,4,32,SSD,Intel,Chrome OS,1.45,375.0,46875
+Lenovo,Notebook,14.0,False,False,2073600,Intel i5,2.5,4,256,SSD,Intel,Windows,1.7,699.0,87375
+HP,Workstation,17.3,False,False,2073600,Intel i7,2.8,8,500,HDD,Nvidia,Windows,3.14,1907.99,238499
+Lenovo,2 in 1 Convertible,14.0,True,False,3686400,Intel i7,2.7,8,256,SSD,Intel,Windows,1.42,2590.0,323750
+Toshiba,Notebook,13.3,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.5,973.0,121625
+Acer,Netbook,11.6,False,False,1049088,Intel Other,1.6,4,32,SSD,Intel,Windows,1.4,269.0,33625
+Lenovo,2 in 1 Convertible,14.0,True,False,2073600,Intel i7,2.7,16,512,SSD,Intel,Windows,1.38,1749.0,218625
+Asus,2 in 1 Convertible,12.5,True,False,2073600,Intel Other,0.9,4,64,SSD,Intel,Chrome OS,1.2,669.0,83625
+Toshiba,Ultrabook,13.3,True,False,2073600,Intel i7,2.5,16,512,SSD,Intel,Windows,1.36,1877.0,234625
+HP,Notebook,15.6,False,True,2073600,Intel i7,2.7,4,500,HDD,AMD,Windows,2.1,689.0,86125
+Dell,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,Nvidia,Windows,2.56,819.0,102375
+Lenovo,Notebook,15.6,False,False,2073600,AMD,2.9,4,256,SSD,AMD,Windows,2.2,399.0,49875
+Lenovo,Notebook,15.6,False,False,1049088,AMD,3.6,8,1024,HDD,AMD,Windows,2.2,429.0,53625
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,2048,HDD,Intel,Windows,2.1,621.45,77681
+Lenovo,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,500,HDD,Intel,No OS,1.9,450.0,56250
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,2.18,795.0,99375
+Acer,2 in 1 Convertible,13.3,True,True,2073600,Intel i5,1.6,8,256,SSD,Intel,Windows,1.6,999.0,124875
+Lenovo,Workstation,15.6,False,False,2073600,Intel i7,2.5,16,512,SSD,Nvidia,Windows,2.18,1855.0,231875
+Lenovo,Notebook,14.0,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.8,1191.0,148875
+HP,Notebook,17.3,False,True,2073600,AMD,2.5,6,2048,HDD,AMD,Windows,2.71,655.01,81876
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.5,1249.0,156125
+Dell,Notebook,14.0,False,False,2073600,Intel i5,2.8,8,256,SSD,Nvidia,Linux,1.64,1089.0,136125
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,Intel,Linux,1.98,726.0,90750
+Asus,Notebook,14.0,False,False,2073600,Intel Other,1.1,4,32,SSD,Intel,Windows,1.5,298.0,37250
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.6,16,512,SSD,Intel,Windows,1.93,1426.66,178332
+Lenovo,Notebook,14.0,False,True,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,1.87,857.07,107134
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.6,8,256,SSD,Intel,Windows,1.9,1179.0,147375
+Lenovo,Notebook,15.6,False,False,1049088,AMD,2.0,4,500,HDD,AMD,Windows,2.19,298.0,37250
+Mediacom,Notebook,14.0,False,True,2304000,Intel Other,1.92,4,32,HDD,Intel,Windows,1.4,265.0,33125
+HP,Notebook,17.3,False,False,2073600,Intel i7,2.7,8,256,SSD,Nvidia,Windows,2.63,1200.0,150000
+Lenovo,Ultrabook,14.0,False,True,3686400,Intel i7,2.5,8,512,SSD,Intel,Windows,1.17,1686.64,210830
+HP,2 in 1 Convertible,13.3,True,True,1049088,Intel i5,2.5,8,256,SSD,Intel,Windows,1.58,836.6,104575
+Lenovo,Ultrabook,14.0,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.32,1499.0,187375
+Dell,Gaming,17.3,False,False,8294400,Intel i7,2.8,32,2048,Hybrid,Nvidia,Windows,4.36,3659.4,457425
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.7,1348.48,168560
+Lenovo,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,1024,HDD,Intel,No OS,1.9,489.9,61238
+Dell,Notebook,15.6,False,False,2073600,Intel i5,1.6,8,1152,Hybrid,AMD,Windows,2.2,719.0,89875
+Dell,2 in 1 Convertible,13.3,True,False,2073600,Intel i3,2.4,4,1024,HDD,Intel,Windows,1.71,649.0,81125
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,1024,HDD,AMD,Linux,2.32,589.52,73690
+HP,Notebook,15.6,False,False,2073600,AMD,3.0,4,1024,HDD,AMD,Windows,2.1,489.0,61125
+Acer,Gaming,17.3,False,True,2073600,Intel i7,2.6,16,1152,Hybrid,Nvidia,Windows,4.2,1935.0,241875
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.5,12,1024,HDD,Intel,Windows,2.25,649.0,81125
+HP,Notebook,15.6,False,False,2073600,AMD,3.0,6,1152,Hybrid,AMD,Windows,2.1,650.0,81250
+Acer,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Windows,2.4,559.0,69875
+Lenovo,Notebook,13.3,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.44,960.0,120000
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,2.7,4,1024,HDD,Intel,Windows,1.85,779.0,97375
+HP,Workstation,15.6,False,False,2073600,Intel i7,2.8,16,256,SSD,Nvidia,Windows,2.6,2419.0,302375
+Dell,2 in 1 Convertible,13.3,True,False,2073600,Intel i5,1.6,8,1024,HDD,Intel,Windows,1.55,659.0,82375
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,1.8,2094.48,261810
+Acer,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,500,HDD,Intel,Windows,2.4,410.8,51350
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,1152,Hybrid,Nvidia,Windows,2.0,1207.0,150875
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,8,256,SSD,Intel,Windows,2.0,665.0,83125
+Toshiba,Notebook,14.0,True,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.25,1535.0,191875
+Lenovo,2 in 1 Convertible,14.0,True,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.7,999.0,124875
+Lenovo,Workstation,15.6,False,True,8294400,Intel i7,2.8,16,1024,SSD,Nvidia,Windows,2.5,3299.0,412375
+Acer,Notebook,14.0,False,False,1049088,Intel Other,1.6,2,32,SSD,Intel,Chrome OS,1.68,330.0,41250
+Samsung,Ultrabook,13.3,False,False,2073600,Intel i7,2.7,16,256,SSD,Intel,Windows,0.81,1649.0,206125
+HP,Notebook,15.6,False,False,2073600,Intel i3,2.0,8,256,SSD,Intel,Windows,1.86,539.0,67375
+Dell,Notebook,14.0,False,False,1049088,Intel i5,2.5,8,256,SSD,Intel,Windows,1.6,1126.71,140839
+HP,Workstation,17.3,False,True,2073600,Intel Other,2.9,16,256,SSD,Nvidia,Windows,3.0,4389.0,548625
+Lenovo,Netbook,11.6,True,False,1049088,Intel Other,1.6,4,128,SSD,Intel,Windows,1.4,475.0,59375
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.4,8,256,SSD,Intel,Windows,1.84,1900.0,237500
+Asus,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,1024,HDD,Nvidia,No OS,2.45,579.0,72375
+Lenovo,Ultrabook,14.0,False,False,2073600,Intel i5,2.3,4,180,SSD,Intel,Windows,1.7,1096.0,137000
+Asus,Notebook,15.6,False,False,1049088,Intel i7,2.7,4,256,SSD,Intel,Windows,2.37,849.9,106238
+Lenovo,2 in 1 Convertible,13.3,True,True,5760000,Intel i5,1.8,8,256,SSD,Intel,Windows,1.3,1199.0,149875
+HP,Notebook,15.6,False,True,2073600,Intel i5,2.5,8,1152,Hybrid,Nvidia,Windows,2.2,1099.0,137375
+HP,Workstation,15.6,False,False,2073600,Intel i7,2.6,8,256,SSD,Nvidia,Windows,2.59,1561.0,195125
+Dell,Gaming,15.6,False,True,8294400,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,4.42,2868.99,358624
+Acer,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,256,SSD,Intel,Windows,2.1,599.0,74875
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.5,1048.0,131000
+Dell,Ultrabook,12.5,False,False,2073600,Intel i7,2.8,16,256,SSD,Intel,Windows,1.18,1859.0,232375
+Google,Ultrabook,12.3,True,False,3840000,Intel i5,1.2,8,256,SSD,Intel,Chrome OS,1.1,1559.0,194875
+Asus,Ultrabook,13.3,False,True,5760000,Intel i5,2.5,8,256,SSD,Intel,Windows,1.2,1129.0,141125
+Dell,Notebook,13.3,False,False,1049088,Intel i3,2.0,4,500,HDD,Intel,Windows,1.65,849.0,106125
+Acer,Notebook,13.3,False,False,1049088,Intel i5,2.3,4,128,SSD,Intel,Windows,1.6,655.0,81875
+Asus,Notebook,17.3,False,False,1049088,Intel Other,1.1,4,1024,HDD,Nvidia,Windows,2.8,470.34,58792
+Dell,Gaming,15.6,True,True,8294400,Intel i7,2.6,16,1152,Hybrid,Nvidia,Windows,2.72,1099.0,137375
+Samsung,Ultrabook,13.3,True,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.31,1599.0,199875
+Acer,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,1024,HDD,Intel,Linux,2.1,298.0,37250
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,16,256,SSD,AMD,Windows,2.3,1181.27,147659
+Samsung,2 in 1 Convertible,15.0,True,False,2073600,Intel i7,2.7,16,256,SSD,AMD,Windows,1.71,1799.0,224875
+Toshiba,Notebook,14.0,False,True,1049088,Intel i5,2.3,4,128,SSD,Intel,Windows,1.75,1020.0,127500
+Dell,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,1024,HDD,Nvidia,Windows,2.62,1099.0,137375
+HP,Ultrabook,12.5,False,False,1049088,Intel i5,2.3,4,256,SSD,Intel,Windows,1.26,1244.0,155500
+Asus,2 in 1 Convertible,15.6,True,False,2073600,Intel i7,2.7,12,2048,HDD,Nvidia,Windows,2.3,839.0,104875
+Lenovo,Notebook,15.6,False,False,8294400,Intel i7,2.7,16,512,SSD,Nvidia,Windows,2.5,2370.0,296250
+Acer,Notebook,14.0,False,True,2073600,Intel i3,2.4,4,128,SSD,Intel,Windows,1.8,636.0,79500
+Razer,Gaming,14.0,False,False,2073600,Intel i7,2.8,16,512,SSD,Nvidia,Windows,1.95,2899.0,362375
+Asus,Notebook,15.6,False,False,2073600,Intel Other,1.1,8,128,SSD,Intel,Windows,2.0,581.9,72738
+Dell,Gaming,17.3,False,True,2073600,Intel i7,2.8,32,2048,Hybrid,Nvidia,Windows,4.42,3588.8,448600
+Asus,Gaming,17.3,False,True,2073600,Intel i7,2.6,16,1280,Hybrid,Nvidia,Windows,4.3,2350.0,293750
+Toshiba,Ultrabook,14.0,False,True,2073600,Intel i7,2.6,16,512,SSD,Nvidia,Windows,1.47,1764.0,220500
+Lenovo,Notebook,15.6,False,False,1049088,Intel Other,1.6,8,1024,HDD,Intel,No OS,2.2,329.0,41125
+Lenovo,Ultrabook,14.0,False,False,2073600,Intel i7,2.7,16,512,SSD,Intel,Windows,1.7,2299.0,287375
+MSI,Gaming,14.0,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,1.6,1891.0,236375
+MSI,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,1152,Hybrid,Nvidia,Windows,2.2,1089.0,136125
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,4,1024,HDD,Nvidia,Windows,2.4,999.0,124875
+Acer,Gaming,17.3,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,4.2,2299.0,287375
+Dell,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.62,985.0,123125
+Asus,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.24,1339.0,167375
+Vero,Notebook,14.0,False,False,2073600,Intel Other,1.1,4,32,SSD,Intel,Windows,1.22,202.9,25362
+Lenovo,2 in 1 Convertible,13.3,True,True,2073600,Intel i7,2.7,8,512,SSD,Intel,Windows,1.37,1970.0,246250
+Lenovo,2 in 1 Convertible,15.6,True,False,2073600,Intel i5,2.5,8,256,SSD,AMD,Windows,2.08,959.0,119875
+Apple,Ultrabook,12.0,False,True,3317760,Intel Other,1.2,8,512,SSD,Intel,Mac,0.92,1165.0,145625
+Lenovo,2 in 1 Convertible,14.0,True,True,3686400,Intel i5,2.5,8,256,SSD,Intel,Windows,1.42,2330.0,291250
+Asus,Notebook,14.0,False,False,1049088,Intel Other,1.1,4,32,SSD,Intel,Windows,1.63,299.0,37375
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,128,SSD,Intel,Windows,1.95,810.0,101250
+Lenovo,2 in 1 Convertible,13.9,True,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.38,1349.0,168625
+Dell,Notebook,15.6,False,False,2073600,Intel i3,2.0,8,256,SSD,AMD,Windows,2.0,739.0,92375
+HP,Workstation,15.6,False,False,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Windows,3.14,2064.9,258112
+Asus,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,2.37,1099.0,137375
+Dell,Ultrabook,13.3,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.29,1499.0,187375
+Dell,Notebook,15.6,True,False,8294400,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.06,1749.0,218625
+Dell,Netbook,11.6,False,False,1049088,Intel Other,1.1,4,128,SSD,Intel,Windows,1.63,744.0,93000
+HP,Netbook,12.5,False,False,1049088,Intel i5,2.6,8,256,SSD,Intel,Windows,1.26,1389.0,173625
+Toshiba,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,Windows,2.1,780.0,97500
+HP,Notebook,15.6,False,False,1049088,AMD,2.5,8,2048,HDD,AMD,Windows,2.04,629.0,78625
+Dell,Gaming,15.6,False,False,8294400,Intel i7,2.8,16,512,SSD,Nvidia,Windows,2.62,1679.0,209875
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,1024,HDD,Nvidia,Windows,2.4,609.0,76125
+HP,Gaming,17.3,False,True,2073600,Intel i7,2.8,12,1024,HDD,AMD,Windows,3.74,1749.0,218625
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1536,Hybrid,Nvidia,Windows,2.9,2415.0,301875
+Samsung,Ultrabook,13.3,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,0.81,1499.0,187375
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,1024,HDD,Nvidia,Windows,1.98,961.0,120125
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,AMD,Windows,2.18,789.81,98726
+Lenovo,Ultrabook,14.0,False,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.32,1859.0,232375
+Razer,Ultrabook,12.5,True,True,8294400,Intel i7,2.5,16,512,SSD,Intel,Windows,1.29,1799.0,224875
+HP,Netbook,11.6,False,False,1049088,Intel Other,1.6,4,16,SSD,Intel,Chrome OS,1.23,385.0,48125
+Dell,Gaming,17.3,False,True,2073600,Intel i7,2.8,16,1152,Hybrid,Nvidia,Windows,4.36,2505.02,313128
+Dell,Notebook,14.0,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,Windows,1.76,755.0,94375
+Lenovo,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,500,HDD,Intel,Windows,2.1,489.9,61238
+Toshiba,Ultrabook,14.0,False,False,1049088,Intel i5,2.5,4,128,SSD,Intel,Windows,1.25,1090.0,136250
+Lenovo,Ultrabook,14.0,False,True,2073600,Intel i7,2.7,8,512,SSD,Intel,Windows,1.13,2499.0,312375
+MSI,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.4,1199.0,149875
+Lenovo,Ultrabook,14.0,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.13,1875.0,234375
+Toshiba,Notebook,14.0,False,False,1049088,Intel Other,2.1,4,128,SSD,Intel,Windows,1.75,499.0,62375
+Asus,2 in 1 Convertible,13.3,True,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.1,1358.0,169750
+Dell,Notebook,14.0,False,False,1049088,Intel i3,2.0,4,500,HDD,Intel,Windows,1.76,585.0,73125
+Acer,Netbook,11.6,False,True,1049088,Intel Other,1.6,4,32,SSD,Intel,Chrome OS,1.35,355.0,44375
+Acer,Notebook,14.0,False,True,2073600,Intel i3,2.4,8,128,SSD,Intel,Windows,1.5,619.0,77375
+Razer,Gaming,17.3,True,False,8294400,Intel i7,2.9,32,512,SSD,Nvidia,Windows,3.49,5499.0,687375
+Lenovo,Ultrabook,14.0,False,True,3686400,Intel i7,2.6,16,512,SSD,Intel,Windows,1.1,2099.0,262375
+Asus,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,1024,HDD,Nvidia,Linux,2.1,519.0,64875
+Lenovo,Notebook,14.0,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.7,1186.0,148250
+Lenovo,Notebook,14.0,False,True,2073600,Intel i5,2.6,8,256,SSD,Intel,Windows,1.32,1650.0,206250
+Dell,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,3.21,2774.63,346829
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.9,2419.0,302375
+Toshiba,Notebook,15.6,False,False,1049088,Intel i3,2.4,4,500,HDD,Intel,Windows,2.0,669.0,83625
+Lenovo,Notebook,14.0,False,False,1049088,Intel Other,1.6,4,16,SSD,Intel,Chrome OS,1.5,325.0,40625
+Asus,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,128,HDD,Intel,Windows,2.3,590.0,73750
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.6,16,1536,Hybrid,Nvidia,Windows,2.73,1799.0,224875
+Dell,Gaming,17.3,False,True,2073600,Intel i7,2.8,32,1536,Hybrid,Nvidia,Windows,4.42,3072.89,384111
+HP,Notebook,17.3,False,False,1440000,Intel i5,2.5,8,1024,HDD,Nvidia,Windows,2.63,910.0,113750
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,128,SSD,Intel,Windows,2.18,713.99,89249
+HP,Ultrabook,14.0,False,False,2073600,Intel i7,2.5,8,512,SSD,Intel,Windows,1.54,1870.0,233750
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,4,256,SSD,AMD,Windows,2.18,739.0,92375
+HP,2 in 1 Convertible,11.6,True,False,1049088,Intel Other,1.1,4,32,SSD,Intel,Chrome OS,1.4,615.0,76875
+Asus,Ultrabook,13.3,False,True,2073600,Intel i5,2.3,8,512,SSD,Nvidia,Windows,1.45,1026.0,128250
+HP,2 in 1 Convertible,13.3,True,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.28,2277.0,284625
+HP,Ultrabook,14.0,False,False,2073600,Intel i7,2.5,8,512,SSD,Intel,Windows,1.54,1468.0,183500
+HP,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,128,SSD,Intel,No OS,1.86,299.0,37375
+Asus,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,1152,Hybrid,Nvidia,Windows,2.1,1899.0,237375
+Dell,Notebook,17.3,False,False,2073600,Intel i7,2.7,8,1024,HDD,AMD,Linux,2.83,865.0,108125
+Lenovo,Ultrabook,14.0,False,True,2073600,Intel i7,2.8,8,256,SSD,Nvidia,Windows,1.96,1903.0,237875
+Asus,Notebook,15.6,False,True,2073600,Intel i7,2.7,8,256,SSD,Nvidia,Windows,2.3,787.0,98375
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,128,SSD,Intel,Windows,1.9,945.0,118125
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,1024,HDD,Intel,Windows,2.0,449.0,56125
+HP,2 in 1 Convertible,13.3,True,False,2073600,Intel i7,2.8,8,256,SSD,Intel,Windows,1.28,2559.0,319875
+Dell,Notebook,13.3,True,False,2073600,Intel i5,2.3,8,1024,HDD,Intel,Windows,1.62,649.0,81125
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,Intel,No OS,2.2,469.0,58625
+Lenovo,Notebook,15.6,False,True,2073600,Intel i5,2.5,8,1024,HDD,Intel,Windows,2.3,850.66,106332
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.6,8,256,SSD,AMD,Windows,1.84,1349.0,168625
+Toshiba,Notebook,13.3,False,False,2073600,Intel i5,2.5,4,128,SSD,Intel,Windows,1.05,1285.0,160625
+Lenovo,Gaming,15.6,False,True,2073600,Intel i5,2.5,8,1024,HDD,Nvidia,No OS,2.5,1017.0,127125
+Dell,Ultrabook,13.3,True,False,5760000,Intel i7,2.5,16,512,SSD,Intel,Windows,1.29,2240.0,280000
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.3,4,500,HDD,Intel,Windows,2.07,910.0,113750
+Toshiba,Ultrabook,13.3,False,False,1049088,Intel i5,2.3,8,256,SSD,Intel,Windows,1.2,1095.0,136875
+Lenovo,2 in 1 Convertible,13.3,True,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.37,1950.0,243750
+Acer,Notebook,14.0,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.56,902.0,112750
+Dell,Workstation,15.6,False,False,2073600,Intel i7,2.8,8,1024,HDD,Nvidia,Windows,2.23,1778.0,222250
+Lenovo,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Windows,2.38,1055.0,131875
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,AMD,No OS,2.2,479.0,59875
+Toshiba,Notebook,15.6,False,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,2.0,1388.0,173500
+Lenovo,Notebook,13.3,False,True,2073600,Intel i3,2.4,4,180,SSD,Intel,Windows,1.44,735.0,91875
+Samsung,Ultrabook,15.0,False,False,2073600,Intel i7,2.7,16,256,SSD,Nvidia,Windows,1.23,1849.0,231125
+Dell,Ultrabook,12.5,False,False,2073600,Intel i7,2.8,8,256,SSD,Intel,Windows,1.6,1690.0,211250
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,1024,HDD,Intel,Linux,2.0,398.99,49874
+Xiaomi,Ultrabook,13.3,False,True,2073600,Intel i5,2.3,8,256,SSD,Nvidia,Windows,1.28,935.0,116875
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,1152,Hybrid,Nvidia,Windows,2.18,912.5,114062
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,256,SSD,Intel,Windows,2.04,839.0,104875
+HP,2 in 1 Convertible,13.3,True,False,2073600,Intel i5,2.5,4,256,SSD,Intel,Windows,1.28,1700.0,212500
+HP,2 in 1 Convertible,15.6,True,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Windows,2.3,684.8,85600
+Asus,Notebook,14.1,False,False,1049088,Intel Other,1.1,4,32,SSD,Intel,Windows,1.65,348.0,43500
+Lenovo,Notebook,15.6,False,True,2073600,Intel i7,2.5,8,1024,HDD,Nvidia,Windows,2.2,669.0,83625
+Dell,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Windows,2.2,369.0,46125
+HP,2 in 1 Convertible,13.3,True,False,2073600,Intel i5,2.5,4,256,SSD,Intel,Windows,1.28,1799.0,224875
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,AMD,Linux,2.18,455.7,56962
+Asus,Gaming,17.3,False,False,2073600,Intel i5,2.5,12,1152,Hybrid,Nvidia,Windows,2.2,1369.9,171238
+Acer,Netbook,11.6,False,True,1049088,Intel Other,1.6,4,32,SSD,Intel,Chrome OS,1.25,297.0,37125
+Lenovo,Notebook,17.3,False,False,1440000,AMD,2.2,4,500,HDD,AMD,Windows,2.8,379.0,47375
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.5,4,128,SSD,Intel,Windows,1.95,1265.0,158125
+HP,2 in 1 Convertible,13.3,True,False,5760000,Intel i7,2.7,16,256,SSD,Intel,Windows,1.42,1399.0,174875
+Samsung,Ultrabook,15.0,False,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.17,1699.0,212375
+Lenovo,Ultrabook,14.0,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.32,1799.0,224875
+MSI,Gaming,17.3,False,True,8294400,Intel i7,2.6,16,2560,Hybrid,Nvidia,Windows,2.43,2649.0,331125
+Toshiba,Notebook,13.3,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.05,1475.0,184375
+Dell,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,1024,HDD,Nvidia,Linux,2.62,929.0,116125
+HP,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,1024,HDD,Nvidia,Windows,2.04,900.0,112500
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,AMD,Windows,2.18,614.0,76750
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.6,8,500,HDD,Intel,Windows,1.9,935.0,116875
+Dell,2 in 1 Convertible,13.3,True,False,5760000,Intel i7,1.3,8,512,SSD,Intel,Windows,1.24,2013.1,251638
+Asus,Gaming,17.3,False,True,2073600,Intel i7,2.7,32,512,SSD,Nvidia,Windows,3.58,1279.0,159875
+Dell,2 in 1 Convertible,13.3,True,False,2073600,Intel i7,1.3,16,256,SSD,Intel,Windows,1.22,1649.0,206125
+Lenovo,Ultrabook,14.0,False,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.13,2049.0,256125
+Lenovo,Notebook,15.6,False,True,2073600,Intel i5,2.5,8,512,SSD,Intel,Windows,1.95,1962.99,245374
+LG,Ultrabook,15.6,True,True,2073600,Intel i7,2.7,16,512,SSD,Intel,Windows,1.08,2099.0,262375
+HP,Netbook,12.5,False,False,2073600,Intel i7,2.7,8,512,SSD,Intel,Windows,1.26,1483.0,185375
+Acer,Notebook,15.6,False,True,2073600,Intel Other,1.5,4,16,SSD,Intel,Chrome OS,2.2,359.0,44875
+Lenovo,Notebook,15.6,False,True,2073600,Intel i5,2.3,8,1152,Hybrid,Nvidia,Windows,2.6,789.0,98625
+LG,Ultrabook,14.0,True,True,2073600,Intel i7,2.7,8,512,SSD,Intel,Windows,0.98,1899.0,237375
+Dell,Notebook,14.0,False,False,2073600,Intel i5,2.8,8,256,SSD,Intel,Windows,1.6,1205.0,150625
+HP,Ultrabook,12.5,True,False,8294400,Intel Other,1.2,8,240,SSD,Intel,Windows,1.09,3100.0,387500
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,2.7,6,256,SSD,Nvidia,Windows,2.2,789.0,98625
+HP,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,Nvidia,Windows,2.04,1018.99,127374
+Acer,Notebook,15.6,False,False,2073600,Intel i3,2.4,4,1024,HDD,Intel,Windows,2.4,499.0,62375
+Lenovo,Notebook,13.3,False,False,2073600,Intel i5,2.5,4,128,SSD,Intel,Windows,1.44,881.0,110125
+HP,Notebook,13.3,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.49,960.0,120000
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.7,1599.0,199875
+Dell,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,1152,Hybrid,Nvidia,Windows,2.6,1349.0,168625
+MSI,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,1152,Hybrid,Nvidia,Windows,2.2,1119.91,139989
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,1024,HDD,AMD,Windows,2.18,684.99,85624
+HP,Ultrabook,15.6,False,False,2073600,Intel i7,2.5,8,256,SSD,AMD,Windows,1.84,1296.99,162124
+HP,Ultrabook,13.3,True,False,5760000,Intel i7,2.7,8,256,SSD,Intel,Windows,1.39,1149.0,143625
+Toshiba,Notebook,15.6,False,True,2073600,Intel i7,2.6,16,256,SSD,Nvidia,Windows,2.4,1975.0,246875
+Lenovo,2 in 1 Convertible,13.3,True,True,2073600,Intel i5,2.5,8,512,SSD,Intel,Windows,1.37,1825.0,228125
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,Windows,1.95,729.9,91238
+Lenovo,Ultrabook,12.5,False,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.36,1650.0,206250
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,2.31,1165.0,145625
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,1024,HDD,Intel,Windows,2.18,708.06,88508
+HP,Notebook,14.0,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,Windows,1.95,1149.0,143625
+Lenovo,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,1024,HDD,Intel,Windows,2.2,309.0,38625
+HP,Ultrabook,12.5,False,False,2073600,Intel i5,2.3,4,500,HDD,Intel,Windows,1.26,1579.0,197375
+HP,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,1024,HDD,Intel,No OS,1.86,288.9,36112
+Lenovo,2 in 1 Convertible,13.3,True,True,5760000,Intel i7,2.2,16,1024,SSD,Intel,Windows,1.3,1799.0,224875
+Toshiba,Notebook,14.0,False,True,2073600,Intel i5,2.3,4,128,SSD,Intel,Windows,1.47,1105.0,138125
+HP,Netbook,12.5,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.26,1669.0,208625
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,Intel,Windows,2.18,558.6,69825
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.2,1199.0,149875
+Dell,Ultrabook,14.0,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.36,1639.0,204875
+Dell,Gaming,17.3,False,False,3686400,Intel i7,2.7,16,1536,Hybrid,Nvidia,Windows,4.36,2758.0,344750
+HP,Gaming,17.3,False,True,2073600,Intel i5,2.3,8,1152,Hybrid,Nvidia,Windows,2.75,1399.0,174875
+Asus,Notebook,17.3,False,False,1440000,Intel Other,1.6,4,1024,HDD,Nvidia,Windows,2.8,530.0,66250
+Acer,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Windows,2.23,619.0,77375
+Toshiba,Notebook,15.6,False,False,1049088,Intel i5,2.3,8,256,SSD,Intel,Windows,2.2,1119.0,139875
+Lenovo,2 in 1 Convertible,11.3,True,True,2073600,Intel Other,1.2,8,256,SSD,Intel,Windows,1.1,1299.0,162375
+Lenovo,Gaming,15.6,False,True,2073600,AMD,2.1,16,1536,Hybrid,AMD,Windows,2.5,999.0,124875
+Dell,Ultrabook,12.5,True,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.36,1472.2,184025
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,1024,HDD,Nvidia,No OS,2.2,685.0,85625
+Dell,Notebook,17.3,False,False,1440000,Intel i3,2.0,4,1024,HDD,AMD,Windows,2.36,659.0,82375
+Acer,Notebook,14.0,False,False,1049088,Intel Other,1.6,4,32,SSD,Intel,Chrome OS,1.68,349.0,43625
+HP,Workstation,15.6,False,True,2073600,Intel i7,2.7,8,8,SSD,Nvidia,Windows,2.0,2249.0,281125
+Dell,Ultrabook,14.0,False,False,2073600,Intel i7,2.8,8,256,SSD,Intel,Windows,1.36,1775.0,221875
+Toshiba,Notebook,13.3,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.2,1460.0,182500
+Asus,2 in 1 Convertible,12.5,False,False,2073600,Intel Other,1.2,8,64,SSD,Intel,Chrome OS,1.2,1159.0,144875
+Lenovo,Ultrabook,14.0,False,True,2073600,Intel i7,2.6,8,256,SSD,Intel,Windows,1.7,1488.99,186124
+Dell,Gaming,17.3,False,True,8294400,Intel i7,2.8,16,1536,Hybrid,Nvidia,Windows,4.36,3154.0,394250
+Dell,2 in 1 Convertible,13.3,True,False,2073600,Intel i5,1.2,8,256,SSD,Intel,Windows,1.24,1899.0,237375
+HP,2 in 1 Convertible,11.6,True,False,1049088,Intel Other,1.1,4,256,SSD,Intel,Windows,1.45,775.0,96875
+Dell,Ultrabook,13.3,False,False,5760000,Intel i7,2.5,8,256,SSD,Intel,Windows,1.3,1268.0,158500
+Acer,2 in 1 Convertible,11.6,True,True,1049088,Intel Other,1.6,4,32,SSD,Intel,Chrome OS,1.25,389.0,48625
+Toshiba,Notebook,13.3,False,False,2073600,Intel i5,2.4,8,256,SSD,Intel,Windows,1.2,1535.0,191875
+Lenovo,Ultrabook,12.5,False,True,2073600,Intel i5,2.6,8,256,SSD,Intel,Windows,1.36,1760.0,220000
+Acer,Notebook,15.6,False,False,2073600,Intel i5,2.5,12,1152,Hybrid,Nvidia,Windows,2.4,1009.0,126125
+Toshiba,Ultrabook,12.5,True,False,2073600,Intel i7,2.7,8,512,SSD,Intel,Windows,1.1,1790.0,223750
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,1024,HDD,Nvidia,Windows,2.04,846.5,105812
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,AMD,Linux,2.25,465.62,58202
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Windows,1.9,825.0,103125
+HP,Notebook,15.6,False,False,2073600,Intel i3,2.4,4,500,HDD,Intel,Windows,2.04,685.0,85625
+Dell,Gaming,17.3,False,True,2073600,Intel i7,2.8,32,1280,Hybrid,Nvidia,Windows,4.42,3149.0,393625
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.5,6,256,SSD,Nvidia,Windows,2.4,695.0,86875
+Dell,2 in 1 Convertible,13.3,True,False,5760000,Intel i7,1.3,16,512,SSD,Intel,Windows,1.22,1899.0,237375
+Dell,Ultrabook,14.0,True,False,3686400,Intel i7,2.6,8,256,SSD,Intel,Windows,1.5,1962.98,245372
+Dell,Gaming,17.3,False,False,2073600,Intel i7,2.6,32,1280,Hybrid,Nvidia,Windows,4.42,2800.0,350000
+Toshiba,Notebook,14.0,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.95,1180.0,147500
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.73,2049.9,256238
+HP,Notebook,15.6,False,True,2073600,Intel i5,2.7,8,1152,Hybrid,Nvidia,Windows,2.04,979.0,122375
+Lenovo,Notebook,14.0,False,False,1049088,Intel i5,2.3,4,508,Other,Intel,Windows,1.7,1002.0,125250
+Asus,2 in 1 Convertible,15.6,True,False,8294400,Intel i7,2.7,16,2560,Hybrid,Nvidia,Windows,2.3,1799.0,224875
+HP,Notebook,15.6,False,False,1049088,Intel i7,2.7,6,1024,HDD,Intel,Windows,2.04,579.0,72375
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.99,1749.0,218625
+Dell,2 in 1 Convertible,15.6,True,True,2073600,Intel i7,2.7,12,512,SSD,Intel,Windows,2.19,1299.0,162375
+Toshiba,Notebook,13.3,False,False,2073600,Intel i5,2.3,4,128,SSD,Intel,Windows,1.2,1195.0,149375
+Lenovo,Notebook,15.6,False,False,2073600,AMD,3.6,6,256,SSD,AMD,Windows,2.2,549.0,68625
+Fujitsu,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,256,SSD,Intel,Windows,2.3,649.0,81125
+Toshiba,Notebook,14.0,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,Windows,1.75,915.0,114375
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,500,HDD,AMD,Windows,2.25,599.0,74875
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,Intel,Windows,2.04,806.0,100750
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.5,1189.0,148625
+Dell,Notebook,15.6,False,False,1049088,Intel i7,2.7,8,1024,HDD,AMD,Windows,2.36,749.0,93625
+Dell,Notebook,14.0,False,False,2073600,Intel i5,2.5,8,128,SSD,Intel,Windows,1.6,1119.0,139875
+HP,Netbook,12.5,False,False,2073600,Intel Other,1.2,8,512,SSD,Intel,Windows,0.97,1908.0,238500
+HP,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1152,Hybrid,AMD,Windows,2.1,499.0,62375
+Lenovo,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,128,SSD,Intel,No OS,1.9,270.62,33828
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,2.3,1349.0,168625
+Dell,2 in 1 Convertible,13.3,True,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.68,889.0,111125
+Asus,Notebook,13.3,False,False,5760000,Intel i5,2.5,8,256,SSD,Intel,Windows,1.4,1150.0,143750
+HP,Ultrabook,13.3,True,True,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.11,1349.0,168625
+Acer,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,500,HDD,Intel,Windows,2.4,380.0,47500
+Asus,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.5,1799.0,224875
+HP,Ultrabook,14.0,False,False,2073600,Intel i7,2.7,8,512,SSD,Intel,Windows,1.48,2089.0,261125
+Acer,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.7,1260.0,157500
+HP,Notebook,13.3,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.34,1189.0,148625
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.4,4,128,SSD,Intel,Windows,2.18,547.0,68375
+HP,Notebook,14.0,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Windows,1.64,779.0,97375
+Toshiba,Notebook,13.3,False,False,2073600,Intel i5,2.3,4,128,SSD,Intel,Windows,1.2,1195.0,149375
+HP,Notebook,14.0,False,False,1049088,Intel i5,2.4,4,256,SSD,Intel,Windows,1.48,1099.99,137499
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.5,4,256,SSD,Intel,Windows,1.95,1205.0,150625
+HP,Ultrabook,14.0,False,False,2073600,Intel i7,2.6,8,256,SSD,Intel,Windows,1.43,1449.0,181125
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,1.64,1049.26,131158
+HP,Notebook,14.0,False,False,1049088,Intel i3,2.4,4,500,HDD,Intel,Windows,1.64,684.0,85500
+Dell,Gaming,15.6,False,False,2073600,Intel i5,2.5,8,0,Other,Nvidia,Windows,2.65,949.0,118625
+HP,Ultrabook,12.5,False,False,2073600,Intel i5,2.5,4,500,HDD,Intel,Windows,1.26,1539.0,192375
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.5,4,256,SSD,Intel,Windows,1.48,1590.0,198750
+HP,Ultrabook,14.0,False,False,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.54,1887.21,235901
+HP,Notebook,13.3,False,False,1049088,Intel i3,2.4,4,500,HDD,Intel,Windows,1.49,800.0,100000
+Toshiba,Notebook,13.3,False,False,1049088,Intel i5,2.3,8,256,SSD,Intel,Windows,1.5,1210.0,151250
+HP,Notebook,15.6,False,False,1049088,Intel i3,2.4,4,256,SSD,Intel,Windows,2.04,769.99,96249
+Lenovo,Notebook,17.3,False,True,8294400,Intel i7,2.7,16,512,SSD,Nvidia,Windows,2.4,2968.0,371000
+Toshiba,Notebook,14.0,False,True,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.47,1490.0,186250
+HP,Notebook,14.0,False,False,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.43,2229.0,278625
+Dell,2 in 1 Convertible,15.6,True,True,2073600,Intel i3,2.3,4,1024,HDD,Intel,Windows,2.08,795.99,99499
+Toshiba,Ultrabook,13.3,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.2,1590.0,198750
+HP,Notebook,13.3,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.11,1149.0,143625
+HP,Notebook,14.0,False,False,2073600,Intel i7,2.7,8,256,SSD,Nvidia,Windows,1.64,1185.43,148179
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.4,8,500,HDD,Intel,Windows,2.09,1046.44,130805
+HP,Ultrabook,12.5,False,False,1049088,Intel i5,2.5,4,256,SSD,Intel,Windows,1.26,1559.0,194875
+HP,Notebook,14.0,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Windows,2.31,1189.0,148625
+HP,Notebook,14.0,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Windows,1.95,1060.0,132500
+Dell,Ultrabook,13.3,True,False,5760000,Intel i5,2.5,8,256,SSD,Intel,Windows,1.29,1624.0,203000
+HP,Notebook,17.3,False,False,2073600,Intel i5,2.5,8,256,SSD,Nvidia,Windows,2.63,1080.0,135000
+HP,Notebook,14.0,False,False,1049088,Intel i5,2.5,4,256,SSD,Intel,Windows,1.64,973.0,121625
+Acer,Notebook,15.6,False,False,1049088,AMD,3.0,6,1024,HDD,AMD,Windows,2.1,409.0,51125
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.7,1191.8,148975
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.95,1195.0,149375
+HP,Notebook,15.6,False,False,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.84,1228.99,153624
+HP,Ultrabook,12.5,False,False,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.26,1349.0,168625
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Windows,2.04,742.0,92750
+Toshiba,Ultrabook,14.0,False,True,2073600,Intel i7,2.6,8,256,SSD,Intel,Windows,1.47,1725.0,215625
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.4,8,256,SSD,Intel,Windows,2.09,1062.95,132869
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.64,1010.51,126314
+Lenovo,2 in 1 Convertible,15.6,True,True,2073600,Intel i7,2.5,4,256,SSD,Intel,Windows,1.8,847.0,105875
+Vero,Notebook,14.0,False,False,1049088,Intel Other,1.44,2,32,SSD,Intel,Windows,1.45,210.8,26350
+Toshiba,Notebook,15.6,False,True,2073600,Intel i7,2.5,16,256,SSD,Nvidia,Windows,2.4,1425.0,178125
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,2.3,1049.6,131200
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.3,4,500,HDD,Intel,Windows,1.54,1000.0,125000
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.4,8,756,Hybrid,Intel,Windows,1.84,2103.34,262918
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.43,1469.0,183625
+MSI,Gaming,17.3,False,True,2073600,Intel i7,2.7,16,1280,Hybrid,Nvidia,Windows,3.78,1545.64,193205
+Lenovo,Gaming,17.3,False,True,2073600,Intel i7,2.6,16,1152,Hybrid,Nvidia,Windows,4.6,2289.99,286249
+Asus,Netbook,11.6,False,False,1049088,Intel Other,1.6,4,16,SSD,Intel,Chrome OS,1.2,287.9,35988
+Lenovo,Notebook,14.0,False,True,3686400,Intel i7,2.6,16,256,SSD,Intel,Windows,1.1,2620.0,327500
+HP,Notebook,15.6,False,True,2073600,Intel i7,2.7,8,1024,HDD,Nvidia,Windows,1.91,979.0,122375
+Dell,2 in 1 Convertible,15.6,True,True,2073600,Intel i5,2.7,8,256,SSD,Intel,Windows,2.3,1094.0,136750
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,256,SSD,Intel,Windows,2.04,979.0,122375
+Dell,Ultrabook,13.3,True,False,5760000,Intel i7,2.7,16,1024,SSD,Intel,Windows,1.2,2254.0,281750
+HP,Notebook,15.6,False,False,1049088,Intel i3,2.3,4,500,HDD,Intel,Windows,2.31,705.15,88144
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,No OS,1.96,499.0,62375
+Acer,Notebook,15.6,False,False,1049088,AMD,2.2,8,1024,HDD,AMD,Windows,2.4,449.0,56125
+Dell,2 in 1 Convertible,13.3,True,True,2073600,Intel i7,2.7,12,256,SSD,Intel,Windows,1.6,1299.0,162375
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.6,16,1280,Hybrid,Nvidia,Windows,2.94,1819.0,227375
+HP,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,2.04,1070.0,133750
+Asus,Gaming,17.3,False,True,2073600,Intel i7,2.6,16,1024,HDD,Nvidia,No OS,4.0,998.0,124750
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,1024,HDD,Intel,Windows,2.25,559.0,69875
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,16,2048,HDD,AMD,Windows,2.32,989.99,123749
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.6,16,1280,Hybrid,Nvidia,Windows,1.8,1929.0,241125
+Dell,Ultrabook,13.3,False,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.29,1458.0,182250
+Asus,Gaming,17.3,False,True,2073600,Intel i7,2.7,64,1024,SSD,Nvidia,Windows,3.58,3975.0,496875
+Dell,2 in 1 Convertible,13.3,True,False,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.62,798.01,99751
+Dell,Gaming,15.6,False,False,8294400,Intel i7,2.6,16,1280,Hybrid,Nvidia,Windows,3.21,1329.0,166125
+Apple,Ultrabook,12.0,False,True,3317760,Intel Other,1.1,8,256,SSD,Intel,Mac,0.92,1300.0,162500
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.3,4,500,HDD,Intel,Windows,2.06,481.98,60248
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,Windows,2.31,1199.0,149875
+HP,Ultrabook,12.5,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.26,1199.0,149875
+HP,Notebook,13.3,False,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.49,1090.0,136250
+Lenovo,Ultrabook,12.5,True,True,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.3,1713.49,214186
+Lenovo,Notebook,17.3,False,False,1440000,Intel i5,2.3,8,0,HDD,AMD,Windows,3.0,659.0,82375
+Lenovo,Notebook,15.6,False,True,2073600,Intel i5,2.3,4,1024,HDD,Nvidia,Windows,2.3,977.0,122125
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,3.78,2499.0,312375
+Lenovo,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,Windows,2.1,540.0,67500
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.3,4,500,HDD,Intel,Windows,2.31,940.0,117500
+Lenovo,Ultrabook,12.5,True,True,3686400,Intel Other,1.2,8,512,SSD,Intel,Windows,0.99,1399.0,174875
+Lenovo,Gaming,17.3,False,True,2073600,Intel i7,2.7,32,512,SSD,Nvidia,Windows,4.6,3240.0,405000
+Lenovo,2 in 1 Convertible,10.1,True,True,2304000,Intel Other,1.44,4,64,SSD,Intel,Windows,0.69,646.27,80784
+HP,Ultrabook,13.3,False,True,8294400,Intel i7,2.7,16,512,SSD,Intel,Windows,1.3,2049.0,256125
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,2.18,750.0,93750
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.3,4,500,HDD,Intel,Windows,1.54,1030.99,128874
+HP,Workstation,15.6,False,False,2073600,Intel i7,2.5,8,256,SSD,AMD,Windows,1.9,1495.0,186875
+Lenovo,Notebook,14.0,False,False,2073600,Intel i5,2.3,8,180,SSD,Intel,Windows,1.7,1199.0,149875
+HP,Notebook,13.3,False,False,5760000,Intel Other,1.5,4,32,SSD,Intel,Chrome OS,1.29,615.0,76875
+Acer,Notebook,15.6,False,False,1049088,AMD,2.2,4,500,HDD,AMD,Windows,2.4,387.0,48375
+Dell,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Linux,2.2,393.49,49186
+HP,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,Intel,No OS,1.86,345.99,43249
+Asus,Gaming,17.3,False,True,2073600,Intel i7,2.8,8,1280,Hybrid,Nvidia,Windows,2.7,1599.0,199875
+Dell,Ultrabook,13.3,False,True,2073600,Intel i5,1.6,4,256,SSD,AMD,Windows,1.4,818.35,102294
+HP,Netbook,12.5,False,False,1049088,Intel i5,2.3,4,128,SSD,Intel,Windows,2.4,1599.0,199875
+Acer,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1280,Hybrid,Nvidia,Windows,2.4,799.0,99875
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,1024,HDD,AMD,Windows,2.36,638.8,79850
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.6,8,256,SSD,Nvidia,Windows,2.6,1599.0,199875
+HP,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,1024,HDD,Intel,Windows,1.96,500.0,62500
+Asus,Gaming,17.3,False,True,2073600,Intel i7,2.6,16,1152,Hybrid,Nvidia,Windows,4.3,2299.0,287375
+Dell,Ultrabook,12.5,False,False,1049088,Intel i3,2.3,4,500,HDD,Intel,Windows,1.5,1135.15,141894
+Dell,Ultrabook,12.5,False,False,1049088,Intel i3,2.3,4,128,SSD,Intel,Windows,1.5,1166.97,145871
+Acer,Notebook,15.6,False,False,1049088,Intel Other,1.5,4,16,SSD,Intel,Chrome OS,2.2,209.0,26125
+HP,Workstation,17.3,False,True,2073600,Intel i7,2.6,8,1024,HDD,AMD,Windows,3.0,2899.0,362375
+Lenovo,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,512,SSD,Nvidia,Windows,2.4,1199.0,149875
+Dell,Ultrabook,12.5,False,False,1049088,Intel i5,2.3,8,256,SSD,Intel,Windows,1.5,1413.1,176638
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.6,8,1152,Hybrid,Nvidia,Windows,2.9,1511.19,188899
+Lenovo,2 in 1 Convertible,15.6,True,True,2073600,Intel i5,2.3,4,256,SSD,Intel,Windows,2.1,867.0,108375
+HP,Notebook,15.6,False,False,2073600,AMD,2.5,4,1024,HDD,AMD,Windows,2.1,398.0,49750
+Asus,Gaming,15.6,False,True,2073600,Intel i7,2.6,16,1152,Hybrid,Nvidia,Windows,2.59,1339.0,167375
+HP,Notebook,13.3,True,False,5760000,Intel Other,1.1,8,256,SSD,Intel,Windows,1.16,1699.0,212375
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,500,HDD,AMD,Windows,2.24,769.15,96144
+Lenovo,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,128,SSD,Intel,Windows,2.1,429.0,53625
+HP,Ultrabook,13.3,False,False,2073600,Intel i7,2.5,8,512,SSD,Intel,Windows,1.16,1969.0,246125
+Lenovo,2 in 1 Convertible,10.1,True,True,2304000,Intel Other,1.44,4,64,SSD,Intel,Android,0.69,549.0,68625
+Dell,Ultrabook,13.3,False,False,2073600,Intel i7,2.4,8,256,SSD,Intel,Windows,1.23,1379.0,172375
+Lenovo,Gaming,17.3,False,True,2073600,Intel i7,2.7,16,256,SSD,Nvidia,Windows,4.6,2749.99,343749
+Razer,Ultrabook,12.5,True,False,8294400,Intel i7,2.5,8,256,SSD,Intel,Windows,1.25,1029.0,128625
+Toshiba,Ultrabook,13.3,False,False,2073600,Intel i7,2.7,16,512,SSD,Intel,Windows,1.05,2226.0,278250
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.6,8,1152,Hybrid,Nvidia,Windows,3.52,1312.49,164061
+Vero,Notebook,13.3,False,False,2073600,Intel Other,1.44,4,32,SSD,Intel,Windows,1.35,196.0,24500
+HP,Notebook,13.3,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.16,1690.0,211250
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.43,1513.0,189125
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,Linux,2.09,523.63,65454
+Asus,Notebook,15.6,False,False,1049088,Intel i3,2.4,4,1024,HDD,Intel,Windows,2.0,435.0,54375
+Lenovo,2 in 1 Convertible,14.0,True,True,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.8,1669.0,208625
+Lenovo,2 in 1 Convertible,10.1,True,True,2304000,Intel Other,1.44,4,64,SSD,Intel,Windows,0.69,479.0,59875
+HP,Ultrabook,12.5,False,False,1049088,Intel i5,2.4,8,256,SSD,Intel,Windows,1.26,1895.0,236875
+Lenovo,Gaming,15.6,False,True,2073600,Intel i5,2.5,8,1152,Hybrid,Nvidia,No OS,2.4,989.0,123625
+HP,Gaming,17.3,False,True,2073600,Intel i5,2.3,8,1152,Hybrid,Nvidia,Windows,3.35,1129.0,141125
+HP,Notebook,15.6,False,False,1049088,Intel i7,2.7,8,2048,HDD,Intel,Windows,2.04,629.0,78625
+Lenovo,2 in 1 Convertible,14.0,True,True,2073600,Intel i7,2.6,8,512,SSD,Nvidia,Windows,1.8,2050.38,256298
+Asus,Notebook,14.0,False,False,1049088,Intel Other,1.1,4,32,SSD,Intel,Windows,1.5,278.0,34750
+HP,Ultrabook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,Intel,Windows,1.84,752.0,94000
+Acer,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,1024,HDD,Nvidia,Windows,2.23,616.0,77000
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,2.5,16,0,Other,AMD,Windows,2.5,1099.0,137375
+HP,Workstation,17.3,False,True,2073600,Intel i7,2.6,8,256,SSD,Nvidia,Windows,3.0,3949.4,493675
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,1024,HDD,AMD,Windows,2.5,784.0,98000
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.7,16,1280,Hybrid,Nvidia,Windows,3.78,2399.0,299875
+HP,Ultrabook,15.6,False,False,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.88,2171.72,271465
+Lenovo,2 in 1 Convertible,14.0,True,True,3686400,Intel i7,2.6,16,512,SSD,Intel,Windows,2.8,2440.0,305000
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.4,1142.8,142850
+HP,2 in 1 Convertible,13.3,True,False,2073600,Intel i5,2.4,8,256,SSD,Intel,Windows,1.48,1629.0,203625
+HP,Workstation,15.6,False,True,2073600,Intel i7,2.6,8,256,SSD,Nvidia,Windows,2.59,2229.0,278625
+HP,2 in 1 Convertible,13.3,True,False,3686400,Intel i7,2.6,8,256,SSD,Intel,Windows,1.48,1799.0,224875
+HP,Workstation,15.6,False,False,2073600,Intel i7,2.6,8,256,SSD,Nvidia,Windows,2.0,1899.0,237375
+HP,Ultrabook,12.5,False,False,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.26,2296.95,287119
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,Nvidia,Windows,2.18,1009.9,126238
+HP,Notebook,15.6,False,False,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.88,1579.0,197375
+Lenovo,2 in 1 Convertible,14.0,True,True,3686400,Intel i7,2.5,8,256,SSD,Intel,Windows,1.27,2339.0,292375
+Lenovo,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,Intel,No OS,1.9,339.0,42375
+HP,Notebook,15.6,False,False,1049088,AMD,1.8,4,500,HDD,AMD,Windows,1.86,297.0,37125
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.3,8,1024,HDD,AMD,No OS,2.32,599.0,74875
+Dell,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,1024,HDD,Nvidia,Windows,2.62,1199.0,149875
+Dell,Notebook,15.6,True,True,8294400,Intel i5,2.3,8,256,SSD,Nvidia,Windows,2.04,2250.68,281335
+HP,Notebook,15.6,False,False,2073600,AMD,2.5,4,256,SSD,AMD,Windows,1.91,478.89,59861
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.7,1492.8,186600
+Lenovo,Ultrabook,14.0,False,False,2073600,Intel i7,2.6,12,512,SSD,Intel,Windows,1.4,2299.0,287375
+Lenovo,Notebook,15.6,False,False,2073600,Intel i5,2.3,8,0,Other,AMD,Windows,2.5,788.49,98561
+HP,2 in 1 Convertible,13.3,True,False,3686400,Intel i7,2.6,8,512,SSD,Intel,Windows,1.48,2041.0,255125
+Lenovo,Ultrabook,14.0,False,False,2073600,Intel i7,2.6,8,256,SSD,Intel,Windows,1.7,1499.0,187375
+MSI,Gaming,14.0,False,False,2073600,Intel i7,2.6,16,1280,Hybrid,Nvidia,Windows,1.7,1769.0,221125
+HP,Gaming,15.6,False,True,2073600,Intel i7,2.8,8,1024,HDD,Nvidia,Windows,2.62,899.0,112375
+Lenovo,Notebook,15.6,False,False,1049088,Intel i3,2.0,8,1024,HDD,Intel,Windows,2.2,459.0,57375
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,No OS,2.1,476.99,59624
+Dell,Gaming,15.6,False,False,8294400,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.62,1498.0,187250
+Lenovo,Notebook,15.6,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.95,1390.0,173750
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,Nvidia,Windows,2.2,468.0,58500
+HP,Notebook,14.0,False,False,1049088,Intel Other,1.6,2,32,SSD,Intel,Windows,1.44,249.0,31125
+MSI,Gaming,15.6,False,True,2073600,Intel i7,2.7,8,1024,HDD,Nvidia,Windows,2.2,839.0,104875
+HP,Notebook,15.6,False,False,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.96,679.0,84875
+HP,Notebook,15.6,False,False,2073600,Intel i7,1.8,16,512,SSD,Intel,Windows,2.1,1159.0,144875
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Windows,2.2,369.0,46125
+Lenovo,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,No OS,2.1,398.0,49750
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,1024,HDD,Nvidia,No OS,2.2,709.0,88625
+Asus,Notebook,14.0,False,False,2073600,Intel i3,2.4,4,256,SSD,Intel,Windows,2.0,769.0,96125
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,2.5,4,0,Other,Intel,Windows,2.32,825.0,103125
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.6,16,512,SSD,Nvidia,Windows,3.31,1305.0,163125
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.6,16,1152,Hybrid,Nvidia,Windows,1.91,2153.37,269171
+HP,Notebook,15.6,False,False,1049088,Intel i3,2.3,4,500,HDD,Intel,Windows,2.07,650.0,81250
+Lenovo,2 in 1 Convertible,14.0,True,True,3686400,Intel i5,2.3,8,256,SSD,Intel,Windows,1.36,1637.0,204625
+Lenovo,Ultrabook,15.6,False,False,2073600,Intel i7,2.7,6,256,SSD,Nvidia,Windows,1.54,831.0,103875
+Dell,Notebook,15.6,False,False,2073600,Intel i7,2.7,8,256,SSD,Nvidia,Linux,1.98,895.01,111876
+Acer,Notebook,15.6,False,False,1049088,Intel Other,2.0,4,500,HDD,Intel,Windows,2.1,333.0,41625
+HP,Notebook,15.6,False,True,2073600,Intel i7,2.6,6,1024,HDD,Nvidia,Windows,2.18,799.0,99875
+Asus,Gaming,15.6,False,True,2073600,Intel i7,2.6,8,1280,Hybrid,Nvidia,Windows,2.591,909.0,113625
+Dell,2 in 1 Convertible,15.6,True,False,2073600,Intel i7,2.7,16,512,SSD,Intel,Windows,2.09,1179.0,147375
+Acer,Notebook,15.6,False,False,2073600,Intel i5,2.5,4,256,SSD,Nvidia,Windows,2.23,691.0,86375
+Dell,Ultrabook,13.3,True,False,5760000,Intel i5,2.4,8,256,SSD,Intel,Linux,1.23,1099.0,137375
+Acer,Gaming,17.3,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,4.2,2599.0,324875
+Lenovo,Gaming,15.6,False,True,2073600,Intel i5,2.5,8,1024,HDD,Nvidia,Windows,2.4,819.0,102375
+Samsung,2 in 1 Convertible,12.3,True,True,3840000,Other,2.0,4,32,SSD,Other,Chrome OS,1.15,659.0,82375
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Windows,1.86,485.0,60625
+Apple,Ultrabook,12.0,False,True,3317760,Intel Other,1.1,8,256,SSD,Intel,Mac,0.92,1163.0,145375
+Dell,2 in 1 Convertible,13.3,True,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,1.6,1199.0,149875
+HP,Notebook,15.6,False,True,2073600,Intel i7,2.8,12,1152,Hybrid,Nvidia,Windows,2.21,1327.0,165875
+Lenovo,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,1024,HDD,AMD,No OS,1.9,368.0,46000
+Asus,Gaming,17.3,False,True,2073600,Intel i7,2.6,16,1536,Hybrid,Nvidia,Windows,4.3,2150.0,268750
+Acer,Notebook,15.6,False,False,1049088,Intel Other,2.0,4,1024,HDD,Intel,Linux,2.1,272.0,34000
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.43,2048.9,256112
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,128,SSD,AMD,Windows,2.3,499.0,62375
+Lenovo,Notebook,15.6,False,False,1049088,Intel i7,2.5,8,500,HDD,Nvidia,No OS,2.2,629.0,78625
+Dell,2 in 1 Convertible,15.6,True,False,2073600,Intel i7,1.8,16,512,SSD,Intel,Windows,2.0,1285.0,160625
+Dell,Ultrabook,13.3,True,False,5760000,Intel i7,2.7,16,512,SSD,Intel,Windows,1.2,2680.0,335000
+Asus,Gaming,15.6,False,False,2073600,Intel i7,2.6,8,1024,HDD,Nvidia,Windows,2.2,1169.0,146125
+Dell,Notebook,15.6,False,False,2073600,Intel i5,2.5,8,256,SSD,AMD,Windows,2.36,889.0,111125
+HP,Notebook,15.6,False,False,1049088,Intel i5,2.5,8,256,SSD,Intel,Windows,1.91,579.0,72375
+Lenovo,Notebook,15.6,False,False,1049088,AMD,2.2,4,500,HDD,AMD,Windows,2.2,299.0,37375
+Acer,Notebook,17.3,False,False,1440000,Intel i3,2.0,8,1024,HDD,Nvidia,Windows,3.3,629.0,78625
+Asus,Gaming,15.6,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.2,2449.0,306125
+Apple,Ultrabook,12.0,False,True,3317760,Intel Other,1.2,8,512,SSD,Intel,Mac,0.92,1279.0,159875
+Asus,Notebook,15.6,False,False,2073600,Intel i7,2.8,16,1152,Hybrid,Nvidia,Windows,2.2,1749.0,218625
+MSI,Gaming,17.3,False,True,2073600,Intel i7,2.6,16,1280,Hybrid,Nvidia,Windows,2.43,1948.99,243624
+Dell,2 in 1 Convertible,15.6,True,True,2073600,Intel i5,2.5,8,256,SSD,Intel,Windows,2.191,999.0,124875
+Asus,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.9,1949.0,243625
+Acer,Netbook,11.6,False,False,1049088,Intel Other,1.5,2,32,SSD,Intel,Chrome OS,1.3,174.0,21750
+Acer,Notebook,17.3,False,False,1440000,Intel i3,2.0,4,1024,HDD,Nvidia,Windows,3.3,598.0,74750
+Lenovo,Notebook,17.3,False,False,1440000,Intel i5,2.5,8,1024,HDD,Intel,No OS,2.8,539.0,67375
+Lenovo,Gaming,15.6,False,True,2073600,Intel i7,2.6,8,1152,Hybrid,Nvidia,Windows,2.6,1272.0,159000
+Acer,2 in 1 Convertible,14.0,True,True,2073600,Intel i7,1.3,8,256,SSD,Intel,Windows,1.2,1149.0,143625
+Lenovo,Notebook,15.6,False,True,2073600,Intel i7,2.6,8,256,SSD,Intel,Windows,2.3,1529.0,191125
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.6,8,1152,Hybrid,Nvidia,Windows,2.2,1476.11,184514
+HP,Notebook,15.6,False,False,2073600,AMD,2.7,6,1024,HDD,AMD,Windows,2.1,529.0,66125
+Dell,Ultrabook,12.5,True,False,2073600,Intel i5,2.4,8,256,SSD,Intel,Windows,1.26,1713.37,214171
+Dell,2 in 1 Convertible,15.0,True,False,2073600,Intel i3,2.4,4,500,HDD,Intel,Windows,2.08,509.0,63625
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,1024,HDD,Intel,Windows,2.65,309.0,38625
+Dell,Ultrabook,13.3,True,False,5760000,Intel i7,2.7,8,256,SSD,Intel,Windows,1.29,1477.0,184625
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.5,4,1024,HDD,Intel,Linux,2.18,521.86,65232
+Lenovo,Gaming,15.6,True,True,2073600,Intel i7,2.6,16,1152,Hybrid,Nvidia,Windows,2.6,1029.0,128625
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.8,8,1152,Hybrid,Nvidia,Windows,2.2,1149.0,143625
+Lenovo,Netbook,12.5,True,True,2073600,Intel i7,2.5,16,512,SSD,Intel,Windows,1.3,1650.0,206250
+Razer,Gaming,14.0,False,False,2073600,Intel i7,2.8,16,1024,SSD,Nvidia,Windows,1.95,3499.0,437375
+Dell,Notebook,15.6,True,False,1049088,Intel i3,2.4,8,1024,HDD,Intel,Windows,2.3,469.01,58626
+MSI,Gaming,17.3,False,False,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.7,1598.0,199750
+Apple,Ultrabook,11.6,False,False,1049088,Intel i5,1.6,4,256,SSD,Intel,Mac,1.08,959.0,119875
+HP,Notebook,15.6,False,False,2073600,Intel i3,2.0,4,1024,HDD,Intel,Windows,2.1,478.0,59750
+HP,Ultrabook,14.0,False,False,3686400,Intel i7,2.5,8,256,SSD,Intel,Windows,1.54,2198.19,274774
+Dell,Notebook,15.6,False,False,1049088,Intel i5,2.3,4,500,HDD,Intel,Windows,2.24,737.0,92125
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.6,8,1152,Hybrid,Nvidia,Windows,2.3,1169.0,146125
+Lenovo,Notebook,13.3,False,True,2073600,Intel i7,2.7,16,512,SSD,Intel,Windows,1.4,1499.0,187375
+Lenovo,Notebook,15.6,False,False,2073600,AMD,3.6,6,256,SSD,AMD,Windows,2.2,597.57,74696
+Asus,Ultrabook,13.3,False,False,2073600,Intel i7,2.5,8,256,SSD,Intel,Windows,1.45,1280.0,160000
+Acer,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,500,HDD,Intel,Linux,2.4,361.8,45225
+Dell,2 in 1 Convertible,17.3,True,False,2073600,Intel i7,2.7,16,512,SSD,Nvidia,Windows,2.77,1799.0,224875
+HP,Notebook,14.0,False,False,2073600,Intel i5,2.3,4,256,SSD,Intel,Windows,1.54,1099.99,137499
+Asus,Gaming,15.6,False,True,2073600,Intel i7,2.8,16,1280,Hybrid,Nvidia,Windows,2.5,1600.0,200000
+Dell,Notebook,14.0,False,False,1049088,Intel i5,2.5,4,500,HDD,Intel,Windows,1.6,875.0,109375
+Asus,Gaming,15.6,False,True,2073600,Intel i7,2.6,16,1280,Hybrid,Nvidia,Windows,2.34,2325.0,290625
+Lenovo,Notebook,15.6,False,True,2073600,Intel i5,2.5,8,256,SSD,Intel,No OS,2.3,573.0,71625
+Dell,2 in 1 Convertible,13.3,True,False,5760000,Intel i5,1.2,8,256,SSD,Intel,Windows,1.24,1813.0,226625
+Dell,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Linux,2.2,324.0,40500
+HP,Notebook,15.6,False,False,1049088,AMD,2.5,4,500,HDD,AMD,Windows,1.86,399.0,49875
+Lenovo,Notebook,15.6,False,False,2073600,Intel i3,2.3,6,128,SSD,Nvidia,Windows,2.4,569.0,71125
+Lenovo,Notebook,14.0,False,True,2073600,Intel i5,2.3,8,256,SSD,Intel,Windows,1.9,1072.0,134000
+Dell,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Windows,2.2,443.99,55499
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.1,4,1024,HDD,Intel,Windows,2.0,339.0,42375
+Asus,Gaming,17.3,False,True,2073600,Intel i7,2.6,16,1152,Hybrid,Nvidia,Windows,4.0,1900.0,237500
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.0,4,500,HDD,Intel,Windows,2.29,490.0,61250
+Lenovo,Notebook,15.6,False,False,2073600,Intel i7,2.5,8,0,Other,AMD,Windows,2.32,895.0,111875
+MSI,Gaming,15.6,False,False,2073600,Intel i7,2.6,8,1152,Hybrid,Nvidia,Windows,2.4,1229.0,153625
+Lenovo,2 in 1 Convertible,14.0,True,False,2073600,Intel i5,2.3,4,128,SSD,Intel,Windows,1.8,833.01,104126
+Asus,Ultrabook,13.3,False,True,2073600,Intel Other,0.9,8,512,SSD,Intel,Windows,1.2,729.0,91125
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.4,6,1024,HDD,Intel,Windows,2.3,459.0,57375
+Acer,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Linux,2.4,289.0,36125
+Dell,Notebook,15.6,False,False,1049088,Intel Other,1.6,2,500,HDD,Intel,Windows,2.2,379.0,47375
+Lenovo,Notebook,15.6,False,True,2073600,Intel i7,2.6,8,1024,HDD,Nvidia,Windows,2.6,899.0,112375
+HP,Notebook,15.6,False,False,2073600,AMD,2.9,6,0,Other,AMD,Windows,2.04,549.99,68749
+Dell,Notebook,15.6,False,False,1049088,Intel i7,2.7,8,1024,HDD,AMD,Linux,2.3,805.99,100749
+HP,Netbook,11.6,False,False,1049088,Intel Other,1.6,2,32,SSD,Intel,Windows,1.17,209.0,26125
+Asus,Notebook,15.6,False,False,1049088,Intel i7,2.5,4,500,HDD,Nvidia,Windows,2.2,720.32,90040
+Lenovo,2 in 1 Convertible,14.0,True,True,2073600,Intel i7,2.5,4,128,SSD,Intel,Windows,1.8,638.0,79750
+Lenovo,2 in 1 Convertible,13.3,True,True,5760000,Intel i7,2.5,16,512,SSD,Intel,Windows,1.3,1499.0,187375
+Lenovo,Notebook,14.0,False,False,1049088,Intel Other,1.6,2,64,SSD,Intel,Windows,1.5,229.0,28625
+HP,Notebook,15.6,False,False,1049088,Intel i7,2.5,6,1024,HDD,AMD,Windows,2.19,764.0,95500
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Windows,2.2,369.0,46125
+Asus,Ultrabook,13.3,False,True,2073600,Intel Other,0.9,8,512,SSD,Intel,Windows,1.2,729.0,91125
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.4,6,1024,HDD,Intel,Windows,2.3,459.0,57375
+Acer,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Linux,2.4,289.0,36125
+Dell,Notebook,15.6,False,False,1049088,Intel Other,1.6,2,500,HDD,Intel,Windows,2.2,379.0,47375
+Lenovo,Notebook,15.6,False,True,2073600,Intel i7,2.6,8,1024,HDD,Nvidia,Windows,2.6,899.0,112375
+HP,Notebook,15.6,False,False,2073600,AMD,2.9,6,0,Other,AMD,Windows,2.04,549.99,68749
+Dell,Notebook,15.6,False,False,1049088,Intel i7,2.7,8,1024,HDD,AMD,Linux,2.3,805.99,100749
+HP,Netbook,11.6,False,False,1049088,Intel Other,1.6,2,32,SSD,Intel,Windows,1.17,209.0,26125
+Asus,Notebook,15.6,False,False,1049088,Intel i7,2.5,4,500,HDD,Nvidia,Windows,2.2,720.32,90040
+Lenovo,2 in 1 Convertible,14.0,True,True,2073600,Intel i7,2.5,4,128,SSD,Intel,Windows,1.8,638.0,79750
+Lenovo,2 in 1 Convertible,13.3,True,True,5760000,Intel i7,2.5,16,512,SSD,Intel,Windows,1.3,1499.0,187375
+Lenovo,Notebook,14.0,False,False,1049088,Intel Other,1.6,2,64,SSD,Intel,Windows,1.5,229.0,28625
+HP,Notebook,15.6,False,False,1049088,Intel i7,2.5,6,1024,HDD,AMD,Windows,2.19,764.0,95500
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Windows,2.2,369.0,46125
+Asus,Ultrabook,13.3,False,True,2073600,Intel Other,0.9,8,512,SSD,Intel,Windows,1.2,729.0,91125
+Dell,Notebook,15.6,False,False,1049088,Intel i3,2.4,6,1024,HDD,Intel,Windows,2.3,459.0,57375
+Acer,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Linux,2.4,289.0,36125
+Dell,Notebook,15.6,False,False,1049088,Intel Other,1.6,2,500,HDD,Intel,Windows,2.2,379.0,47375
+Lenovo,Notebook,15.6,False,True,2073600,Intel i7,2.6,8,1024,HDD,Nvidia,Windows,2.6,899.0,112375
+HP,Notebook,15.6,False,False,2073600,AMD,2.9,6,0,Other,AMD,Windows,2.04,549.99,68749
+Dell,Notebook,15.6,False,False,1049088,Intel i7,2.7,8,1024,HDD,AMD,Linux,2.3,805.99,100749
+HP,Netbook,11.6,False,False,1049088,Intel Other,1.6,2,32,SSD,Intel,Windows,1.17,209.0,26125
+Asus,Notebook,15.6,False,False,1049088,Intel i7,2.5,4,500,HDD,Nvidia,Windows,2.2,720.32,90040
+Lenovo,2 in 1 Convertible,14.0,True,True,2073600,Intel i7,2.5,4,128,SSD,Intel,Windows,1.8,638.0,79750
+Lenovo,2 in 1 Convertible,13.3,True,True,5760000,Intel i7,2.5,16,512,SSD,Intel,Windows,1.3,1499.0,187375
+Lenovo,Notebook,14.0,False,False,1049088,Intel Other,1.6,2,64,SSD,Intel,Windows,1.5,229.0,28625
+HP,Notebook,15.6,False,False,1049088,Intel i7,2.5,6,1024,HDD,AMD,Windows,2.19,764.0,95500
+Asus,Notebook,15.6,False,False,1049088,Intel Other,1.6,4,500,HDD,Intel,Windows,2.2,369.0,46125
