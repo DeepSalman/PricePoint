@@ -4,7 +4,7 @@ import { predictPrice, MODEL_METADATA } from './model/predictor';
 const PRESETS = [
   {
     id: 'student',
-    name: 'Student / Everyday',
+    name: '🎓 Student / Everyday',
     specs: {
       brand: 'Dell',
       type: 'Notebook',
@@ -25,7 +25,7 @@ const PRESETS = [
   },
   {
     id: 'macbook',
-    name: 'MacBook Retina',
+    name: '🍎 MacBook Retina',
     specs: {
       brand: 'Apple',
       type: 'Ultrabook',
@@ -46,7 +46,7 @@ const PRESETS = [
   },
   {
     id: 'gaming',
-    name: 'RTX Gaming Rig',
+    name: '⚡ RTX Gaming Rig',
     specs: {
       brand: 'Asus',
       type: 'Gaming',
@@ -67,7 +67,7 @@ const PRESETS = [
   },
   {
     id: 'business',
-    name: 'Business Ultrabook',
+    name: '💼 Business Ultrabook',
     specs: {
       brand: 'Lenovo',
       type: 'Ultrabook',
@@ -88,7 +88,7 @@ const PRESETS = [
   },
   {
     id: 'budget',
-    name: 'Budget / Basic',
+    name: '💰 Budget / Basic',
     specs: {
       brand: 'HP',
       type: 'Notebook',
