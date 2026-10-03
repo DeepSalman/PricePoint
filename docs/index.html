@@ -73,7 +73,7 @@
         <div class="predictor-grid">
           <!-- Left Column: Form Controls -->
           <form class="glass-panel" onsubmit="return false;">
-            <!-- Section 1: Brand & Model Line -->
+            <!-- Section 1: Manufacturer & Model Line -->
             <div class="form-section-title">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect width="18" height="18" x="3" y="3" rx="2" />
@@ -89,19 +89,24 @@
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="spec-series">
-                  <span>Model Line / Series</span>
-                  <span class="series-badge" id="series-badge">Thin &amp; Light</span>
-                </label>
+                <label class="form-label" for="spec-series">Model Line / Series</label>
                 <select id="spec-series" class="form-select"></select>
-                <div class="helper-note" id="series-helper-note"></div>
               </div>
 
               <div class="form-group">
                 <label class="form-label" for="spec-era">Release Era / Age</label>
                 <select id="spec-era" class="form-select"></select>
-                <div class="helper-note" id="era-helper-note"></div>
               </div>
+            </div>
+
+            <!-- Cohesive Info Strip for Active Series & Era -->
+            <div class="selection-info-strip" id="series-info-strip">
+              <div class="info-strip-header">
+                <span class="series-badge" id="series-badge">Thin &amp; Light</span>
+                <span class="info-strip-title" id="series-name-display">MacBook Air</span>
+              </div>
+              <div class="info-strip-desc" id="series-helper-note">Fanless ultra-portable unibody design with all-day battery life and silent operation.</div>
+              <div class="info-strip-era" id="era-helper-note">Standard benchmark used market pricing with minor depreciation.</div>
             </div>
 
             <!-- Section 2: Processor & Graphics -->
@@ -125,7 +130,6 @@
               <div class="form-group">
                 <label class="form-label" for="spec-cpu">Processor / Chip Tier</label>
                 <select id="spec-cpu" class="form-select"></select>
-                <div class="helper-note" id="cpu-helper-note"></div>
               </div>
 
               <div class="form-group">
@@ -133,7 +137,9 @@
                   <span>Clock Speed</span>
                   <span class="form-label-val" id="val-cpuspeed">2.8 GHz</span>
                 </label>
-                <input id="spec-cpuspeed" type="range" class="range-slider" min="0.9" max="4.0" step="0.1" value="2.8" />
+                <div class="slider-control-box">
+                  <input id="spec-cpuspeed" type="range" class="range-slider" min="0.9" max="4.0" step="0.1" value="2.8" />
+                </div>
               </div>
 
               <div class="form-group">
@@ -142,6 +148,12 @@
               </div>
             </div>
 
+            <!-- CPU Context Note -->
+            <div class="cpu-info-callout" id="cpu-helper-note">
+              Apple M2: Proactive power efficiency with ProRes video encode/decode acceleration.
+            </div>
+
+            <!-- Graphics Options -->
             <div class="form-group" style="margin-bottom: 1.5rem">
               <label class="form-label">
                 <span>Graphics Configuration</span>
@@ -167,11 +179,11 @@
                 </div>
               </div>
 
-              <div class="helper-note" id="gpu-helper-note" style="display: none;"></div>
+              <div class="helper-note alert" id="gpu-helper-note" style="display: none;"></div>
 
               <!-- Dedicated GPU Family Select -->
-              <div id="dedicated-gpu-selector-box" style="display: none; margin-top: 0.5rem; background: var(--bg-surface-elevated); padding: 0.85rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-                <label class="form-label" for="spec-dedicated-gpu">Discrete Graphics Model</label>
+              <div id="dedicated-gpu-selector-box" style="display: none; margin-top: 0.65rem; background: var(--bg-surface-elevated); padding: 0.85rem 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                <label class="form-label" for="spec-dedicated-gpu" style="margin-bottom: 0.4rem;">Discrete Graphics Model</label>
                 <select id="spec-dedicated-gpu" class="form-select"></select>
               </div>
             </div>
@@ -214,7 +226,6 @@
                   <option value="HDD">Mechanical Hard Drive (HDD)</option>
                   <option value="Hybrid">Hybrid Drive (SSHD)</option>
                 </select>
-                <div class="helper-note" id="storage-helper-note" style="display: none;"></div>
               </div>
 
               <div class="form-group">
@@ -229,6 +240,7 @@
                 </select>
               </div>
             </div>
+            <div class="helper-note" id="storage-helper-note" style="display: none; margin-top: -0.5rem; margin-bottom: 1.25rem;"></div>
 
             <!-- Section 4: Display & Ergonomics -->
             <div class="form-section-title">
@@ -260,12 +272,14 @@
                   <span>Screen Size</span>
                   <span class="form-label-val" id="val-inches">13.6"</span>
                 </label>
-                <input id="spec-inches" type="range" class="range-slider" min="11.6" max="18.0" step="0.1" value="13.6" />
+                <div class="slider-control-box">
+                  <input id="spec-inches" type="range" class="range-slider" min="11.6" max="18.0" step="0.1" value="13.6" />
+                </div>
               </div>
             </div>
 
-            <div class="form-grid-2">
-              <div>
+            <div class="form-grid-2" style="margin-top: 0.5rem;">
+              <div class="form-group">
                 <div class="toggle-row" id="toggle-touch-row">
                   <div class="toggle-info">
                     <div class="toggle-title">Touchscreen</div>
@@ -275,16 +289,18 @@
                     <div class="toggle-knob"></div>
                   </div>
                 </div>
-                <div class="helper-note" id="touch-helper-note" style="display: none;"></div>
+                <div class="helper-note alert" id="touch-helper-note" style="display: none;"></div>
               </div>
 
-              <div class="toggle-row" id="toggle-ips-row">
-                <div class="toggle-info">
-                  <div class="toggle-title">IPS / Liquid Retina Display</div>
-                  <div class="toggle-sub">Wide viewing angles &amp; accurate colors</div>
-                </div>
-                <div class="toggle-switch active" id="toggle-ips-switch">
-                  <div class="toggle-knob"></div>
+              <div class="form-group">
+                <div class="toggle-row" id="toggle-ips-row">
+                  <div class="toggle-info">
+                    <div class="toggle-title">IPS / Liquid Retina Display</div>
+                    <div class="toggle-sub">Wide viewing angles &amp; accurate colors</div>
+                  </div>
+                  <div class="toggle-switch active" id="toggle-ips-switch">
+                    <div class="toggle-knob"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -294,7 +310,9 @@
                 <span>Laptop Weight</span>
                 <span class="form-label-val" id="val-weight">1.24 kg</span>
               </label>
-              <input id="spec-weight" type="range" class="range-slider" min="0.85" max="4.5" step="0.05" value="1.24" />
+              <div class="slider-control-box">
+                <input id="spec-weight" type="range" class="range-slider" min="0.85" max="4.5" step="0.05" value="1.24" />
+              </div>
             </div>
           </form>
 
@@ -331,9 +349,18 @@
                 <span class="form-label-val" id="val-condition">90%</span>
               </div>
               <div class="condition-grid">
-                <button type="button" class="cond-btn" data-mult="1.0">Mint / Like New (100%)</button>
-                <button type="button" class="cond-btn active" data-mult="0.9">Good (Minor wear 90%)</button>
-                <button type="button" class="cond-btn" data-mult="0.8">Fair (Heavy wear 80%)</button>
+                <button type="button" class="cond-btn" data-mult="1.0">
+                  <span class="cond-btn-title">Mint</span>
+                  <span class="cond-btn-sub">100% Grade</span>
+                </button>
+                <button type="button" class="cond-btn active" data-mult="0.9">
+                  <span class="cond-btn-title">Good</span>
+                  <span class="cond-btn-sub">90% Grade</span>
+                </button>
+                <button type="button" class="cond-btn" data-mult="0.8">
+                  <span class="cond-btn-title">Fair</span>
+                  <span class="cond-btn-sub">80% Grade</span>
+                </button>
               </div>
             </div>
 

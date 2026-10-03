@@ -233,9 +233,11 @@ function syncBrandAndSeries(brandKey, desiredSeriesId, resetDefaults = true) {
 
   const series = brandData.series.find((s) => s.id === currentConfig.seriesId) || brandData.series[0];
 
-  // Update Series Badge and Description
+  // Update Series Badge, Name and Description
   const badgeEl = el('series-badge');
   if (badgeEl) badgeEl.textContent = series.badge;
+  const nameEl = el('series-name-display');
+  if (nameEl) nameEl.textContent = `${currentConfig.brand} ${series.name}`;
   const seriesNote = el('series-helper-note');
   if (seriesNote) seriesNote.textContent = series.desc;
 
