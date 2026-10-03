@@ -65,7 +65,7 @@
         <div class="preset-bar">
           <div class="preset-label">Quick Spec Templates:</div>
           <div class="preset-chips" id="preset-chips-container">
-            <!-- Dynamically populated -->
+            <!-- Dynamically populated by JS -->
           </div>
         </div>
 
@@ -97,16 +97,6 @@
                 <label class="form-label" for="spec-era">Release Era / Age</label>
                 <select id="spec-era" class="form-select"></select>
               </div>
-            </div>
-
-            <!-- Cohesive Info Strip for Active Series & Era -->
-            <div class="selection-info-strip" id="series-info-strip">
-              <div class="info-strip-header">
-                <span class="series-badge" id="series-badge">Thin &amp; Light</span>
-                <span class="info-strip-title" id="series-name-display">MacBook Air</span>
-              </div>
-              <div class="info-strip-desc" id="series-helper-note">Fanless ultra-portable unibody design with all-day battery life and silent operation.</div>
-              <div class="info-strip-era" id="era-helper-note">Standard benchmark used market pricing with minor depreciation.</div>
             </div>
 
             <!-- Section 2: Processor & Graphics -->
@@ -148,12 +138,6 @@
               </div>
             </div>
 
-            <!-- CPU Context Note -->
-            <div class="cpu-info-callout" id="cpu-helper-note">
-              Apple M2: Proactive power efficiency with ProRes video encode/decode acceleration.
-            </div>
-
-            <!-- Graphics Options -->
             <div class="form-group" style="margin-bottom: 1.5rem">
               <label class="form-label">
                 <span>Graphics Configuration</span>
@@ -165,7 +149,7 @@
                   <div class="gpu-radio-indicator"></div>
                   <div class="gpu-card-content">
                     <div class="gpu-card-title" id="gpu-integrated-title">Integrated / Unified Graphics</div>
-                    <div class="gpu-card-desc" id="gpu-integrated-desc">Onboard processor graphics (Apple Silicon Unified GPU, Intel Iris Xe, or AMD Radeon). Best for battery life.</div>
+                    <div class="gpu-card-desc" id="gpu-integrated-desc">Onboard processor graphics. Low power consumption and cool, quiet operation.</div>
                   </div>
                 </div>
 
@@ -174,7 +158,7 @@
                   <div class="gpu-radio-indicator"></div>
                   <div class="gpu-card-content">
                     <div class="gpu-card-title" id="gpu-dedicated-title">Dedicated Discrete GPU</div>
-                    <div class="gpu-card-desc" id="gpu-dedicated-desc">Dedicated graphics accelerator with independent VRAM. Essential for 3D modeling, high-end video, and gaming.</div>
+                    <div class="gpu-card-desc" id="gpu-dedicated-desc">Dedicated graphics processor with independent VRAM for 3D modeling, video, and gaming.</div>
                   </div>
                 </div>
               </div>
@@ -240,7 +224,6 @@
                 </select>
               </div>
             </div>
-            <div class="helper-note" id="storage-helper-note" style="display: none; margin-top: -0.5rem; margin-bottom: 1.25rem;"></div>
 
             <!-- Section 4: Display & Ergonomics -->
             <div class="form-section-title">

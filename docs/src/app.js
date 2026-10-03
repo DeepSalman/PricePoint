@@ -198,14 +198,6 @@ function populateEraSelect() {
     if (era.id === currentConfig.eraId) opt.selected = true;
     eraSelect.appendChild(opt);
   });
-  updateEraNote(currentConfig.eraId);
-}
-
-function updateEraNote(eraId) {
-  const note = el('era-helper-note');
-  if (!note) return;
-  const era = RELEASE_ERAS.find((e) => e.id === eraId) || RELEASE_ERAS[1];
-  note.textContent = era.desc;
 }
 
 /**
@@ -215,7 +207,7 @@ function syncBrandAndSeries(brandKey, desiredSeriesId, resetDefaults = true) {
   const brandData = BRAND_CATALOG[brandKey] || BRAND_CATALOG['Apple'];
   currentConfig.brand = brandKey;
 
-  // 1. Populate Series
+  // 1. Populate Series dropdown
   const seriesSelect = el('spec-series');
   if (seriesSelect) {
     seriesSelect.innerHTML = '';
@@ -233,15 +225,7 @@ function syncBrandAndSeries(brandKey, desiredSeriesId, resetDefaults = true) {
 
   const series = brandData.series.find((s) => s.id === currentConfig.seriesId) || brandData.series[0];
 
-  // Update Series Badge, Name and Description
-  const badgeEl = el('series-badge');
-  if (badgeEl) badgeEl.textContent = series.badge;
-  const nameEl = el('series-name-display');
-  if (nameEl) nameEl.textContent = `${currentConfig.brand} ${series.name}`;
-  const seriesNote = el('series-helper-note');
-  if (seriesNote) seriesNote.textContent = series.desc;
-
-  // Set series defaults if requested
+  // Set series defaults if requested (e.g. user manually switched brand/series)
   if (resetDefaults) {
     currentConfig.inches = series.defaultInches;
     currentConfig.weight_kg = series.defaultWeight;
@@ -276,7 +260,12 @@ function syncBrandAndSeries(brandKey, desiredSeriesId, resetDefaults = true) {
       currentConfig.chipId = series.defaultChip;
     }
     cpuSelect.value = currentConfig.chipId;
-    updateCpuNote(currentConfig.chipId);
+  }
+
+  // Update clock speed from chip
+  const chip = PROCESSOR_CATALOG[currentConfig.chipId];
+  if (chip && resetDefaults) {
+    currentConfig.cpu_speed_ghz = chip.speedGhz;
   }
 
   // 3. Operating System constraints
@@ -304,21 +293,21 @@ function syncBrandAndSeries(brandKey, desiredSeriesId, resetDefaults = true) {
     currentConfig.touchscreen = false;
     if (touchRow) touchRow.classList.add('disabled');
     if (touchNote) {
-      touchNote.textContent = 'Apple MacBooks do not feature touchscreens. macOS is optimized for Trackpad gesture control.';
+      touchNote.textContent = 'Touchscreens are not supported on Apple MacBooks.';
       touchNote.style.display = 'block';
     }
   } else if (series.formFactor === '2 in 1 Convertible') {
     currentConfig.touchscreen = true;
     if (touchRow) touchRow.classList.remove('disabled');
     if (touchNote) {
-      touchNote.textContent = '2-in-1 Convertibles require a 360-degree touchscreen display.';
+      touchNote.textContent = '2-in-1 Convertibles require a touchscreen.';
       touchNote.style.display = 'block';
     }
   } else if (!series.touchSupported) {
     currentConfig.touchscreen = false;
     if (touchRow) touchRow.classList.add('disabled');
     if (touchNote) {
-      touchNote.textContent = 'Touchscreen is not supported on this performance gaming display.';
+      touchNote.textContent = 'Touchscreen is not supported on this display panel.';
       touchNote.style.display = 'block';
     }
   } else {
@@ -328,38 +317,17 @@ function syncBrandAndSeries(brandKey, desiredSeriesId, resetDefaults = true) {
 
   // 5. Storage Type constraint
   const storageTypeSelect = el('spec-storagetype');
-  const storageNote = el('storage-helper-note');
   if (storageTypeSelect) {
     if (currentConfig.brand === 'Apple') {
       storageTypeSelect.value = 'SSD';
       storageTypeSelect.disabled = true;
-      if (storageNote) {
-        storageNote.textContent = 'High-speed unified NVMe flash storage standard on Apple hardware.';
-        storageNote.style.display = 'block';
-      }
     } else {
       storageTypeSelect.disabled = false;
-      if (storageNote) storageNote.style.display = 'none';
     }
   }
 
   // 6. Graphics configuration
   updateGraphicsUI(series);
-}
-
-function updateCpuNote(chipKey) {
-  const note = el('cpu-helper-note');
-  const chip = PROCESSOR_CATALOG[chipKey];
-  if (!note || !chip) return;
-  note.textContent = chip.desc;
-
-  // Set default clock speed from chip
-  currentConfig.cpu_speed_ghz = chip.speedGhz;
-  const speedInput = el('spec-cpuspeed');
-  if (speedInput) {
-    speedInput.value = chip.speedGhz;
-    el('val-cpuspeed').textContent = `${chip.speedGhz} GHz`;
-  }
 }
 
 function updateGraphicsUI(series) {
@@ -551,7 +519,6 @@ function attachEventListeners() {
   el('spec-era')?.addEventListener('change', (e) => {
     markCustom();
     currentConfig.eraId = e.target.value;
-    updateEraNote(currentConfig.eraId);
     recalculate();
   });
 
@@ -559,7 +526,14 @@ function attachEventListeners() {
   el('spec-cpu')?.addEventListener('change', (e) => {
     markCustom();
     currentConfig.chipId = e.target.value;
-    updateCpuNote(currentConfig.chipId);
+    const chip = PROCESSOR_CATALOG[currentConfig.chipId];
+    if (chip) {
+      currentConfig.cpu_speed_ghz = chip.speedGhz;
+      if (el('spec-cpuspeed')) {
+        el('spec-cpuspeed').value = chip.speedGhz;
+        el('val-cpuspeed').textContent = `${chip.speedGhz} GHz`;
+      }
+    }
     const brandData = BRAND_CATALOG[currentConfig.brand] || BRAND_CATALOG['Apple'];
     const series = brandData.series.find((s) => s.id === currentConfig.seriesId) || brandData.series[0];
     updateGraphicsUI(series);
@@ -696,7 +670,7 @@ function generateMarketDrivers(specs, series, processor, gpu, era) {
     drivers.push({
       type: 'positive',
       title: 'Apple Silicon Architecture',
-      desc: `${processor.label}: Industry-leading performance-per-watt with exceptional long-term market resale retention.`,
+      desc: `${processor.label}: Industry-leading efficiency with strong long-term market resale retention.`,
     });
   } else if (processor.marketWeight >= 0.5) {
     drivers.push({
@@ -711,7 +685,7 @@ function generateMarketDrivers(specs, series, processor, gpu, era) {
     drivers.push({
       type: 'positive',
       title: 'Discrete High-TGP Graphics',
-      desc: `${gpu.label}: Dedicated GDDR6 VRAM accelerates 3D rendering, video encoding, and high-FPS gaming.`,
+      desc: `${gpu.label}: Dedicated GDDR6 VRAM accelerates 3D rendering, video encoding, and gaming.`,
     });
   } else {
     drivers.push({

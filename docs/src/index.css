@@ -283,34 +283,32 @@ body {
   color: var(--accent-primary);
 }
 
-/* Grid Layouts with clean breakpoints (eliminates ragged auto-fit wrapping) */
+/* Clean Form Grid Breakpoints */
 .form-grid-3 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: 1.15rem;
+  margin-bottom: 1.25rem;
   align-items: start;
 }
 
 @media (min-width: 640px) {
   .form-grid-3 {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.15rem;
   }
 }
 
 .form-grid-2 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: 1.15rem;
+  margin-bottom: 1.25rem;
   align-items: start;
 }
 
 @media (min-width: 640px) {
   .form-grid-2 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.15rem;
   }
 }
 
@@ -339,7 +337,7 @@ body {
   font-size: 0.85rem;
 }
 
-/* Consistent Input Heights and Baseline Alignment */
+/* Uniform 44px Controls */
 .form-select, .form-input {
   width: 100%;
   height: 44px;
@@ -381,7 +379,7 @@ body {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
 
-/* Slider Control Box (Aligns exactly with select boxes at 44px height) */
+/* Slider Box Matching Dropdown Heights */
 .slider-control-box {
   width: 100%;
   height: 44px;
@@ -448,70 +446,7 @@ body {
   border-radius: 9999px;
 }
 
-/* Series Badge */
-.series-badge {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 0.18rem 0.55rem;
-  background: var(--accent-primary-subtle);
-  color: var(--accent-primary);
-  border: 1px solid rgba(37, 99, 235, 0.25);
-  border-radius: 9999px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-}
-
-/* Selection Info Strip (Clean full-width banner below Section 1 selects) */
-.selection-info-strip {
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 0.85rem 1.1rem;
-  margin-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-
-.info-strip-header {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-}
-
-.info-strip-title {
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: var(--text-primary);
-}
-
-.info-strip-desc {
-  font-size: 0.82rem;
-  color: var(--text-secondary);
-  line-height: 1.45;
-}
-
-.info-strip-era {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-}
-
-/* CPU Callout */
-.cpu-info-callout {
-  background: var(--bg-surface-elevated);
-  border-radius: var(--radius-sm);
-  padding: 0.55rem 0.85rem;
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  border-left: 3px solid var(--accent-primary);
-  margin-bottom: 1.5rem;
-  line-height: 1.4;
-}
-
-/* Helper Notes */
+/* Functional Alert / Helper Notes */
 .helper-note {
   font-size: 0.78rem;
   color: var(--text-secondary);
@@ -532,7 +467,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.85rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 @media (min-width: 600px) {
