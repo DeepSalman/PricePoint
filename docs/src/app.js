@@ -1,132 +1,172 @@
 import { predictPrice, MODEL_METADATA } from './model/predictor.js';
-import { BRAND_RULES } from './model/brand_data.js';
+import {
+  BRAND_CATALOG,
+  PROCESSOR_CATALOG,
+  GRAPHICS_CATALOG,
+  RELEASE_ERAS,
+} from './model/laptop_knowledge.js';
 
-// Pre-defined templates for quick exploration
+// Pre-defined templates for quick exploration (No emojis)
 const PRESETS = [
   {
-    id: 'student',
-    name: 'Student / Everyday',
-    specs: {
-      brand: 'Dell',
-      type: 'Notebook',
-      inches: 15.6,
-      touchscreen: false,
-      ips: false,
-      resolution_pixels: 1920 * 1080,
-      cpu_brand: 'Intel i3',
-      cpu_speed_ghz: 2.0,
-      ram_gb: 8,
-      storage_gb: 256,
+    id: 'macbook_air_m2',
+    name: 'MacBook Air M2 (13.6-inch)',
+    config: {
+      brand: 'Apple',
+      seriesId: 'air',
+      chipId: 'm2',
+      eraId: 'recent',
+      hasDedicatedGpu: false,
+      dedicatedGpuId: 'apple_silicon_gpu',
+      integratedGpuId: 'apple_silicon_gpu',
+      os: 'Mac',
+      cpu_speed_ghz: 2.8,
+      ram_gb: 16,
+      storage_gb: 512,
       storage_type: 'SSD',
-      has_dedicated_gpu: false,
-      dedicated_gpu_brand: 'Nvidia',
-      os: 'Windows',
-      weight_kg: 1.85,
+      resolution_pixels: 2560 * 1664,
+      inches: 13.6,
+      touchscreen: false,
+      ips: true,
+      weight_kg: 1.24,
     },
     condition: 0.9,
   },
   {
-    id: 'macbook',
-    name: 'MacBook Retina',
-    specs: {
+    id: 'macbook_pro_m3max',
+    name: 'MacBook Pro 16" (M3 Max)',
+    config: {
       brand: 'Apple',
-      type: 'Ultrabook',
-      inches: 13.3,
+      seriesId: 'pro_max',
+      chipId: 'm3_max',
+      eraId: 'current',
+      hasDedicatedGpu: false,
+      dedicatedGpuId: 'apple_silicon_gpu',
+      integratedGpuId: 'apple_silicon_gpu',
+      os: 'Mac',
+      cpu_speed_ghz: 3.4,
+      ram_gb: 36,
+      storage_gb: 1024,
+      storage_type: 'SSD',
+      resolution_pixels: 3456 * 2234,
+      inches: 16.2,
       touchscreen: false,
       ips: true,
-      resolution_pixels: 2560 * 1600,
-      cpu_brand: 'Intel i5',
-      cpu_speed_ghz: 2.3,
-      ram_gb: 16,
-      storage_gb: 512,
-      storage_type: 'SSD',
-      has_dedicated_gpu: false,
-      dedicated_gpu_brand: 'AMD',
-      os: 'Mac',
-      weight_kg: 1.37,
+      weight_kg: 2.15,
     },
     condition: 1.0,
   },
   {
-    id: 'gaming',
-    name: 'RTX Gaming Rig',
-    specs: {
-      brand: 'Asus',
-      type: 'Gaming',
-      inches: 15.6,
-      touchscreen: false,
-      ips: true,
-      resolution_pixels: 1920 * 1080,
-      cpu_brand: 'Intel i7',
-      cpu_speed_ghz: 2.8,
-      ram_gb: 16,
-      storage_gb: 1024,
-      storage_type: 'SSD',
-      has_dedicated_gpu: true,
-      dedicated_gpu_brand: 'Nvidia',
+    id: 'dell_xps14',
+    name: 'Dell XPS 14 (Core Ultra 7)',
+    config: {
+      brand: 'Dell',
+      seriesId: 'xps',
+      chipId: 'intel_ultra7',
+      eraId: 'current',
+      hasDedicatedGpu: false,
+      dedicatedGpuId: 'nvidia_rtx40',
+      integratedGpuId: 'intel_integrated',
       os: 'Windows',
-      weight_kg: 2.3,
-    },
-    condition: 0.95,
-  },
-  {
-    id: 'business',
-    name: 'Business Ultrabook',
-    specs: {
-      brand: 'Lenovo',
-      type: 'Ultrabook',
-      inches: 14.0,
-      touchscreen: true,
-      ips: true,
-      resolution_pixels: 1920 * 1080,
-      cpu_brand: 'Intel i7',
-      cpu_speed_ghz: 2.6,
+      cpu_speed_ghz: 3.0,
       ram_gb: 16,
       storage_gb: 512,
       storage_type: 'SSD',
-      has_dedicated_gpu: false,
-      dedicated_gpu_brand: 'Nvidia',
+      resolution_pixels: 2560 * 1600,
+      inches: 14.0,
+      touchscreen: true,
+      ips: true,
+      weight_kg: 1.45,
+    },
+    condition: 1.0,
+  },
+  {
+    id: 'lenovo_legion',
+    name: 'Lenovo Legion Pro 5 (RTX 4070)',
+    config: {
+      brand: 'Lenovo',
+      seriesId: 'legion',
+      chipId: 'intel_i7',
+      eraId: 'current',
+      hasDedicatedGpu: true,
+      dedicatedGpuId: 'nvidia_rtx40',
+      integratedGpuId: 'intel_integrated',
       os: 'Windows',
-      weight_kg: 1.4,
+      cpu_speed_ghz: 3.2,
+      ram_gb: 32,
+      storage_gb: 1024,
+      storage_type: 'SSD',
+      resolution_pixels: 2560 * 1600,
+      inches: 16.0,
+      touchscreen: false,
+      ips: true,
+      weight_kg: 2.4,
     },
     condition: 0.95,
   },
   {
-    id: 'budget',
-    name: 'Budget / Basic',
-    specs: {
+    id: 'thinkpad_x1',
+    name: 'ThinkPad X1 Carbon (Business)',
+    config: {
+      brand: 'Lenovo',
+      seriesId: 'thinkpad',
+      chipId: 'intel_ultra7',
+      eraId: 'recent',
+      hasDedicatedGpu: false,
+      dedicatedGpuId: 'intel_integrated',
+      integratedGpuId: 'intel_integrated',
+      os: 'Windows',
+      cpu_speed_ghz: 2.8,
+      ram_gb: 16,
+      storage_gb: 512,
+      storage_type: 'SSD',
+      resolution_pixels: 1920 * 1200,
+      inches: 14.0,
+      touchscreen: true,
+      ips: true,
+      weight_kg: 1.35,
+    },
+    condition: 0.95,
+  },
+  {
+    id: 'hp_pavilion',
+    name: 'HP Pavilion 15 (Everyday Student)',
+    config: {
       brand: 'HP',
-      type: 'Notebook',
+      seriesId: 'pavilion',
+      chipId: 'intel_i5',
+      eraId: 'recent',
+      hasDedicatedGpu: false,
+      dedicatedGpuId: 'intel_integrated',
+      integratedGpuId: 'intel_integrated',
+      os: 'Windows',
+      cpu_speed_ghz: 2.5,
+      ram_gb: 8,
+      storage_gb: 512,
+      storage_type: 'SSD',
+      resolution_pixels: 1920 * 1080,
       inches: 15.6,
       touchscreen: false,
       ips: false,
-      resolution_pixels: 1366 * 768,
-      cpu_brand: 'Intel Other',
-      cpu_speed_ghz: 1.6,
-      ram_gb: 4,
-      storage_gb: 500,
-      storage_type: 'HDD',
-      has_dedicated_gpu: false,
-      dedicated_gpu_brand: 'Nvidia',
-      os: 'Windows',
-      weight_kg: 2.1,
+      weight_kg: 1.75,
     },
-    condition: 0.8,
+    condition: 0.9,
   },
 ];
 
-// Current State
-let currentSpecs = { ...PRESETS[0].specs };
+// Application State
+let currentConfig = { ...PRESETS[0].config };
 let currentCondition = PRESETS[0].condition;
 let currentCurrency = 'BDT'; // 'BDT' | 'USD' | 'EUR'
-let activePresetId = 'student';
+let activePresetId = 'macbook_air_m2';
 
-// DOM elements cache
+// DOM utility
 const el = (id) => document.getElementById(id);
 
 function initApp() {
   populateBrandSelect();
-  updateDependentOptions(currentSpecs.brand);
+  populateEraSelect();
+  syncBrandAndSeries(currentConfig.brand, currentConfig.seriesId, false);
   renderPresetChips();
   attachEventListeners();
   syncFormToState();
@@ -136,129 +176,147 @@ function initApp() {
 function populateBrandSelect() {
   const brandSelect = el('spec-brand');
   if (!brandSelect) return;
-  const brands = Object.keys(BRAND_RULES).sort();
+  const brands = Object.keys(BRAND_CATALOG).sort();
   brandSelect.innerHTML = '';
   brands.forEach((brand) => {
     const opt = document.createElement('option');
     opt.value = brand;
     opt.textContent = brand;
-    if (brand === currentSpecs.brand) opt.selected = true;
+    if (brand === currentConfig.brand) opt.selected = true;
     brandSelect.appendChild(opt);
   });
 }
 
-/**
- * Updates types, OS, CPUs, and GPU options based on the chosen brand constraints.
- */
-function updateDependentOptions(brand) {
-  const rules = BRAND_RULES[brand] || BRAND_RULES['Dell'];
+function populateEraSelect() {
+  const eraSelect = el('spec-era');
+  if (!eraSelect) return;
+  eraSelect.innerHTML = '';
+  RELEASE_ERAS.forEach((era) => {
+    const opt = document.createElement('option');
+    opt.value = era.id;
+    opt.textContent = era.label;
+    if (era.id === currentConfig.eraId) opt.selected = true;
+    eraSelect.appendChild(opt);
+  });
+  updateEraNote(currentConfig.eraId);
+}
 
-  // 1. Laptop Type
-  const typeSelect = el('spec-type');
-  if (typeSelect) {
-    typeSelect.innerHTML = '';
-    rules.types.forEach((t) => {
+function updateEraNote(eraId) {
+  const note = el('era-helper-note');
+  if (!note) return;
+  const era = RELEASE_ERAS.find((e) => e.id === eraId) || RELEASE_ERAS[1];
+  note.textContent = era.desc;
+}
+
+/**
+ * Synchronizes series, processor, GPU, and constraints when brand or series changes.
+ */
+function syncBrandAndSeries(brandKey, desiredSeriesId, resetDefaults = true) {
+  const brandData = BRAND_CATALOG[brandKey] || BRAND_CATALOG['Apple'];
+  currentConfig.brand = brandKey;
+
+  // 1. Populate Series
+  const seriesSelect = el('spec-series');
+  if (seriesSelect) {
+    seriesSelect.innerHTML = '';
+    brandData.series.forEach((s) => {
       const opt = document.createElement('option');
-      opt.value = t;
-      opt.textContent = t;
-      typeSelect.appendChild(opt);
+      opt.value = s.id;
+      opt.textContent = s.name;
+      seriesSelect.appendChild(opt);
     });
 
-    if (!rules.types.includes(currentSpecs.type)) {
-      currentSpecs.type = rules.default_type || rules.types[0];
-    }
-    typeSelect.value = currentSpecs.type;
+    const seriesExists = brandData.series.some((s) => s.id === desiredSeriesId);
+    currentConfig.seriesId = seriesExists ? desiredSeriesId : brandData.defaultSeries;
+    seriesSelect.value = currentConfig.seriesId;
   }
 
-  // Type helper note
-  const typeNote = el('type-helper-note');
-  if (typeNote) {
-    if (brand === 'Apple') {
-      typeNote.textContent = 'Apple only manufactures premium portable Ultrabooks (MacBook Air & MacBook Pro).';
-      typeNote.style.display = 'block';
-    } else if (brand === 'MSI') {
-      typeNote.textContent = 'MSI specializes exclusively in high-performance Gaming laptops.';
-      typeNote.style.display = 'block';
+  const series = brandData.series.find((s) => s.id === currentConfig.seriesId) || brandData.series[0];
+
+  // Update Series Badge and Description
+  const badgeEl = el('series-badge');
+  if (badgeEl) badgeEl.textContent = series.badge;
+  const seriesNote = el('series-helper-note');
+  if (seriesNote) seriesNote.textContent = series.desc;
+
+  // Set series defaults if requested
+  if (resetDefaults) {
+    currentConfig.inches = series.defaultInches;
+    currentConfig.weight_kg = series.defaultWeight;
+    currentConfig.resolution_pixels = series.defaultRes;
+    currentConfig.ram_gb = series.defaultRam;
+    currentConfig.storage_gb = series.defaultStorage;
+    currentConfig.chipId = series.defaultChip;
+    currentConfig.integratedGpuId = series.defaultGpu;
+    if (series.formFactor === 'Gaming' || series.formFactor === 'Workstation') {
+      currentConfig.hasDedicatedGpu = true;
+      currentConfig.dedicatedGpuId = series.gpuOptions.find((g) => GRAPHICS_CATALOG[g]?.isDedicated) || 'nvidia_rtx40';
     } else {
-      typeNote.style.display = 'none';
+      currentConfig.hasDedicatedGpu = false;
     }
   }
 
-  // 2. Operating System
+  // 2. Populate Processors for this series
+  const cpuSelect = el('spec-cpu');
+  if (cpuSelect) {
+    cpuSelect.innerHTML = '';
+    series.chipTiers.forEach((chipKey) => {
+      const chip = PROCESSOR_CATALOG[chipKey];
+      if (chip) {
+        const opt = document.createElement('option');
+        opt.value = chipKey;
+        opt.textContent = chip.label;
+        cpuSelect.appendChild(opt);
+      }
+    });
+
+    if (!series.chipTiers.includes(currentConfig.chipId)) {
+      currentConfig.chipId = series.defaultChip;
+    }
+    cpuSelect.value = currentConfig.chipId;
+    updateCpuNote(currentConfig.chipId);
+  }
+
+  // 3. Operating System constraints
   const osSelect = el('spec-os');
   if (osSelect) {
     osSelect.innerHTML = '';
-    rules.os.forEach((o) => {
+    series.os.forEach((o) => {
       const opt = document.createElement('option');
       opt.value = o;
       opt.textContent = o;
       osSelect.appendChild(opt);
     });
 
-    if (!rules.os.includes(currentSpecs.os)) {
-      currentSpecs.os = rules.default_os || rules.os[0];
+    if (!series.os.includes(currentConfig.os)) {
+      currentConfig.os = series.os[0];
     }
-    osSelect.value = currentSpecs.os;
-    osSelect.disabled = rules.os.length === 1;
+    osSelect.value = currentConfig.os;
+    osSelect.disabled = series.os.length === 1;
   }
 
-  // 3. CPU Brands
-  const cpuSelect = el('spec-cpu');
-  if (cpuSelect) {
-    cpuSelect.innerHTML = '';
-    rules.cpu_brands.forEach((c) => {
-      const opt = document.createElement('option');
-      opt.value = c;
-      opt.textContent = c;
-      cpuSelect.appendChild(opt);
-    });
-
-    if (!rules.cpu_brands.includes(currentSpecs.cpu_brand)) {
-      currentSpecs.cpu_brand = rules.cpu_brands[0];
-    }
-    cpuSelect.value = currentSpecs.cpu_brand;
-  }
-
-  // 4. Storage Type
-  const storageTypeSelect = el('spec-storagetype');
-  if (storageTypeSelect) {
-    storageTypeSelect.innerHTML = '';
-    rules.storage_types.forEach((st) => {
-      const opt = document.createElement('option');
-      opt.value = st;
-      opt.textContent = st;
-      storageTypeSelect.appendChild(opt);
-    });
-
-    if (!rules.storage_types.includes(currentSpecs.storage_type)) {
-      currentSpecs.storage_type = rules.storage_types[0];
-    }
-    storageTypeSelect.value = currentSpecs.storage_type;
-    storageTypeSelect.disabled = rules.storage_types.length === 1;
-  }
-
-  // 5. Touchscreen Support
+  // 4. Touchscreen constraint
   const touchRow = el('toggle-touch-row');
   const touchNote = el('touch-helper-note');
-  if (brand === 'Apple') {
-    currentSpecs.touchscreen = false;
+  if (currentConfig.brand === 'Apple') {
+    currentConfig.touchscreen = false;
     if (touchRow) touchRow.classList.add('disabled');
     if (touchNote) {
-      touchNote.textContent = 'Touchscreens are not supported on Apple MacBooks.';
+      touchNote.textContent = 'Apple MacBooks do not feature touchscreens. macOS is optimized for Trackpad gesture control.';
       touchNote.style.display = 'block';
     }
-  } else if (currentSpecs.type === '2 in 1 Convertible') {
-    currentSpecs.touchscreen = true;
+  } else if (series.formFactor === '2 in 1 Convertible') {
+    currentConfig.touchscreen = true;
     if (touchRow) touchRow.classList.remove('disabled');
     if (touchNote) {
-      touchNote.textContent = '2-in-1 Convertibles require a touchscreen by design.';
+      touchNote.textContent = '2-in-1 Convertibles require a 360-degree touchscreen display.';
       touchNote.style.display = 'block';
     }
-  } else if (!rules.touchscreen_supported) {
-    currentSpecs.touchscreen = false;
+  } else if (!series.touchSupported) {
+    currentConfig.touchscreen = false;
     if (touchRow) touchRow.classList.add('disabled');
     if (touchNote) {
-      touchNote.textContent = 'Touchscreen is not supported on this manufacturer form factor.';
+      touchNote.textContent = 'Touchscreen is not supported on this performance gaming display.';
       touchNote.style.display = 'block';
     }
   } else {
@@ -266,42 +324,123 @@ function updateDependentOptions(brand) {
     if (touchNote) touchNote.style.display = 'none';
   }
 
-  // 6. Dedicated GPU Constraints
-  const dedicatedGpuCard = el('gpu-card-dedicated');
-  const dedicatedBrandSelect = el('spec-dedicated-gpubrand');
-  const gpuNote = el('gpu-helper-note');
-
-  if (!rules.has_dedicated_gpu) {
-    currentSpecs.has_dedicated_gpu = false;
-    if (dedicatedGpuCard) dedicatedGpuCard.classList.add('disabled');
-    if (gpuNote) {
-      gpuNote.textContent = 'Dedicated discrete GPUs are not offered on this brand/model.';
-      gpuNote.style.display = 'block';
-    }
-  } else {
-    if (dedicatedGpuCard) dedicatedGpuCard.classList.remove('disabled');
-    if (gpuNote) gpuNote.style.display = 'none';
-
-    // Populate dedicated options (e.g. AMD for Apple, Nvidia/AMD for Dell)
-    if (dedicatedBrandSelect) {
-      dedicatedBrandSelect.innerHTML = '';
-      rules.dedicated_gpu_options.forEach((dg) => {
-        const opt = document.createElement('option');
-        opt.value = dg;
-        opt.textContent = dg === 'Nvidia' ? 'Nvidia GeForce' : 'AMD Radeon';
-        dedicatedBrandSelect.appendChild(opt);
-      });
-
-      if (!rules.dedicated_gpu_options.includes(currentSpecs.dedicated_gpu_brand)) {
-        currentSpecs.dedicated_gpu_brand = rules.dedicated_gpu_options[0];
+  // 5. Storage Type constraint
+  const storageTypeSelect = el('spec-storagetype');
+  const storageNote = el('storage-helper-note');
+  if (storageTypeSelect) {
+    if (currentConfig.brand === 'Apple') {
+      storageTypeSelect.value = 'SSD';
+      storageTypeSelect.disabled = true;
+      if (storageNote) {
+        storageNote.textContent = 'High-speed unified NVMe flash storage standard on Apple hardware.';
+        storageNote.style.display = 'block';
       }
-      dedicatedBrandSelect.value = currentSpecs.dedicated_gpu_brand;
+    } else {
+      storageTypeSelect.disabled = false;
+      if (storageNote) storageNote.style.display = 'none';
     }
   }
 
-  // If Gaming, default to dedicated GPU
-  if (currentSpecs.type === 'Gaming' && rules.has_dedicated_gpu) {
-    currentSpecs.has_dedicated_gpu = true;
+  // 6. Graphics configuration
+  updateGraphicsUI(series);
+}
+
+function updateCpuNote(chipKey) {
+  const note = el('cpu-helper-note');
+  const chip = PROCESSOR_CATALOG[chipKey];
+  if (!note || !chip) return;
+  note.textContent = chip.desc;
+
+  // Set default clock speed from chip
+  currentConfig.cpu_speed_ghz = chip.speedGhz;
+  const speedInput = el('spec-cpuspeed');
+  if (speedInput) {
+    speedInput.value = chip.speedGhz;
+    el('val-cpuspeed').textContent = `${chip.speedGhz} GHz`;
+  }
+}
+
+function updateGraphicsUI(series) {
+  const cardIntegrated = el('gpu-card-integrated');
+  const cardDedicated = el('gpu-card-dedicated');
+  const integratedTitle = el('gpu-integrated-title');
+  const integratedDesc = el('gpu-integrated-desc');
+  const dedicatedContainer = el('dedicated-gpu-selector-box');
+  const dedicatedSelect = el('spec-dedicated-gpu');
+  const gpuNote = el('gpu-helper-note');
+
+  const chip = PROCESSOR_CATALOG[currentConfig.chipId];
+  const isAppleSilicon = chip?.family === 'Apple' && currentConfig.chipId.startsWith('m');
+  const dedicatedOptions = series.gpuOptions.filter((g) => GRAPHICS_CATALOG[g]?.isDedicated);
+
+  // Customize Integrated title & desc
+  if (isAppleSilicon) {
+    currentConfig.integratedGpuId = 'apple_silicon_gpu';
+    if (integratedTitle) integratedTitle.textContent = 'Apple Silicon Unified GPU';
+    if (integratedDesc) {
+      integratedDesc.textContent = 'On-chip high-bandwidth GPU sharing unified memory across CPU and Neural Engine. No discrete GPU required.';
+    }
+  } else if (chip?.mlCpuBrand === 'AMD') {
+    currentConfig.integratedGpuId = 'amd_integrated';
+    if (integratedTitle) integratedTitle.textContent = 'AMD Radeon Integrated Graphics';
+    if (integratedDesc) {
+      integratedDesc.textContent = 'RDNA onboard processor graphics with capable 1080p efficiency.';
+    }
+  } else {
+    currentConfig.integratedGpuId = 'intel_integrated';
+    if (integratedTitle) integratedTitle.textContent = 'Intel Iris Xe / Arc Integrated Graphics';
+    if (integratedDesc) {
+      integratedDesc.textContent = 'Shared processor memory. Low thermal footprint and maximum battery life.';
+    }
+  }
+
+  // Handle Dedicated GPU availability
+  if (isAppleSilicon) {
+    currentConfig.hasDedicatedGpu = false;
+    if (cardDedicated) cardDedicated.classList.add('disabled');
+    if (gpuNote) {
+      gpuNote.textContent = 'Apple Silicon integrates unified GPU cores directly on the M-series SoC (discrete GPUs not applicable).';
+      gpuNote.style.display = 'block';
+    }
+  } else if (dedicatedOptions.length === 0) {
+    currentConfig.hasDedicatedGpu = false;
+    if (cardDedicated) cardDedicated.classList.add('disabled');
+    if (gpuNote) {
+      gpuNote.textContent = 'Dedicated discrete GPUs are not offered on this ultra-portable series.';
+      gpuNote.style.display = 'block';
+    }
+  } else {
+    if (cardDedicated) cardDedicated.classList.remove('disabled');
+    if (gpuNote) gpuNote.style.display = 'none';
+
+    // Populate dedicated options
+    if (dedicatedSelect) {
+      dedicatedSelect.innerHTML = '';
+      dedicatedOptions.forEach((dgKey) => {
+        const opt = document.createElement('option');
+        opt.value = dgKey;
+        opt.textContent = GRAPHICS_CATALOG[dgKey]?.label || dgKey;
+        dedicatedSelect.appendChild(opt);
+      });
+
+      if (!dedicatedOptions.includes(currentConfig.dedicatedGpuId)) {
+        currentConfig.dedicatedGpuId = dedicatedOptions[0];
+      }
+      dedicatedSelect.value = currentConfig.dedicatedGpuId;
+    }
+  }
+
+  // Sync active card visual state
+  if (cardIntegrated && cardDedicated) {
+    if (currentConfig.hasDedicatedGpu) {
+      cardIntegrated.classList.remove('active');
+      cardDedicated.classList.add('active');
+      if (dedicatedContainer) dedicatedContainer.style.display = 'block';
+    } else {
+      cardIntegrated.classList.add('active');
+      cardDedicated.classList.remove('active');
+      if (dedicatedContainer) dedicatedContainer.style.display = 'none';
+    }
   }
 }
 
@@ -317,9 +456,9 @@ function renderPresetChips() {
     btn.textContent = p.name;
     btn.addEventListener('click', () => {
       activePresetId = p.id;
-      currentSpecs = { ...p.specs };
+      currentConfig = { ...p.config };
       currentCondition = p.condition;
-      updateDependentOptions(currentSpecs.brand);
+      syncBrandAndSeries(currentConfig.brand, currentConfig.seriesId, false);
       syncFormToState();
       updatePresetChipsUI();
       recalculate();
@@ -340,56 +479,35 @@ function updatePresetChipsUI() {
 }
 
 function syncFormToState() {
-  if (el('spec-brand')) el('spec-brand').value = currentSpecs.brand;
-  if (el('spec-type')) el('spec-type').value = currentSpecs.type;
-  if (el('spec-cpu')) el('spec-cpu').value = currentSpecs.cpu_brand;
-  if (el('spec-os')) el('spec-os').value = currentSpecs.os;
-  if (el('spec-ram')) el('spec-ram').value = currentSpecs.ram_gb;
-  if (el('spec-storagegb')) el('spec-storagegb').value = currentSpecs.storage_gb;
-  if (el('spec-storagetype')) el('spec-storagetype').value = currentSpecs.storage_type;
-  if (el('spec-res')) el('spec-res').value = currentSpecs.resolution_pixels;
+  if (el('spec-brand')) el('spec-brand').value = currentConfig.brand;
+  if (el('spec-series')) el('spec-series').value = currentConfig.seriesId;
+  if (el('spec-era')) el('spec-era').value = currentConfig.eraId;
+  if (el('spec-cpu')) el('spec-cpu').value = currentConfig.chipId;
+  if (el('spec-os')) el('spec-os').value = currentConfig.os;
+  if (el('spec-ram')) el('spec-ram').value = currentConfig.ram_gb;
+  if (el('spec-storagegb')) el('spec-storagegb').value = currentConfig.storage_gb;
+  if (el('spec-storagetype')) el('spec-storagetype').value = currentConfig.storage_type;
+  if (el('spec-res')) el('spec-res').value = currentConfig.resolution_pixels;
 
   if (el('spec-cpuspeed')) {
-    el('spec-cpuspeed').value = currentSpecs.cpu_speed_ghz;
-    el('val-cpuspeed').textContent = `${currentSpecs.cpu_speed_ghz} GHz`;
+    el('spec-cpuspeed').value = currentConfig.cpu_speed_ghz;
+    el('val-cpuspeed').textContent = `${currentConfig.cpu_speed_ghz} GHz`;
   }
   if (el('spec-inches')) {
-    el('spec-inches').value = currentSpecs.inches;
-    el('val-inches').textContent = `${currentSpecs.inches}"`;
+    el('spec-inches').value = currentConfig.inches;
+    el('val-inches').textContent = `${currentConfig.inches}"`;
   }
   if (el('spec-weight')) {
-    el('spec-weight').value = currentSpecs.weight_kg;
-    el('val-weight').textContent = `${currentSpecs.weight_kg} kg`;
-  }
-
-  // GPU Card selection UI
-  const cardIntegrated = el('gpu-card-integrated');
-  const cardDedicated = el('gpu-card-dedicated');
-  const dedicatedBrandContainer = el('dedicated-gpu-selector-box');
-  const dedicatedBrandSelect = el('spec-dedicated-gpubrand');
-
-  if (cardIntegrated && cardDedicated) {
-    if (currentSpecs.has_dedicated_gpu) {
-      cardIntegrated.classList.remove('active');
-      cardDedicated.classList.add('active');
-      if (dedicatedBrandContainer) dedicatedBrandContainer.style.display = 'block';
-    } else {
-      cardIntegrated.classList.add('active');
-      cardDedicated.classList.remove('active');
-      if (dedicatedBrandContainer) dedicatedBrandContainer.style.display = 'none';
-    }
-  }
-
-  if (dedicatedBrandSelect) {
-    dedicatedBrandSelect.value = currentSpecs.dedicated_gpu_brand;
+    el('spec-weight').value = currentConfig.weight_kg;
+    el('val-weight').textContent = `${currentConfig.weight_kg} kg`;
   }
 
   // Toggles
   const touchSwitch = el('toggle-touch-switch');
-  if (touchSwitch) touchSwitch.classList.toggle('active', !!currentSpecs.touchscreen);
+  if (touchSwitch) touchSwitch.classList.toggle('active', !!currentConfig.touchscreen);
 
   const ipsSwitch = el('toggle-ips-switch');
-  if (ipsSwitch) ipsSwitch.classList.toggle('active', !!currentSpecs.ips);
+  if (ipsSwitch) ipsSwitch.classList.toggle('active', !!currentConfig.ips);
 
   // Condition buttons
   document.querySelectorAll('.cond-btn').forEach((btn) => {
@@ -399,6 +517,10 @@ function syncFormToState() {
   if (el('val-condition')) {
     el('val-condition').textContent = `${Math.round(currentCondition * 100)}%`;
   }
+
+  const brandData = BRAND_CATALOG[currentConfig.brand] || BRAND_CATALOG['Apple'];
+  const series = brandData.series.find((s) => s.id === currentConfig.seriesId) || brandData.series[0];
+  updateGraphicsUI(series);
 }
 
 function attachEventListeners() {
@@ -407,63 +529,73 @@ function attachEventListeners() {
     updatePresetChipsUI();
   };
 
-  // 1. Brand Change Listener
+  // 1. Brand Change
   el('spec-brand')?.addEventListener('change', (e) => {
     markCustom();
-    currentSpecs.brand = e.target.value;
-    updateDependentOptions(currentSpecs.brand);
+    syncBrandAndSeries(e.target.value, null, true);
     syncFormToState();
     recalculate();
   });
 
-  // 2. Type Change Listener
-  el('spec-type')?.addEventListener('change', (e) => {
+  // 2. Series Change
+  el('spec-series')?.addEventListener('change', (e) => {
     markCustom();
-    currentSpecs.type = e.target.value;
-    const rules = BRAND_RULES[currentSpecs.brand] || BRAND_RULES['Dell'];
-
-    if (currentSpecs.type === '2 in 1 Convertible') {
-      currentSpecs.touchscreen = true;
-    } else if (currentSpecs.brand === 'Apple') {
-      currentSpecs.touchscreen = false;
-    }
-
-    if (currentSpecs.type === 'Gaming' && rules.has_dedicated_gpu) {
-      currentSpecs.has_dedicated_gpu = true;
-    } else if (currentSpecs.type === 'Ultrabook') {
-      currentSpecs.weight_kg = rules.typical_weight < 1.6 ? rules.typical_weight : 1.35;
-      currentSpecs.storage_type = 'SSD';
-    }
-
-    updateDependentOptions(currentSpecs.brand);
+    syncBrandAndSeries(currentConfig.brand, e.target.value, true);
     syncFormToState();
     recalculate();
   });
 
-  // 3. GPU Cards Listener
+  // 3. Era Change
+  el('spec-era')?.addEventListener('change', (e) => {
+    markCustom();
+    currentConfig.eraId = e.target.value;
+    updateEraNote(currentConfig.eraId);
+    recalculate();
+  });
+
+  // 4. CPU Change
+  el('spec-cpu')?.addEventListener('change', (e) => {
+    markCustom();
+    currentConfig.chipId = e.target.value;
+    updateCpuNote(currentConfig.chipId);
+    const brandData = BRAND_CATALOG[currentConfig.brand] || BRAND_CATALOG['Apple'];
+    const series = brandData.series.find((s) => s.id === currentConfig.seriesId) || brandData.series[0];
+    updateGraphicsUI(series);
+    recalculate();
+  });
+
+  // 5. GPU Card Integrated
   el('gpu-card-integrated')?.addEventListener('click', () => {
     markCustom();
-    currentSpecs.has_dedicated_gpu = false;
-    syncFormToState();
+    currentConfig.hasDedicatedGpu = false;
+    const brandData = BRAND_CATALOG[currentConfig.brand] || BRAND_CATALOG['Apple'];
+    const series = brandData.series.find((s) => s.id === currentConfig.seriesId) || brandData.series[0];
+    updateGraphicsUI(series);
     recalculate();
   });
 
+  // 6. GPU Card Dedicated
   el('gpu-card-dedicated')?.addEventListener('click', () => {
-    const rules = BRAND_RULES[currentSpecs.brand] || BRAND_RULES['Dell'];
-    if (!rules.has_dedicated_gpu) return;
+    const chip = PROCESSOR_CATALOG[currentConfig.chipId];
+    if (chip?.family === 'Apple' && currentConfig.chipId.startsWith('m')) return;
+    const brandData = BRAND_CATALOG[currentConfig.brand] || BRAND_CATALOG['Apple'];
+    const series = brandData.series.find((s) => s.id === currentConfig.seriesId) || brandData.series[0];
+    const dedicatedOptions = series.gpuOptions.filter((g) => GRAPHICS_CATALOG[g]?.isDedicated);
+    if (dedicatedOptions.length === 0) return;
+
     markCustom();
-    currentSpecs.has_dedicated_gpu = true;
-    syncFormToState();
+    currentConfig.hasDedicatedGpu = true;
+    updateGraphicsUI(series);
     recalculate();
   });
 
-  el('spec-dedicated-gpubrand')?.addEventListener('change', (e) => {
+  el('spec-dedicated-gpu')?.addEventListener('change', (e) => {
     markCustom();
-    currentSpecs.dedicated_gpu_brand = e.target.value;
+    currentConfig.dedicatedGpuId = e.target.value;
     recalculate();
   });
 
-  // 4. Other Standard Controls
+  // Standard inputs
   const addChange = (id, fn) => {
     const elem = el(id);
     if (!elem) return;
@@ -479,48 +611,49 @@ function attachEventListeners() {
     });
   };
 
-  addChange('spec-cpu', (e) => (currentSpecs.cpu_brand = e.target.value));
-  addChange('spec-os', (e) => (currentSpecs.os = e.target.value));
-  addChange('spec-ram', (e) => (currentSpecs.ram_gb = parseInt(e.target.value, 10)));
-  addChange('spec-storagegb', (e) => (currentSpecs.storage_gb = parseInt(e.target.value, 10)));
-  addChange('spec-storagetype', (e) => (currentSpecs.storage_type = e.target.value));
-  addChange('spec-res', (e) => (currentSpecs.resolution_pixels = parseInt(e.target.value, 10)));
+  addChange('spec-os', (e) => (currentConfig.os = e.target.value));
+  addChange('spec-ram', (e) => (currentConfig.ram_gb = parseInt(e.target.value, 10)));
+  addChange('spec-storagegb', (e) => (currentConfig.storage_gb = parseInt(e.target.value, 10)));
+  addChange('spec-storagetype', (e) => (currentConfig.storage_type = e.target.value));
+  addChange('spec-res', (e) => (currentConfig.resolution_pixels = parseInt(e.target.value, 10)));
 
   addChange('spec-cpuspeed', (e) => {
-    currentSpecs.cpu_speed_ghz = parseFloat(e.target.value);
-    el('val-cpuspeed').textContent = `${currentSpecs.cpu_speed_ghz} GHz`;
+    currentConfig.cpu_speed_ghz = parseFloat(e.target.value);
+    el('val-cpuspeed').textContent = `${currentConfig.cpu_speed_ghz} GHz`;
   });
 
   addChange('spec-inches', (e) => {
-    currentSpecs.inches = parseFloat(e.target.value);
-    el('val-inches').textContent = `${currentSpecs.inches}"`;
+    currentConfig.inches = parseFloat(e.target.value);
+    el('val-inches').textContent = `${currentConfig.inches}"`;
   });
 
   addChange('spec-weight', (e) => {
-    currentSpecs.weight_kg = parseFloat(e.target.value);
-    el('val-weight').textContent = `${currentSpecs.weight_kg} kg`;
+    currentConfig.weight_kg = parseFloat(e.target.value);
+    el('val-weight').textContent = `${currentConfig.weight_kg} kg`;
   });
 
-  // Toggles
+  // Touchscreen Toggle
   el('toggle-touch-row')?.addEventListener('click', () => {
-    const rules = BRAND_RULES[currentSpecs.brand] || BRAND_RULES['Dell'];
-    if (currentSpecs.brand === 'Apple' || !rules.touchscreen_supported) return;
-    if (currentSpecs.type === '2 in 1 Convertible') return; // Cannot turn off touch on convertible
+    if (currentConfig.brand === 'Apple') return;
+    const brandData = BRAND_CATALOG[currentConfig.brand] || BRAND_CATALOG['Apple'];
+    const series = brandData.series.find((s) => s.id === currentConfig.seriesId) || brandData.series[0];
+    if (series.formFactor === '2 in 1 Convertible' || !series.touchSupported) return;
 
     markCustom();
-    currentSpecs.touchscreen = !currentSpecs.touchscreen;
-    el('toggle-touch-switch')?.classList.toggle('active', currentSpecs.touchscreen);
+    currentConfig.touchscreen = !currentConfig.touchscreen;
+    el('toggle-touch-switch')?.classList.toggle('active', currentConfig.touchscreen);
     recalculate();
   });
 
+  // IPS Toggle
   el('toggle-ips-row')?.addEventListener('click', () => {
     markCustom();
-    currentSpecs.ips = !currentSpecs.ips;
-    el('toggle-ips-switch')?.classList.toggle('active', currentSpecs.ips);
+    currentConfig.ips = !currentConfig.ips;
+    el('toggle-ips-switch')?.classList.toggle('active', currentConfig.ips);
     recalculate();
   });
 
-  // Condition buttons
+  // Condition Buttons
   document.querySelectorAll('.cond-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       currentCondition = parseFloat(btn.dataset.mult);
@@ -533,7 +666,7 @@ function attachEventListeners() {
     });
   });
 
-  // Currency switcher
+  // Currency Buttons
   document.querySelectorAll('.curr-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       currentCurrency = btn.dataset.curr;
@@ -543,7 +676,7 @@ function attachEventListeners() {
     });
   });
 
-  // Benchmark toggle
+  // Benchmark Section Toggle
   el('toggle-benchmark-btn')?.addEventListener('click', () => {
     const card = el('benchmark-section');
     if (!card) return;
@@ -553,70 +686,75 @@ function attachEventListeners() {
   });
 }
 
-function resolveGpuBrand(specs) {
-  if (!specs.has_dedicated_gpu) {
-    return specs.cpu_brand === 'AMD' ? 'AMD' : 'Intel';
-  }
-  return specs.dedicated_gpu_brand || 'Nvidia';
-}
-
-function generateMarketDrivers(specs, result) {
+function generateMarketDrivers(specs, series, processor, gpu, era) {
   const drivers = [];
 
-  // GPU Driver
-  if (specs.has_dedicated_gpu) {
+  // 1. Processor & Silicon Driver
+  if (processor.family === 'Apple') {
     drivers.push({
       type: 'positive',
-      title: 'Dedicated Graphics',
-      desc: `${specs.dedicated_gpu_brand === 'Nvidia' ? 'Nvidia GeForce' : 'AMD Radeon'} dedicated VRAM adds value for gaming and 3D tasks.`,
+      title: 'Apple Silicon Architecture',
+      desc: `${processor.label}: Industry-leading performance-per-watt with exceptional long-term market resale retention.`,
+    });
+  } else if (processor.marketWeight >= 0.5) {
+    drivers.push({
+      type: 'positive',
+      title: 'High-Performance Processor',
+      desc: `${processor.label}: Multi-core powerhouse with high thermal ceiling for creator workflows.`,
+    });
+  }
+
+  // 2. Graphics Driver
+  if (specs.hasDedicatedGpu) {
+    drivers.push({
+      type: 'positive',
+      title: 'Discrete High-TGP Graphics',
+      desc: `${gpu.label}: Dedicated GDDR6 VRAM accelerates 3D rendering, video encoding, and high-FPS gaming.`,
     });
   } else {
     drivers.push({
       type: 'neutral',
-      title: 'Integrated Graphics',
-      desc: 'Shared system memory graphics keeps cost accessible and maximizes battery life.',
+      title: 'Integrated Graphics Architecture',
+      desc: `${gpu.label}: Optimized for silent operation, cool temperatures, and all-day battery life.`,
     });
   }
 
-  // Brand / OS
-  if (specs.brand === 'Apple') {
+  // 3. Generation & Age
+  if (era.id === 'current') {
     drivers.push({
       type: 'positive',
-      title: 'Apple Ecosystem',
-      desc: 'High residual resale value retention and build quality.',
+      title: 'Current Generation Hardware',
+      desc: `${era.label}: Fresh component lifecycle with peak residual value.`,
     });
-  }
-
-  // Storage
-  if (specs.storage_type === 'SSD') {
-    drivers.push({
-      type: 'positive',
-      title: 'Solid State Drive',
-      desc: 'Fast NVMe/SATA SSD storage is favored over traditional hard drives.',
-    });
-  } else if (specs.storage_type === 'HDD') {
+  } else if (era.id === 'legacy') {
     drivers.push({
       type: 'negative',
-      title: 'Mechanical HDD',
-      desc: 'Spinning hard drive reduces market valuation compared to modern SSDs.',
+      title: 'Legacy Release Era',
+      desc: `${era.label}: Standard market depreciation from generational silicon cycles and battery wear.`,
     });
   }
 
-  // Display
+  // 4. Memory & Storage
+  if (specs.ram_gb >= 32) {
+    drivers.push({
+      type: 'positive',
+      title: 'Enthusiast Memory Capacity',
+      desc: `${specs.ram_gb} GB RAM offers workstation-grade headroom for heavy multitasking and local LLM models.`,
+    });
+  } else if (specs.ram_gb <= 4) {
+    drivers.push({
+      type: 'negative',
+      title: 'Base Memory Constraint',
+      desc: '4 GB RAM limits multitasking in modern operating systems, lowering market valuation.',
+    });
+  }
+
+  // 5. Display Panel
   if (specs.resolution_pixels >= 4000000) {
     drivers.push({
       type: 'positive',
-      title: 'High Resolution Display',
-      desc: 'Retina / 4K high pixel density panel commands a visual premium.',
-    });
-  }
-
-  // RAM
-  if (specs.ram_gb >= 16) {
-    drivers.push({
-      type: 'positive',
-      title: 'High RAM Capacity',
-      desc: `${specs.ram_gb} GB RAM offers strong multitasking overhead.`,
+      title: 'High-Density Retina / XDR Panel',
+      desc: 'High pixel density panel delivers exceptional text clarity and color accuracy.',
     });
   }
 
@@ -624,50 +762,74 @@ function generateMarketDrivers(specs, result) {
 }
 
 function recalculate() {
-  // Construct ML feature input payload
-  const resolvedGpu = resolveGpuBrand(currentSpecs);
+  const brandData = BRAND_CATALOG[currentConfig.brand] || BRAND_CATALOG['Apple'];
+  const series = brandData.series.find((s) => s.id === currentConfig.seriesId) || brandData.series[0];
+  const processor = PROCESSOR_CATALOG[currentConfig.chipId] || PROCESSOR_CATALOG['m2'];
+  const activeGpuKey = currentConfig.hasDedicatedGpu
+    ? currentConfig.dedicatedGpuId
+    : currentConfig.integratedGpuId;
+  const gpu = GRAPHICS_CATALOG[activeGpuKey] || GRAPHICS_CATALOG['apple_silicon_gpu'];
+  const era = RELEASE_ERAS.find((e) => e.id === currentConfig.eraId) || RELEASE_ERAS[1];
+
+  // Construct standard ML feature payload
   const mlSpecs = {
-    brand: currentSpecs.brand,
-    type: currentSpecs.type,
-    cpu_brand: currentSpecs.cpu_brand,
-    cpu_speed_ghz: currentSpecs.cpu_speed_ghz,
-    storage_type: currentSpecs.storage_type,
-    gpu_brand: resolvedGpu,
-    os: currentSpecs.os,
-    inches: currentSpecs.inches,
-    touchscreen: currentSpecs.touchscreen,
-    ips: currentSpecs.ips,
-    resolution_pixels: currentSpecs.resolution_pixels,
-    ram_gb: currentSpecs.ram_gb,
-    storage_gb: currentSpecs.storage_gb,
-    weight_kg: currentSpecs.weight_kg,
+    brand: currentConfig.brand,
+    type: series.formFactor,
+    cpu_brand: processor.mlCpuBrand,
+    cpu_speed_ghz: currentConfig.cpu_speed_ghz,
+    storage_type: currentConfig.storage_type,
+    gpu_brand: gpu.mlGpuBrand,
+    os: currentConfig.os,
+    inches: currentConfig.inches,
+    touchscreen: currentConfig.touchscreen ? 1 : 0,
+    ips: currentConfig.ips ? 1 : 0,
+    resolution_pixels: currentConfig.resolution_pixels,
+    ram_gb: currentConfig.ram_gb,
+    storage_gb: currentConfig.storage_gb,
+    weight_kg: currentConfig.weight_kg,
   };
 
-  const result = predictPrice(mlSpecs, currentCondition);
+  // Base inference from Gradient Boosted Decision Tree
+  const rawPred = predictPrice(mlSpecs, 1.0);
 
-  // Update symbols and amounts
+  // Market calibration:
+  // Evaluates real market valuation factoring generation era, processor tier weight, series prestige, and physical condition.
+  const seriesMult = series.marketSeriesMult || 1.0;
+  const chipMult = processor.marketWeight || 0.45;
+  const eraMult = era.factor || 1.0;
+  const conditionMult = currentCondition;
+
+  const calibratedBdt = Math.max(
+    14000,
+    Math.round(rawPred.priceBdt * seriesMult * chipMult * eraMult * conditionMult)
+  );
+
+  const lowBdt = Math.round(calibratedBdt * 0.92);
+  const highBdt = Math.round(calibratedBdt * 1.08);
+
   const symbol = currentCurrency === 'BDT' ? '৳' : currentCurrency === 'USD' ? '$' : '€';
   const amount =
     currentCurrency === 'BDT'
-      ? result.priceBdt
+      ? calibratedBdt
       : currentCurrency === 'USD'
-      ? result.priceUsd
-      : result.priceEur;
+      ? Math.round(calibratedBdt / 120)
+      : Math.round(calibratedBdt / 128);
 
   const low =
     currentCurrency === 'BDT'
-      ? result.lowBdt
+      ? lowBdt
       : currentCurrency === 'USD'
-      ? Math.round(result.lowBdt / 120)
-      : Math.round(result.lowBdt / 128);
+      ? Math.round(lowBdt / 120)
+      : Math.round(lowBdt / 128);
 
   const high =
     currentCurrency === 'BDT'
-      ? result.highBdt
+      ? highBdt
       : currentCurrency === 'USD'
-      ? Math.round(result.highBdt / 120)
-      : Math.round(result.highBdt / 128);
+      ? Math.round(highBdt / 120)
+      : Math.round(highBdt / 128);
 
+  // Update hero price display
   if (el('price-symbol')) el('price-symbol').textContent = symbol;
   if (el('price-amount')) el('price-amount').textContent = amount.toLocaleString();
   if (el('price-range-text')) {
@@ -676,30 +838,34 @@ function recalculate() {
 
   // Update Summary Card
   if (el('sum-config')) {
-    el('sum-config').textContent = `${currentSpecs.brand} ${currentSpecs.type}`;
+    el('sum-config').textContent = `${currentConfig.brand} ${series.name}`;
+  }
+  if (el('sum-era')) {
+    el('sum-era').textContent = `${era.label} • ${Math.round(currentCondition * 100)}% Grade`;
   }
   if (el('sum-cpu')) {
-    el('sum-cpu').textContent = `${currentSpecs.cpu_brand} @ ${currentSpecs.cpu_speed_ghz} GHz`;
+    el('sum-cpu').textContent = `${processor.label} @ ${currentConfig.cpu_speed_ghz} GHz`;
   }
   if (el('sum-storage')) {
-    el('sum-storage').textContent = `${currentSpecs.ram_gb} GB • ${currentSpecs.storage_gb} GB ${currentSpecs.storage_type}`;
+    const ramLabel = processor.family === 'Apple' ? `${currentConfig.ram_gb} GB Unified` : `${currentConfig.ram_gb} GB`;
+    el('sum-storage').textContent = `${ramLabel} • ${currentConfig.storage_gb} GB ${currentConfig.storage_type}`;
   }
   if (el('sum-gpu')) {
-    el('sum-gpu').textContent = currentSpecs.has_dedicated_gpu
-      ? `Dedicated ${currentSpecs.dedicated_gpu_brand === 'Nvidia' ? 'Nvidia GeForce' : 'AMD Radeon'}`
-      : 'Integrated Graphics (No Dedicated GPU)';
+    el('sum-gpu').textContent = currentConfig.hasDedicatedGpu
+      ? `Dedicated ${gpu.label}`
+      : gpu.label;
   }
   if (el('sum-display')) {
-    const touch = currentSpecs.touchscreen ? 'Touch' : '';
-    const ips = currentSpecs.ips ? 'IPS' : '';
+    const touch = currentConfig.touchscreen ? 'Touch' : '';
+    const ips = currentConfig.ips ? 'IPS' : '';
     const features = [ips, touch].filter(Boolean).join('/');
-    el('sum-display').textContent = `${currentSpecs.inches}" ${features ? `(${features})` : ''} • ${currentSpecs.weight_kg}kg`;
+    el('sum-display').textContent = `${currentConfig.inches}" ${features ? `(${features})` : ''} • ${currentConfig.weight_kg}kg`;
   }
 
   // Render Market Value Drivers
   const driversContainer = el('market-drivers-list');
   if (driversContainer) {
-    const drivers = generateMarketDrivers(currentSpecs, result);
+    const drivers = generateMarketDrivers(currentConfig, series, processor, gpu, era);
     driversContainer.innerHTML = '';
     drivers.forEach((d) => {
       const item = document.createElement('div');

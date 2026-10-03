@@ -57,7 +57,7 @@
           </h1>
           <p class="hero-desc">
             Powered by Gradient Boosted Decision Trees trained on 1,300+ laptops with cross-validated accuracy (R² = 0.85). 
-            Configures manufacturer-specific form factors and graphics architectures in real time.
+            Configures manufacturer-specific model lines, Apple Silicon M1–M5, and graphics architectures in real time.
           </p>
         </section>
 
@@ -73,13 +73,13 @@
         <div class="predictor-grid">
           <!-- Left Column: Form Controls -->
           <form class="glass-panel" onsubmit="return false;">
-            <!-- Section 1: Brand & Form Factor -->
+            <!-- Section 1: Brand & Model Line -->
             <div class="form-section-title">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect width="18" height="18" x="3" y="3" rx="2" />
                 <path d="M3 9h18" />
               </svg>
-              <span>1. Manufacturer &amp; Form Factor</span>
+              <span>1. Manufacturer &amp; Model Line</span>
             </div>
 
             <div class="form-grid-3">
@@ -89,14 +89,18 @@
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="spec-type">Laptop Type</label>
-                <select id="spec-type" class="form-select"></select>
-                <div class="helper-note" id="type-helper-note" style="display: none;"></div>
+                <label class="form-label" for="spec-series">
+                  <span>Model Line / Series</span>
+                  <span class="series-badge" id="series-badge">Thin &amp; Light</span>
+                </label>
+                <select id="spec-series" class="form-select"></select>
+                <div class="helper-note" id="series-helper-note"></div>
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="spec-os">Operating System</label>
-                <select id="spec-os" class="form-select"></select>
+                <label class="form-label" for="spec-era">Release Era / Age</label>
+                <select id="spec-era" class="form-select"></select>
+                <div class="helper-note" id="era-helper-note"></div>
               </div>
             </div>
 
@@ -117,18 +121,24 @@
               <span>2. Processing &amp; Graphics Architecture</span>
             </div>
 
-            <div class="form-grid-2">
+            <div class="form-grid-3">
               <div class="form-group">
-                <label class="form-label" for="spec-cpu">CPU Tier</label>
+                <label class="form-label" for="spec-cpu">Processor / Chip Tier</label>
                 <select id="spec-cpu" class="form-select"></select>
+                <div class="helper-note" id="cpu-helper-note"></div>
               </div>
 
               <div class="form-group">
                 <label class="form-label" for="spec-cpuspeed">
                   <span>Clock Speed</span>
-                  <span class="form-label-val" id="val-cpuspeed">2.5 GHz</span>
+                  <span class="form-label-val" id="val-cpuspeed">2.8 GHz</span>
                 </label>
-                <input id="spec-cpuspeed" type="range" class="range-slider" min="0.9" max="3.6" step="0.1" value="2.5" />
+                <input id="spec-cpuspeed" type="range" class="range-slider" min="0.9" max="4.0" step="0.1" value="2.8" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="spec-os">Operating System</label>
+                <select id="spec-os" class="form-select"></select>
               </div>
             </div>
 
@@ -142,8 +152,8 @@
                 <div class="gpu-card active" id="gpu-card-integrated">
                   <div class="gpu-radio-indicator"></div>
                   <div class="gpu-card-content">
-                    <div class="gpu-card-title">Integrated Graphics (No Dedicated GPU)</div>
-                    <div class="gpu-card-desc">Onboard processor graphics (Intel UHD / Iris or AMD Radeon). Best for everyday tasks and long battery life.</div>
+                    <div class="gpu-card-title" id="gpu-integrated-title">Integrated / Unified Graphics</div>
+                    <div class="gpu-card-desc" id="gpu-integrated-desc">Onboard processor graphics (Apple Silicon Unified GPU, Intel Iris Xe, or AMD Radeon). Best for battery life.</div>
                   </div>
                 </div>
 
@@ -151,18 +161,18 @@
                 <div class="gpu-card" id="gpu-card-dedicated">
                   <div class="gpu-radio-indicator"></div>
                   <div class="gpu-card-content">
-                    <div class="gpu-card-title">Dedicated Discrete GPU</div>
-                    <div class="gpu-card-desc">Dedicated graphics processor with separate VRAM. Essential for 3D modeling, video rendering, and gaming.</div>
+                    <div class="gpu-card-title" id="gpu-dedicated-title">Dedicated Discrete GPU</div>
+                    <div class="gpu-card-desc" id="gpu-dedicated-desc">Dedicated graphics accelerator with independent VRAM. Essential for 3D modeling, high-end video, and gaming.</div>
                   </div>
                 </div>
               </div>
 
               <div class="helper-note" id="gpu-helper-note" style="display: none;"></div>
 
-              <!-- Dedicated GPU Brand Select (Appears when Dedicated is selected) -->
+              <!-- Dedicated GPU Family Select -->
               <div id="dedicated-gpu-selector-box" style="display: none; margin-top: 0.5rem; background: var(--bg-surface-elevated); padding: 0.85rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-                <label class="form-label" for="spec-dedicated-gpubrand">Dedicated GPU Family</label>
-                <select id="spec-dedicated-gpubrand" class="form-select"></select>
+                <label class="form-label" for="spec-dedicated-gpu">Discrete Graphics Model</label>
+                <select id="spec-dedicated-gpu" class="form-select"></select>
               </div>
             </div>
 
@@ -182,31 +192,40 @@
               <div class="form-group">
                 <label class="form-label" for="spec-ram">RAM Capacity</label>
                 <select id="spec-ram" class="form-select">
-                  <option value="2">2 GB</option>
                   <option value="4">4 GB</option>
-                  <option value="6">6 GB</option>
-                  <option value="8" selected>8 GB</option>
+                  <option value="8">8 GB</option>
                   <option value="12">12 GB</option>
-                  <option value="16">16 GB</option>
+                  <option value="16" selected>16 GB</option>
+                  <option value="18">18 GB (Pro)</option>
                   <option value="24">24 GB</option>
                   <option value="32">32 GB</option>
+                  <option value="36">36 GB (Max)</option>
+                  <option value="48">48 GB</option>
                   <option value="64">64 GB</option>
+                  <option value="96">96 GB</option>
+                  <option value="128">128 GB</option>
                 </select>
               </div>
 
               <div class="form-group">
                 <label class="form-label" for="spec-storagetype">Drive Type</label>
-                <select id="spec-storagetype" class="form-select"></select>
+                <select id="spec-storagetype" class="form-select">
+                  <option value="SSD" selected>Solid State Drive (SSD)</option>
+                  <option value="HDD">Mechanical Hard Drive (HDD)</option>
+                  <option value="Hybrid">Hybrid Drive (SSHD)</option>
+                </select>
+                <div class="helper-note" id="storage-helper-note" style="display: none;"></div>
               </div>
 
               <div class="form-group">
                 <label class="form-label" for="spec-storagegb">Capacity</label>
                 <select id="spec-storagegb" class="form-select">
                   <option value="128">128 GB</option>
-                  <option value="256" selected>256 GB</option>
-                  <option value="512">512 GB</option>
+                  <option value="256">256 GB</option>
+                  <option value="512" selected>512 GB</option>
                   <option value="1024">1024 GB (1 TB)</option>
                   <option value="2048">2048 GB (2 TB)</option>
+                  <option value="4096">4096 GB (4 TB)</option>
                 </select>
               </div>
             </div>
@@ -226,8 +245,12 @@
                 <label class="form-label" for="spec-res">Display Resolution</label>
                 <select id="spec-res" class="form-select">
                   <option value="1049088">1366 × 768 (HD)</option>
-                  <option value="2073600" selected>1920 × 1080 (Full HD)</option>
+                  <option value="2073600">1920 × 1080 (Full HD)</option>
                   <option value="4096000">2560 × 1600 (Retina / 2K)</option>
+                  <option value="4259840" selected>2560 × 1664 (MacBook Air Liquid Retina)</option>
+                  <option value="5184000">2880 × 1800 (OLED 3K)</option>
+                  <option value="5939136">3024 × 1964 (MacBook Pro 14" XDR)</option>
+                  <option value="7720704">3456 × 2234 (MacBook Pro 16" XDR)</option>
                   <option value="8294400">3840 × 2160 (4K UHD)</option>
                 </select>
               </div>
@@ -235,9 +258,9 @@
               <div class="form-group">
                 <label class="form-label" for="spec-inches">
                   <span>Screen Size</span>
-                  <span class="form-label-val" id="val-inches">15.6"</span>
+                  <span class="form-label-val" id="val-inches">13.6"</span>
                 </label>
-                <input id="spec-inches" type="range" class="range-slider" min="11.6" max="17.3" step="0.1" value="15.6" />
+                <input id="spec-inches" type="range" class="range-slider" min="11.6" max="18.0" step="0.1" value="13.6" />
               </div>
             </div>
 
@@ -257,8 +280,8 @@
 
               <div class="toggle-row" id="toggle-ips-row">
                 <div class="toggle-info">
-                  <div class="toggle-title">IPS Display</div>
-                  <div class="toggle-sub">Wide viewing angles &amp; color accuracy</div>
+                  <div class="toggle-title">IPS / Liquid Retina Display</div>
+                  <div class="toggle-sub">Wide viewing angles &amp; accurate colors</div>
                 </div>
                 <div class="toggle-switch active" id="toggle-ips-switch">
                   <div class="toggle-knob"></div>
@@ -269,9 +292,9 @@
             <div class="form-group" style="margin-top: 1rem">
               <label class="form-label" for="spec-weight">
                 <span>Laptop Weight</span>
-                <span class="form-label-val" id="val-weight">1.8 kg</span>
+                <span class="form-label-val" id="val-weight">1.24 kg</span>
               </label>
-              <input id="spec-weight" type="range" class="range-slider" min="0.9" max="4.5" step="0.05" value="1.8" />
+              <input id="spec-weight" type="range" class="range-slider" min="0.85" max="4.5" step="0.05" value="1.24" />
             </div>
           </form>
 
@@ -284,12 +307,12 @@
 
             <div class="price-hero-amount">
               <span class="price-symbol" id="price-symbol">৳</span>
-              <span id="price-amount">124,751</span>
+              <span id="price-amount">113,595</span>
             </div>
 
             <div class="price-range-badge">
-              <span>Typical Range:</span>
-              <strong id="price-range-text">৳114,771 – ৳134,731</strong>
+              <span>Typical Fair Range:</span>
+              <strong id="price-range-text">৳104,507 – ৳122,683</strong>
             </div>
 
             <!-- Currency switcher -->
@@ -308,9 +331,9 @@
                 <span class="form-label-val" id="val-condition">90%</span>
               </div>
               <div class="condition-grid">
-                <button type="button" class="cond-btn" data-mult="1.0">Mint / Like New</button>
-                <button type="button" class="cond-btn active" data-mult="0.9">Good (Minor wear)</button>
-                <button type="button" class="cond-btn" data-mult="0.8">Fair (Heavy wear)</button>
+                <button type="button" class="cond-btn" data-mult="1.0">Mint / Like New (100%)</button>
+                <button type="button" class="cond-btn active" data-mult="0.9">Good (Minor wear 90%)</button>
+                <button type="button" class="cond-btn" data-mult="0.8">Fair (Heavy wear 80%)</button>
               </div>
             </div>
 
@@ -326,23 +349,27 @@
             <div class="spec-summary-list">
               <div class="spec-summary-item">
                 <span>Configuration</span>
-                <span class="spec-summary-val" id="sum-config">Dell Notebook</span>
+                <span class="spec-summary-val" id="sum-config">Apple MacBook Air</span>
+              </div>
+              <div class="spec-summary-item">
+                <span>Release Era &amp; Grade</span>
+                <span class="spec-summary-val" id="sum-era">2022–2023 • Good (90%)</span>
               </div>
               <div class="spec-summary-item">
                 <span>Processor</span>
-                <span class="spec-summary-val" id="sum-cpu">Intel i5 @ 2.5 GHz</span>
+                <span class="spec-summary-val" id="sum-cpu">Apple M2 @ 2.8 GHz</span>
               </div>
               <div class="spec-summary-item">
                 <span>RAM &amp; Storage</span>
-                <span class="spec-summary-val" id="sum-storage">8 GB • 256 GB SSD</span>
+                <span class="spec-summary-val" id="sum-storage">16 GB Unified • 512 GB SSD</span>
               </div>
               <div class="spec-summary-item">
                 <span>Graphics</span>
-                <span class="spec-summary-val" id="sum-gpu">Integrated Graphics</span>
+                <span class="spec-summary-val" id="sum-gpu">Apple Silicon Unified GPU</span>
               </div>
               <div class="spec-summary-item">
                 <span>Display &amp; Weight</span>
-                <span class="spec-summary-val" id="sum-display">15.6" (IPS) • 1.8kg</span>
+                <span class="spec-summary-val" id="sum-display">13.6" (IPS) • 1.24kg</span>
               </div>
             </div>
 
@@ -427,7 +454,7 @@
 
       <!-- Footer -->
       <footer class="app-footer">
-        <p><strong>PricePoint</strong> — Laptop market valuation using machine learning.</p>
+        <p><strong>PricePoint</strong> — Laptop market valuation using machine learning &amp; domain intelligence.</p>
         <p style="margin-top: 0.5rem">
           Configured for GitHub Pages deployment. Built by <a href="https://github.com/DeepSalman" target="_blank" rel="noreferrer">DeepSalman</a>.
         </p>
