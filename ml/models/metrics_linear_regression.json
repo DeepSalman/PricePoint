@@ -1,0 +1,9 @@
+{
+  "model": "Linear Regression",
+  "test_mae": 30753.97,
+  "test_rmse": 44136.04,
+  "test_r2": 0.7545,
+  "cv_mae": 31511.33,
+  "cv_rmse": 43848.98,
+  "cv_r2": 0.7409
+}
