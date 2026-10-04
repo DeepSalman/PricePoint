@@ -9,8 +9,8 @@ Three parts:
 ```
 web/     React frontend — user enters specs, sees estimated price (you build this)
 server/  Node.js (Express) backend — API gateway/proxy, serves the React app (you build this)
-ml/      Python — data prep, 4 models (Linear Regression, Decision Tree,
-                                    Random Forest, SVR), evaluation (MAE/RMSE/R²),
+ml/      Python — data prep, 6 models (Linear Regression, Decision Tree,
+                                    Random Forest, SVR,KNN,Gradient Boosting), evaluation (MAE/RMSE/R²),
                                     and a FastAPI prediction service the Node server calls
 ```
 
