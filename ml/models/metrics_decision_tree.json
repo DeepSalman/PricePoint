@@ -1,0 +1,9 @@
+{
+  "model": "Decision Tree",
+  "test_mae": 29907.16,
+  "test_rmse": 50645.26,
+  "test_r2": 0.6768,
+  "cv_mae": 33221.85,
+  "cv_rmse": 53609.06,
+  "cv_r2": 0.6151
+}
