@@ -155,5 +155,8 @@ python3 -m http.server 8000
 ---
 
 ## 6. Authors & Contribution
-- **Salman (@DeepSalman):** System Architecture, Frontend Development, Client-Side Inference Engine, Gradient Boosting Tuning, Deployment.
-- **Teammates:** Notebook modules and model benchmarks (`Mehedi`: Linear Regression, `Maruf`: Decision Tree, `Jannat`: KNN & Gradient Boosting experiments).
+- **Salman (@DeepSalman, ID: 0112430508):** Team Lead — System Architecture, Random Forest & SVR Modules, Frontend Development, Client-Side Inference Engine, Gradient Boosting Tuning, Deployment.
+- **Teammates:**
+  - **Mehedi (ID: 0112410105):** Linear Regression Module, Preprocessing Benchmarks.
+  - **Maruf (ID: 0112330918):** Decision Tree Regression, Overfitting Analysis.
+  - **Jannat (ID: 0112330157):** KNN Regression, Gradient Boosting & Error Analysis.

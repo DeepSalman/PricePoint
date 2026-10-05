@@ -289,7 +289,7 @@ def build_pdf():
             Paragraph("Student ID / Roll", table_header_style),
         ],
         [
-            Paragraph("<b>Salman</b><br/><font color='#64748b' size=7>System Architecture, Web App, Deployment, Tuning</font>", member_name_style),
+            Paragraph("<b>Salman</b><br/><font color='#64748b' size=7>System Architecture, Random Forest, SVR, Web App, Deployment, Tuning</font>", member_name_style),
             Paragraph("Team Lead", table_cell_center),
             Paragraph("0112430508", member_id_style),
         ],
