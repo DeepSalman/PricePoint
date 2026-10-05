@@ -747,10 +747,15 @@ function recalculate() {
   const gpu = GRAPHICS_CATALOG[activeGpuKey] || GRAPHICS_CATALOG['apple_silicon_gpu'];
   const era = RELEASE_ERAS.find((e) => e.id === currentConfig.eraId) || RELEASE_ERAS[1];
 
-  // Construct standard ML feature payload
+  // Map UI form factor to a type the model actually knows.
+  // The training data has: 'Notebook', 'Gaming', 'Ultrabook', '2 in 1 Convertible', 'Workstation', 'Netbook'
+  // The BRAND_CATALOG formFactor values match these exactly.
+  const mlType = series.formFactor;
+
+  // Construct standard ML feature payload — values must exactly match training column names and category strings
   const mlSpecs = {
     brand: currentConfig.brand,
-    type: series.formFactor,
+    type: mlType,
     cpu_brand: processor.mlCpuBrand,
     cpu_speed_ghz: currentConfig.cpu_speed_ghz,
     storage_type: currentConfig.storage_type,
@@ -765,19 +770,29 @@ function recalculate() {
     weight_kg: currentConfig.weight_kg,
   };
 
-  // Base inference from Gradient Boosted Decision Tree
+  // The ML model is the primary pricing engine — it learned brand premiums, specs, and market patterns
+  // directly from 1,303 real laptop listings. Its output should dominate.
   const rawPred = predictPrice(mlSpecs, 1.0);
+  const mlBase = rawPred.priceBdt;
 
-  // Market calibration:
-  // Evaluates real market valuation factoring generation era, processor tier weight, series prestige, and physical condition.
-  const seriesMult = series.marketSeriesMult || 1.0;
-  const chipMult = processor.marketWeight || 0.45;
-  const eraMult = era.factor || 1.0;
-  const conditionMult = currentCondition;
+  // Era adjustment: training data covers 2015–2020 hardware. Newer or older eras need correction.
+  const eraMult = era.factor;  // 0.65–1.15, centered at 1.0 for 2022–2023 hardware
+
+  // Condition (user-set): new, excellent, good, fair — this is a real economic factor
+  const conditionMult = currentCondition; // 0.70–1.0
+
+  // Series prestige: a very small nudge (±12% max) for flagship vs budget within a brand.
+  // Compress to reduce distortion: center around 1.0, apply only 30% of the series premium.
+  const rawSeriesMult = series.marketSeriesMult || 1.0;
+  const seriesNudge = 1.0 + (rawSeriesMult - 1.0) * 0.30;
+
+  // Do NOT apply chipMult to the price — the ML model already encodes CPU tier through
+  // cpu_brand (Intel i7, Intel i5, AMD) and cpu_speed_ghz. Applying chipMult on top
+  // would double-count the CPU effect and cut Apple M2/M3 prices by 50–60%.
 
   const calibratedBdt = Math.max(
     14000,
-    Math.round(rawPred.priceBdt * seriesMult * chipMult * eraMult * conditionMult)
+    Math.round(mlBase * eraMult * conditionMult * seriesNudge)
   );
 
   const lowBdt = Math.round(calibratedBdt * 0.92);
