@@ -326,8 +326,125 @@ function syncBrandAndSeries(brandKey, desiredSeriesId, resetDefaults = true) {
     }
   }
 
-  // 6. Graphics configuration
+  // 6. Dynamic RAM options based on brand
+  updateRamOptions(currentConfig.brand);
+
+  // 7. Dynamic Resolution options based on brand
+  updateResolutionOptions(currentConfig.brand);
+
+  // 8. Graphics configuration
   updateGraphicsUI(series);
+}
+
+/**
+ * Dynamically populates RAM select with brand-appropriate tiers and labels.
+ * 18GB (M Pro) and 36GB (M Max) only apply to Apple.
+ * Standard PC brands use standard JEDEC/DDR capacities (4, 8, 12, 16, 24, 32, 48, 64, 96, 128).
+ */
+function updateRamOptions(brand) {
+  const ramSelect = el('spec-ram');
+  if (!ramSelect) return;
+
+  const appleTiers = [
+    { value: 8, label: '8 GB (Unified Memory)' },
+    { value: 16, label: '16 GB (Unified Memory)' },
+    { value: 18, label: '18 GB (Pro Chip Unified)' },
+    { value: 24, label: '24 GB (Unified Memory)' },
+    { value: 32, label: '32 GB (Unified Memory)' },
+    { value: 36, label: '36 GB (Max Chip Unified)' },
+    { value: 48, label: '48 GB (Unified Memory)' },
+    { value: 64, label: '64 GB (Unified Memory)' },
+    { value: 96, label: '96 GB (Unified Memory)' },
+    { value: 128, label: '128 GB (Unified Memory)' },
+  ];
+
+  const pcTiers = [
+    { value: 4, label: '4 GB' },
+    { value: 8, label: '8 GB' },
+    { value: 12, label: '12 GB' },
+    { value: 16, label: '16 GB' },
+    { value: 24, label: '24 GB' },
+    { value: 32, label: '32 GB' },
+    { value: 48, label: '48 GB' },
+    { value: 64, label: '64 GB' },
+    { value: 96, label: '96 GB' },
+    { value: 128, label: '128 GB' },
+  ];
+
+  const tiers = brand === 'Apple' ? appleTiers : pcTiers;
+  const prevVal = Number(currentConfig.ram_gb) || 16;
+
+  ramSelect.innerHTML = '';
+  tiers.forEach((t) => {
+    const opt = document.createElement('option');
+    opt.value = t.value;
+    opt.textContent = t.label;
+    ramSelect.appendChild(opt);
+  });
+
+  // Keep selection if available, or snap to nearest valid
+  const hasPrev = tiers.some((t) => t.value === prevVal);
+  if (hasPrev) {
+    ramSelect.value = prevVal;
+  } else {
+    // If user switched from Apple (e.g. 18GB) to PC, snap to 16GB or 32GB
+    const closest = tiers.reduce((prev, curr) =>
+      Math.abs(curr.value - prevVal) < Math.abs(prev.value - prevVal) ? curr : prev
+    );
+    currentConfig.ram_gb = closest.value;
+    ramSelect.value = closest.value;
+  }
+}
+
+/**
+ * Dynamically formats Resolution select so Apple-specific names (MacBook Air/Pro Retina)
+ * only show on Apple, and standard industry names show for PC brands.
+ */
+function updateResolutionOptions(brand) {
+  const resSelect = el('spec-res');
+  if (!resSelect) return;
+
+  const appleResolutions = [
+    { value: 2073600, label: '1920 × 1080 (Full HD External)' },
+    { value: 4096000, label: '2560 × 1600 (Retina 13")' },
+    { value: 4259840, label: '2560 × 1664 (MacBook Air 13.6" Liquid Retina)' },
+    { value: 5184000, label: '2880 × 1864 (MacBook Air 15.3" Liquid Retina)' },
+    { value: 5939136, label: '3024 × 1964 (MacBook Pro 14" Liquid Retina XDR)' },
+    { value: 7720704, label: '3456 × 2234 (MacBook Pro 16" Liquid Retina XDR)' },
+    { value: 8294400, label: '3840 × 2160 (4K UHD External)' },
+  ];
+
+  const pcResolutions = [
+    { value: 1049088, label: '1366 × 768 (HD / WXGA)' },
+    { value: 2073600, label: '1920 × 1080 (Full HD / 1080p)' },
+    { value: 2304000, label: '1920 × 1200 (WUXGA 16:10)' },
+    { value: 3686400, label: '2560 × 1440 (QHD / 2K)' },
+    { value: 4096000, label: '2560 × 1600 (QHD+ / WQXGA 16:10)' },
+    { value: 5184000, label: '2880 × 1800 (3K OLED)' },
+    { value: 8294400, label: '3840 × 2160 (4K UHD)' },
+  ];
+
+  const resolutions = brand === 'Apple' ? appleResolutions : pcResolutions;
+  const prevVal = Number(currentConfig.resolution_pixels) || (brand === 'Apple' ? 4259840 : 2073600);
+
+  resSelect.innerHTML = '';
+  resolutions.forEach((r) => {
+    const opt = document.createElement('option');
+    opt.value = r.value;
+    opt.textContent = r.label;
+    resSelect.appendChild(opt);
+  });
+
+  const hasPrev = resolutions.some((r) => r.value === prevVal);
+  if (hasPrev) {
+    resSelect.value = prevVal;
+  } else {
+    const closest = resolutions.reduce((prev, curr) =>
+      Math.abs(curr.value - prevVal) < Math.abs(prev.value - prevVal) ? curr : prev
+    );
+    currentConfig.resolution_pixels = closest.value;
+    resSelect.value = closest.value;
+  }
 }
 
 function updateGraphicsUI(series) {
