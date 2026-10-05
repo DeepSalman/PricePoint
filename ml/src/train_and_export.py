@@ -1,7 +1,6 @@
 """
-Train regression models on the cleaned laptop dataset, evaluate metrics,
-and export both a Python joblib artifact and a serialized JSON model
-for zero-dependency client-side inference on GitHub Pages.
+Train and score all six regression models on the cleaned laptop dataset
+(Linear Regression, Decision Tree, Random Forest, SVR, KNN, Gradient Boosting),
 """
 
 import json
@@ -10,12 +9,13 @@ import numpy as np
 import pandas as pd
 from sklearn.model_selection import KFold, cross_val_score, train_test_split
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from sklearn.compose import ColumnTransformer
+from sklearn.compose import ColumnTransformer, TransformedTargetRegressor
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
+from sklearn.neighbors import KNeighborsRegressor
 from sklearn.svm import SVR
 import joblib
 
@@ -59,15 +59,43 @@ preprocessor = ColumnTransformer(
 
 preprocessor.fit(X_train)
 
-# 1. Train and save metrics for all 4 benchmark models
+GB_SETTINGS = dict(
+    n_estimators=120,
+    max_depth=4,
+    learning_rate=0.08,
+    subsample=0.85,
+    random_state=42,
+)
+
+cv = KFold(n_splits=5, shuffle=True, random_state=42)
+
+def make_knn(k):
+    return Pipeline([
+        ("prep", preprocessor),
+        ("scaler", StandardScaler()),
+        ("model", KNeighborsRegressor(n_neighbors=k)),
+    ])
+
+knn_mae_by_k = {
+    k: -cross_val_score(make_knn(k), X_train, y_train, cv=cv, scoring="neg_mean_absolute_error").mean()
+    for k in range(1, 21)
+}
+best_k = min(knn_mae_by_k, key=knn_mae_by_k.get)
+print(f"KNN: best k = {best_k} (CV MAE = {knn_mae_by_k[best_k]:.1f})")
+
 models = {
     "Linear Regression": Pipeline([("prep", preprocessor), ("model", LinearRegression())]),
     "Decision Tree": Pipeline([("prep", preprocessor), ("model", DecisionTreeRegressor(random_state=42))]),
     "Random Forest": Pipeline([("prep", preprocessor), ("model", RandomForestRegressor(n_estimators=100, random_state=42))]),
-    "SVR": Pipeline([("prep", preprocessor), ("scaler", StandardScaler()), ("model", SVR())]),
+    
+    "SVR": TransformedTargetRegressor(
+        regressor=Pipeline([("prep", preprocessor), ("scaler", StandardScaler()), ("model", SVR(C=3))]),
+        func=np.log1p,
+        inverse_func=np.expm1,
+    ),
+    "KNN": make_knn(best_k),
+    "Gradient Boosting": Pipeline([("prep", preprocessor), ("model", GradientBoostingRegressor(**GB_SETTINGS))]),
 }
-
-cv = KFold(n_splits=5, shuffle=True, random_state=42)
 
 for name, pipe in models.items():
     pipe.fit(X_train, y_train)
@@ -93,20 +121,16 @@ for name, pipe in models.items():
     }
     with open(MODELS_DIR / f"metrics_{slug}.json", "w") as f:
         json.dump(metrics, f, indent=2)
-    print(f"Saved metrics for {name}: Test MAE = {test_mae:.1f}, R2 = {test_r2:.4f}, CV MAE = {cv_mae.mean():.1f}")
 
-# 2. Train high-performing GradientBoostingRegressor
+    # Save full pipeline for standalone CLI / API prediction
+    joblib.dump(pipe, MODELS_DIR / f"{slug}.joblib")
+    print(f"Saved metrics & joblib for {name}: Test MAE = {test_mae:.1f}, R2 = {test_r2:.4f}, CV MAE = {cv_mae.mean():.1f}")
+
 print("\nTraining final production GradientBoostingRegressor model...")
 X_train_trans = preprocessor.transform(X_train)
 X_test_trans = preprocessor.transform(X_test)
 
-gbr = GradientBoostingRegressor(
-    n_estimators=120,
-    max_depth=4,
-    learning_rate=0.08,
-    subsample=0.85,
-    random_state=42,
-)
+gbr = GradientBoostingRegressor(**GB_SETTINGS)
 gbr.fit(X_train_trans, y_train)
 
 gbr_preds = gbr.predict(X_test_trans)
@@ -115,7 +139,7 @@ gbr_rmse = np.sqrt(mean_squared_error(y_test, gbr_preds))
 gbr_r2 = r2_score(y_test, gbr_preds)
 print(f"GBR Performance: Test MAE = {gbr_mae:.2f} BDT, RMSE = {gbr_rmse:.2f}, R2 = {gbr_r2:.4f}")
 
-# Save full pipeline joblib
+
 final_pipeline = Pipeline([
     ("prep", preprocessor),
     ("model", gbr),
@@ -124,7 +148,6 @@ final_pipeline.fit(X, y)
 joblib.dump(final_pipeline, MODELS_DIR / "best_model.joblib")
 print(f"Saved full joblib pipeline to {MODELS_DIR / 'best_model.joblib'}")
 
-# 3. Export model trees into compact JSON for zero-dependency client-side inference
 trees = []
 for estimator in gbr.estimators_:
     t = estimator[0].tree_
@@ -137,7 +160,6 @@ for estimator in gbr.estimators_:
     }
     trees.append(tree_dict)
 
-# Feature metadata
 cat_categories = {}
 cat_encoder = preprocessor.named_transformers_["cat"]
 for i, col in enumerate(categorical_cols):

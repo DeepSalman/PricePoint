@@ -1,0 +1,9 @@
+{
+  "model": "Gradient Boosting (tuned)",
+  "test_mae": 21994.61,
+  "test_rmse": 38798.05,
+  "test_r2": 0.8103,
+  "cv_mae": 24595.07,
+  "cv_rmse": 38979.01,
+  "cv_r2": 0.7963
+}

@@ -1,9 +1,9 @@
 {
   "model": "Random Forest",
-  "test_mae": 23784.17,
-  "test_rmse": 40024.77,
-  "test_r2": 0.7981,
-  "cv_mae": 25102.36,
-  "cv_rmse": 39283.71,
-  "cv_r2": 0.794
+  "test_mae": 23021.73,
+  "test_rmse": 39402.86,
+  "test_r2": 0.8259,
+  "cv_mae": 22695.25,
+  "cv_rmse": 36517.82,
+  "cv_r2": 0.8234
 }
