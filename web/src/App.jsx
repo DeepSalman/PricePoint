@@ -203,10 +203,6 @@ export default function App() {
           <h1 className="hero-title">
             Predict Fair Market Price for <span>Any Laptop</span>
           </h1>
-          <p className="hero-desc">
-            Powered by Gradient Boosted Decision Trees trained on 1,300+ laptops with cross-validated accuracy ($R^2 = 0.85$). 
-            Runs 100% offline in your browser with zero latency.
-          </p>
         </section>
 
         {/* Preset Selector */}
